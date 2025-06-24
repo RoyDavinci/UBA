@@ -14,38 +14,30 @@ $conn = getConnection();
 $action = $_REQUEST['action'] ?? null;
 
 switch ($action) {
-
     case 'create':
         $category_name = $_REQUEST['category_name'] ?? null;
 
         if (!$category_name) {
-            echo json_encode(['status' => false, 'error' => 'Category Name name is required']);
+            echo json_encode(['status' => false, 'error' => 'Category Name is required']);
             break;
         }
 
-        $stmt = $conn->prepare("INSERT INTO msg_cat (category_name) VALUES (?)");
-        $stmt->bind_param("s", $category_name);
-
-        if ($stmt->execute()) {
-             // Audit log the successful creation
+        $sql = "INSERT INTO msg_cat (category_name) VALUES ('$category_name')";
+        if (mysqli_query($conn, $sql)) {
             audit_log($conn, "Created message category: $category_name");
-
             echo json_encode(['status' => true, 'message' => 'Category added successfully']);
         } else {
-            echo json_encode(['status' => false, 'error' => $stmt->error]);
+            echo json_encode(['status' => false, 'error' => mysqli_error($conn)]);
         }
-        $stmt->close();
         break;
 
     case 'read':
         $result = mysqli_query($conn, "SELECT * FROM msg_cat ORDER BY id DESC");
-        $category = [];
-
+        $categories = [];
         while ($row = mysqli_fetch_assoc($result)) {
-            $category[] = $row;
+            $categories[] = $row;
         }
-
-        echo json_encode(['status' => true, 'data' => $category]);
+        echo json_encode(['status' => true, 'data' => $categories]);
         break;
 
     case 'update':
@@ -53,40 +45,34 @@ switch ($action) {
         $category_name = $_REQUEST['category_name'] ?? null;
 
         if (!$id || !$category_name) {
-            echo json_encode(['status' => false, 'error' => 'ID and message category are required']);
+        
+            echo json_encode(['status' => false, 'error' => 'ID and Category Name are required']);
             break;
         }
 
-        $stmt = $conn->prepare("UPDATE msg_cat SET category_name = ? WHERE id = ?");
-        $stmt->bind_param("si", $category_name, $id);
-
-        if ($stmt->execute()) {
-             // Audit log the successful creation
+        $sql = "UPDATE msg_cat SET category_name = '$category_name' WHERE id = $id";
+        if (mysqli_query($conn, $sql)) {
             audit_log($conn, "Updated message category: $category_name");
             echo json_encode(['status' => true, 'message' => 'Category updated successfully']);
         } else {
-            echo json_encode(['status' => false, 'error' => $stmt->error]);
+            echo json_encode(['status' => false, 'error' => mysqli_error($conn)]);
         }
-        $stmt->close();
         break;
 
     case 'delete':
         $id = $_REQUEST['id'] ?? null;
-
         if (!$id) {
             echo json_encode(['status' => false, 'error' => 'Category ID is required']);
             break;
         }
 
-        $stmt = $conn->prepare("DELETE FROM msg_cat WHERE id = ?");
-        $stmt->bind_param("i", $id);
-
-        if ($stmt->execute()) {
+        $sql = "DELETE FROM msg_cat WHERE id = $id";
+        if (mysqli_query($conn, $sql)) {
+     
             echo json_encode(['status' => true, 'message' => 'Category deleted successfully']);
         } else {
-            echo json_encode(['status' => false, 'error' => $stmt->error]);
+            echo json_encode(['status' => false, 'error' => mysqli_error($conn)]);
         }
-        $stmt->close();
         break;
 
     default:

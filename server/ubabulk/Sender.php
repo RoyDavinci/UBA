@@ -13,7 +13,6 @@ $conn = getConnection();
 $action = $_REQUEST['action'] ?? null;
 
 switch ($action) {
-
     case 'create':
         $sender_name = $_REQUEST['sender_name'] ?? null;
 
@@ -22,15 +21,12 @@ switch ($action) {
             break;
         }
 
-        $stmt = $conn->prepare("INSERT INTO senderid (sender_name) VALUES (?)");
-        $stmt->bind_param("s", $sender_name);
-
-        if ($stmt->execute()) {
+        $sql = "INSERT INTO senderid (sender_name) VALUES ('$sender_name')";
+        if (mysqli_query($conn, $sql)) {
             echo json_encode(['status' => true, 'message' => 'Sender added successfully']);
         } else {
-            echo json_encode(['status' => false, 'error' => $stmt->error]);
+            echo json_encode(['status' => false, 'error' => mysqli_error($conn)]);
         }
-        $stmt->close();
         break;
 
     case 'read':
@@ -53,15 +49,12 @@ switch ($action) {
             break;
         }
 
-        $stmt = $conn->prepare("UPDATE senderid SET sender_name = ? WHERE id = ?");
-        $stmt->bind_param("si", $sender_name, $id);
-
-        if ($stmt->execute()) {
+        $sql = "UPDATE senderid SET sender_name = '$sender_name' WHERE id = $id";
+        if (mysqli_query($conn, $sql)) {
             echo json_encode(['status' => true, 'message' => 'Sender updated successfully']);
         } else {
-            echo json_encode(['status' => false, 'error' => $stmt->error]);
+            echo json_encode(['status' => false, 'error' => mysqli_error($conn)]);
         }
-        $stmt->close();
         break;
 
     case 'delete':
@@ -72,15 +65,12 @@ switch ($action) {
             break;
         }
 
-        $stmt = $conn->prepare("DELETE FROM senderid WHERE id = ?");
-        $stmt->bind_param("i", $id);
-
-        if ($stmt->execute()) {
+        $sql = "DELETE FROM senderid WHERE id = $id";
+        if (mysqli_query($conn, $sql)) {
             echo json_encode(['status' => true, 'message' => 'Sender deleted successfully']);
         } else {
-            echo json_encode(['status' => false, 'error' => $stmt->error]);
+            echo json_encode(['status' => false, 'error' => mysqli_error($conn)]);
         }
-        $stmt->close();
         break;
 
     default:
