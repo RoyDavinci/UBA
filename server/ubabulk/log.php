@@ -46,21 +46,19 @@ function audit_log($conn, $user_id, $full_name, $action) {
     }
 
     try {
+        
+        $user_id = $conn->real_escape_string($user_id);
+        $full_name = $conn->real_escape_string($full_name);
+        $action = $conn->real_escape_string($action);
+
         $query = "INSERT INTO audit_logs 
-                  (user_id, full_name, log_action) 
-                  VALUES (?, ?, ?)";
+                (user_id, full_name, log_action) 
+                VALUES ('$user_id', '$full_name', '$action')";
         
-        $stmt = $conn->prepare($query);
-        if (!$stmt) {
-            log_action("Prepare failed: " . $conn->error);
-            return ['status' => false, 'message' => 'Database error'];
-        }
-        
-        $stmt->bind_param("iss", $user_id, $full_name, $action);
-        $executed = $stmt->execute();
+        $executed = $conn->query($query);
         
         if (!$executed) {
-            log_action("Execute failed: " . $stmt->error);
+            log_action("Query failed: " . $conn->error);
             return ['status' => false, 'message' => 'Failed to log action'];
         }
         
