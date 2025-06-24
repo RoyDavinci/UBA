@@ -163,6 +163,10 @@ if (!move_uploaded_file($file_tmp, $target_file)) {
 //        log_action("Normalized line endings to Unix for: $target_file");
 log_action("File moved to: $target_file");
 
+//audit logging
+$action = "File Upload";
+audit_log($conn, $user_id, $full_name, $action);
+
 echo json_encode([
     "status" => true,
     "message" => "File uploaded and saved successfully.",
