@@ -105,6 +105,24 @@ $full_name = $conn->real_escape_string($row['full_name']);
 // Handle POST data
 $batchId = $_POST['batchId'] ?? '';
 $costCntr = $_POST['cost_cntr'] ?? '';
+$params1   = $_POST['params1']   ?? null;
+$params2   = $_POST['params2']   ?? null;
+$params3   = $_POST['params3']   ?? null;
+$params4   = $_POST['params4']   ?? null;
+$params5   = $_POST['params5']   ?? null;
+$phoneHeader   = $_POST['phoneHeader']   ?? null;
+
+if (!empty($_POST['shcduleAt'])) {
+    try {
+        $date = new DateTime($_POST['shcduleAt']);
+        $scheduled_at = $date->format('Y-m-d H:i:s');
+    } catch (Exception $e) {
+        error_log("Invalid date format for scheduled_at: " . $_POST['shcduleAt']);
+        $scheduled_at = null;
+    }
+} else {
+    $scheduled_at = null;
+}
 
 //Validating Message Category input
 if (!$costCntr) {
@@ -163,6 +181,10 @@ if (!move_uploaded_file($file_tmp, $target_file)) {
 //        log_action("Normalized line endings to Unix for: $target_file");
 log_action("File moved to: $target_file");
 
+//audit logging
+$action = "File Upload";
+audit_log($conn, $user_id, $full_name, $action);
+
 echo json_encode([
     "status" => true,
     "message" => "File uploaded and saved successfully.",
@@ -218,8 +240,8 @@ if ($file_ext === 'xlsx') {
     } catch (Exception $e) {
         log_action("Spout conversion failed: " . $e->getMessage());
         //status 5 means file upload failed
-        $query = "INSERT INTO uploaded_files (file_path, status, batch_id, full_name, user_id, cost_cntr) 
-            VALUES ('$file_escaped', '5', '$batch_escaped', '$full_name', '$user_id', '$costCntr)";
+        $query = "INSERT INTO uploaded_files (file_path, status, batch_id, full_name, user_id, cost_cntr,schedule_time, params1, params2, params3, params4, params5, phoneHeader) 
+            VALUES ('$file_escaped', '5', '$batch_escaped', '$full_name', '$user_id', '$costCntr', '$scheduled_at', '$params1', '$params2', '$params3', '$params4', '$params5', '$phoneHeader')";
             $result = $conn->query($query);
         echo json_encode(["status" => false, "message" => "Failed to convert Excel to CSV (streaming)."]);
         closeConnection($conn);
@@ -333,42 +355,40 @@ log_action("Duplicate entries (extra occurrences): $duplicateEntries");
 log_action("Distinct duplicated numbers: $distinctDuplicates");
 
 
-// Prepare the initial insert query with status 0
-$query = "INSERT INTO uploaded_files 
-          (file_path, status, batch_id, full_name, user_id, cost_cntr, total_count, total_distinct) 
-          VALUES (?, '0', ?, ?, ?, ?, ?, ?)";
+$file_escaped = $conn->real_escape_string($file_escaped);
+$batch_escaped = $conn->real_escape_string($batch_escaped);
+$full_name = $conn->real_escape_string($full_name);
+$user_id = $conn->real_escape_string($user_id);
+$costCntr = $conn->real_escape_string($costCntr);
+$params1 = $conn->real_escape_string($params1);
+$params2 = $conn->real_escape_string($params2);
+$params3 = $conn->real_escape_string($params3);
+$params4 = $conn->real_escape_string($params4);
+$params5 = $conn->real_escape_string($params5);
+$phoneHeader = $conn->real_escape_string($phoneHeader);
+$scheduled_at = $conn->real_escape_string($scheduled_at);
+$totalNumbers = (int)$totalNumbers; // Cast to integer for safety
+$uniqueNumbers = (int)$uniqueNumbers; // Cast to integer for safety
 
-$stmt = $conn->prepare($query);
-$stmt->bind_param("sssssii", 
-    $file_escaped, 
-    $batch_escaped, 
-    $full_name, 
-    $user_id, 
-    $costCntr, 
-    $totalNumbers, 
-    $uniqueNumbers
-);
+$query = "INSERT INTO uploaded_files 
+          (file_path, status, batch_id, full_name, user_id, cost_cntr, total_count, total_distinct, schedule_time, params1, params2, params3, params4, params5, phoneHeader) 
+          VALUES ('$file_escaped', '0', '$batch_escaped', '$full_name', '$user_id', '$costCntr', $totalNumbers, $uniqueNumbers, '$scheduled_at', '$params1', '$params2', '$params3', '$params4', '$params5', '$phoneHeader')";
 
 // Try the initial insert
-if (!$stmt->execute()) {
-    log_action("Initial insert failed: " . $stmt->error);
+if (!$conn->query($query)) {
+    log_action("Initial insert failed: " . $conn->error);
     
     // Check if record already exists
-    $checkQuery = "SELECT id FROM uploaded_files WHERE file_path = ? LIMIT 1";
-    $checkStmt = $conn->prepare($checkQuery);
-    $checkStmt->bind_param("s", $file_escaped);
-    $checkStmt->execute();
-    $exists = $checkStmt->get_result()->num_rows > 0;
-    $checkStmt->close();
+    $checkQuery = "SELECT id FROM uploaded_files WHERE file_path = '$file_escaped' LIMIT 1";
+    $result = $conn->query($checkQuery);
+    $exists = $result->num_rows > 0;
     
     if ($exists) {
-        // Update existing record to status 2
-        $updateQuery = "UPDATE uploaded_files SET status = '5' WHERE file_path = ?";
-        $updateStmt = $conn->prepare($updateQuery);
-        $updateStmt->bind_param("s", $file_escaped);
+        // Update existing record to status 5
+        $updateQuery = "UPDATE uploaded_files SET status = '5' WHERE file_path = '$file_escaped'";
         
-        if (!$updateStmt->execute()) {
-            log_action("Update failed: " . $updateStmt->error);
+        if (!$conn->query($updateQuery)) {
+            log_action("Update failed: " . $conn->error);
             echo json_encode([
                 "status" => false, 
                 "message" => "Failed to update existing file record."
@@ -376,29 +396,16 @@ if (!$stmt->execute()) {
             closeConnection($conn);
             exit;
         }
-        $updateStmt->close();
         
-        log_action("Updated existing record to status 2: $file_escaped");
+        log_action("Updated existing record to status 5: $file_escaped");
     } else {
-        // Insert new record with status 5
-        //status 5 means file upload failed
+        // Insert new record with status 5 (file upload failed)
         $insertQuery = "INSERT INTO uploaded_files 
-                       (file_path, status, batch_id, full_name, user_id, cost_cntr, total_count, total_distinct) 
-                       VALUES (?, '5', ?, ?, ?, ?, ?, ?)";
+                       (file_path, status, batch_id, full_name, user_id, cost_cntr, total_count, total_distinct, schedule_time, params1, params2, params3, params4, params5, phoneHeader) 
+                       VALUES ('$file_escaped', '5', '$batch_escaped', '$full_name', '$user_id', '$costCntr', $totalNumbers, $uniqueNumbers, '$scheduled_at', '$params1', '$params2', '$params3', '$params4', '$params5', '$phoneHeader')";
         
-        $insertStmt = $conn->prepare($insertQuery);
-        $insertStmt->bind_param("sssssii", 
-            $file_escaped, 
-            $batch_escaped, 
-            $full_name, 
-            $user_id, 
-            $costCntr, 
-            $totalNumbers, 
-            $uniqueNumbers
-        );
-        
-        if (!$insertStmt->execute()) {
-            log_action("Fallback insert failed: " . $insertStmt->error);
+        if (!$conn->query($insertQuery)) {
+            log_action("Fallback insert failed: " . $conn->error);
             echo json_encode([
                 "status" => false, 
                 "message" => "Failed to insert fallback file record."
@@ -406,9 +413,8 @@ if (!$stmt->execute()) {
             closeConnection($conn);
             exit;
         }
-        $insertStmt->close();
         
-        log_action("Inserted new record with status 2: $file_escaped");
+        log_action("Inserted new record with status 5: $file_escaped");
     }
     
     echo json_encode([

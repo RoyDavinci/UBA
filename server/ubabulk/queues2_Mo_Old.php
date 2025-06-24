@@ -334,7 +334,7 @@ if (!$stmt->execute()) {
     $checkStmt->close();
     
     if ($exists) {
-        // Update existing record to status 5
+        // Update existing record to status 2
         $updateQuery = "UPDATE uploaded_files SET status = '5' WHERE file_path = ?";
         $updateStmt = $conn->prepare($updateQuery);
         $updateStmt->bind_param("s", $file_escaped);
@@ -350,10 +350,10 @@ if (!$stmt->execute()) {
         }
         $updateStmt->close();
         
-        log_action("Updated existing record to status 5: $file_escaped");
+        log_action("Updated existing record to status 2: $file_escaped");
     } else {
-	    // Insert new record with status 5
-	    // status 5 means file upload failed
+        // Insert new record with status 5
+        //status 5 means file upload failed
         $insertQuery = "INSERT INTO uploaded_files 
                        (file_path, status, batch_id, full_name, user_id, cost_cntr, total_count, total_distinct) 
                        VALUES (?, '5', ?, ?, ?, ?, ?, ?)";
@@ -380,7 +380,7 @@ if (!$stmt->execute()) {
         }
         $insertStmt->close();
         
-        log_action("Inserted new record with status 5: $file_escaped");
+        log_action("Inserted new record with status 2: $file_escaped");
     }
     
     echo json_encode([
@@ -389,7 +389,7 @@ if (!$stmt->execute()) {
     ]);
     closeConnection($conn);
     exit;
-}
+} 
 
 // If we got here, initial insert succeeded
 log_action("File record inserted successfully: $file_escaped");

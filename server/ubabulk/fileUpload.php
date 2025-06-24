@@ -17,7 +17,7 @@ $data = json_decode(file_get_contents("php://input"), true);
 log_action("Received file data: " . json_encode($data));
 
 $batch_id  = $data['batch_id']  ?? null;
-$message      = $data['message'] ?? null;
+$message   = $data['message'] ?? null;
 $sender_id = $data['sender_id'] ?? null;
 $msg_cat   = $data['msg_cat']   ?? null;
 
@@ -28,6 +28,7 @@ if (!$batch_id || !$message || !$sender_id || !$msg_cat) {
 }
 
 try {
+
     $query  = "UPDATE uploaded_files SET message = '$message', senderid = '$sender_id', batch_id = '$batch_id', msg_cat = '$msg_cat' WHERE batch_id = '$batch_id'";
     $result = mysqli_query($conn, $query);
     log_action($query);
