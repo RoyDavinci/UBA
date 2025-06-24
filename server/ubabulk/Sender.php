@@ -6,11 +6,17 @@ header("Access-Control-Allow-Headers: Content-Type, Authorization");
 header("Access-Control-Allow-Credentials: true");
 header("Content-Type: application/json");
 
-require_once 'conn.php';
-require_once 'log.php';
+require_once './conn.php';
+require_once './log.php';
+require_once './JWTUser.php'; 
+
 
 $conn = getConnection();
 $action = $_REQUEST['action'] ?? null;
+
+$userData = getUserFromJWT();
+$user_id = $userData['user_id'] ?? null;
+$full_name = $userData['full_name'] ?? null;
 
 switch ($action) {
     case 'create':
@@ -23,6 +29,7 @@ switch ($action) {
 
         $sql = "INSERT INTO senderid (sender_name) VALUES ('$sender_name')";
         if (mysqli_query($conn, $sql)) {
+            audit_log($conn, $user_id, $full_name, "Created sender: $sender_name");
             echo json_encode(['status' => true, 'message' => 'Sender added successfully']);
         } else {
             echo json_encode(['status' => false, 'error' => mysqli_error($conn)]);
@@ -51,6 +58,7 @@ switch ($action) {
 
         $sql = "UPDATE senderid SET sender_name = '$sender_name' WHERE id = $id";
         if (mysqli_query($conn, $sql)) {
+            audit_log($conn, $user_id, $full_name, "Updated sender ID $id to: $sender_name");
             echo json_encode(['status' => true, 'message' => 'Sender updated successfully']);
         } else {
             echo json_encode(['status' => false, 'error' => mysqli_error($conn)]);
@@ -67,6 +75,7 @@ switch ($action) {
 
         $sql = "DELETE FROM senderid WHERE id = $id";
         if (mysqli_query($conn, $sql)) {
+            audit_log($conn, $user_id, $full_name, "Deleted sender with ID: $id");
             echo json_encode(['status' => true, 'message' => 'Sender deleted successfully']);
         } else {
             echo json_encode(['status' => false, 'error' => mysqli_error($conn)]);

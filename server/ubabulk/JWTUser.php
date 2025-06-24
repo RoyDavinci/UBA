@@ -1,8 +1,7 @@
 <?php
-require_once 'jwt.php';
-require_once 'conn.php';
-require_once 'getUserFullName.php';
-require_once 'log.php';
+require_once './jwt.php';
+require_once './conn.php';
+require_once './log.php';
 
 
 // function to get headers from request
@@ -74,5 +73,19 @@ function getUserFromJWT() {
     } catch (Exception $e) {
         log_action("JWT decode failed in audit log: " . $e->getMessage());
         return ['status' => false, 'message' => 'Token validation failed'];
+    }
+}
+
+
+
+function getUserFullName($conn, $user_id) {
+    try {
+
+         $result = $conn->query("SELECT full_name FROM users WHERE id = $user_id");
+         return $result->fetch_assoc()['full_name'] ?? false;
+        
+    } catch (Exception $e) {
+        log_action("Exception in getUserFullName: " . $e->getMessage());
+        return false;
     }
 }

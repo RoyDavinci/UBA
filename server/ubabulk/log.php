@@ -51,9 +51,13 @@ function audit_log($conn, $user_id, $full_name, $action) {
         $full_name = $conn->real_escape_string($full_name);
         $action = $conn->real_escape_string($action);
 
+        $dateTime = new DateTime('now', new DateTimeZone('Africa/Lagos'));
+        $dateTimeNow = $dateTime->format('Y-m-d H:i:s');
+        $dateTimeNow = $conn->real_escape_string($dateTimeNow);
+
         $query = "INSERT INTO audit_logs 
-                (user_id, full_name, log_action) 
-                VALUES ('$user_id', '$full_name', '$action')";
+                (user_id, full_name, log_action, created_at, updated_at) 
+                VALUES ('$user_id', '$full_name', '$action', '$dateTimeNow', '$dateTimeNow')";
         
         $executed = $conn->query($query);
         

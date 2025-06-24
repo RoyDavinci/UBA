@@ -6,12 +6,15 @@ header("Access-Control-Allow-Headers: Content-Type, Authorization");
 header("Access-Control-Allow-Credentials: true");
 header("Content-Type: application/json");
 
-require_once 'conn.php';
-require_once 'log.php';
-require_once 'audit_log.php';
+require_once './conn.php';
+require_once './log.php';
+require_once './JWTUser.php'; 
 
 $conn = getConnection();
 $action = $_REQUEST['action'] ?? null;
+$userData = getUserFromJWT();
+$user_id = $userData['user_id'] ?? null;
+$full_name = $userData['full_name'] ?? null;
 
 switch ($action) {
     case 'create':
@@ -24,7 +27,7 @@ switch ($action) {
 
         $sql = "INSERT INTO msg_cat (category_name) VALUES ('$category_name')";
         if (mysqli_query($conn, $sql)) {
-            audit_log($conn, "Created message category: $category_name");
+            audit_log($conn, $user_id, $full_name, "Created message category: $category_name");
             echo json_encode(['status' => true, 'message' => 'Category added successfully']);
         } else {
             echo json_encode(['status' => false, 'error' => mysqli_error($conn)]);
@@ -45,14 +48,13 @@ switch ($action) {
         $category_name = $_REQUEST['category_name'] ?? null;
 
         if (!$id || !$category_name) {
-        
             echo json_encode(['status' => false, 'error' => 'ID and Category Name are required']);
             break;
         }
 
         $sql = "UPDATE msg_cat SET category_name = '$category_name' WHERE id = $id";
         if (mysqli_query($conn, $sql)) {
-            audit_log($conn, "Updated message category: $category_name");
+            audit_log($conn, $user_id, $full_name, "Updated message category: $category_name");
             echo json_encode(['status' => true, 'message' => 'Category updated successfully']);
         } else {
             echo json_encode(['status' => false, 'error' => mysqli_error($conn)]);
@@ -68,7 +70,7 @@ switch ($action) {
 
         $sql = "DELETE FROM msg_cat WHERE id = $id";
         if (mysqli_query($conn, $sql)) {
-     
+            audit_log($conn, $user_id, $full_name, "Deleted message category with ID: $id");
             echo json_encode(['status' => true, 'message' => 'Category deleted successfully']);
         } else {
             echo json_encode(['status' => false, 'error' => mysqli_error($conn)]);
