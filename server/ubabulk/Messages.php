@@ -8,6 +8,7 @@ header("Content-Type: application/json");
 
 require_once 'conn.php';
 require_once 'log.php';
+require_once 'audit_log.php';
 
 $conn = getConnection();
 $action = $_REQUEST['action'] ?? null;
@@ -17,7 +18,7 @@ switch ($action) {
     case 'create':
         $category_name = $_REQUEST['category_name'] ?? null;
 
-        if (!$sender_name) {
+        if (!$category_name) {
             echo json_encode(['status' => false, 'error' => 'Category Name name is required']);
             break;
         }
@@ -26,6 +27,9 @@ switch ($action) {
         $stmt->bind_param("s", $category_name);
 
         if ($stmt->execute()) {
+             // Audit log the successful creation
+            audit_log($conn, "Created message category: $category_name");
+
             echo json_encode(['status' => true, 'message' => 'Category added successfully']);
         } else {
             echo json_encode(['status' => false, 'error' => $stmt->error]);
@@ -57,6 +61,8 @@ switch ($action) {
         $stmt->bind_param("si", $category_name, $id);
 
         if ($stmt->execute()) {
+             // Audit log the successful creation
+            audit_log($conn, "Updated message category: $category_name");
             echo json_encode(['status' => true, 'message' => 'Category updated successfully']);
         } else {
             echo json_encode(['status' => false, 'error' => $stmt->error]);
