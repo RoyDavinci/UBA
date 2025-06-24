@@ -31,21 +31,16 @@ function audit_log($conn, $action, $user_id = null) {
         }
         
         // Insert audit log
-        $query = "INSERT INTO audit_logs (user_id, full_name, log_action) VALUES (?, ?, ?)";
-        $stmt = $conn->prepare($query);
-        
-        if (!$stmt) {
-            log_action("Prepare failed: " . $conn->error);
-            return ['status' => false, 'message' => 'Database error'];
-        }
-        
-        $stmt->bind_param("iss", $user_id, $full_name, $action);
-        $executed = $stmt->execute();
-        
-        if (!$executed) {
-            log_action("Execute failed: " . $stmt->error);
-            return ['status' => false, 'message' => 'Failed to log action'];
-        }
+                $query = "INSERT INTO audit_logs (user_id, full_name, log_action) 
+                    VALUES ($user_id, '" . mysqli_real_escape_string($conn, $full_name) . "', 
+                    '" . mysqli_real_escape_string($conn, $action) . "')";
+
+            $executed = mysqli_query($conn, $query);
+
+            if (!$executed) {
+                log_action("Audit log failed: " . mysqli_error($conn));
+                return ['status' => false, 'message' => 'Failed to log action'];
+            }
         
         return ['status' => true, 'message' => 'Action logged successfully'];
         
