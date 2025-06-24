@@ -1,0 +1,338 @@
+=== LOGIN ATTEMPT START === | 2025-06-18 07:51:21
+<=============================================>
+Raw Input Data: {"email":"emsthias33@gmail.com","password":"davinci"} | 2025-06-18 07:51:21
+<=============================================>
+Executing SQL query: SELECT id, full_name, email, password, role FROM users WHERE email = 'emsthias33@gmail.com' | 2025-06-18 07:51:21
+<=============================================>
+Query executed. Rows found: 1 | 2025-06-18 07:51:21
+<=============================================>
+User record fetched for: emsthias33@gmail.com | 2025-06-18 07:51:21
+<=============================================>
+Password verified successfully for user ID: 10 | 2025-06-18 07:51:21
+<=============================================>
+PHPMailer: OTP email sent to emsthias33@gmail.com | 2025-06-18 07:51:22
+<=============================================>
+OTP generated: 834019, sending email to: emsthias33@gmail.com | 2025-06-18 07:51:22
+<=============================================>
+OTP email sent successfully to: emsthias33@gmail.com | 2025-06-18 07:51:22
+<=============================================>
+OTP updated successfully for: emsthias33@gmail.com | 2025-06-18 07:51:22
+<=============================================>
+JWT generated for user ID:  | 2025-06-18 07:51:22
+<=============================================>
+=== LOGIN ATTEMPT END === | 2025-06-18 07:51:22
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/bulksms.approot.ng\/otp","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"same-origin","Origin":"https:\/\/bulksms.approot.ng","Sec-Ch-Ua-Mobile":"?0","Content-Type":"application\/json","Sec-Ch-Ua":"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Sec-Ch-Ua-Platform":"\"macOS\"","Content-Length":"16","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEwIiwiZW1haWwiOiJlbXN0aGlhczMzQGdtYWlsLmNvbSIsInJvbGUiOiJzdXBlcl9hZG1pbiIsImlhdCI6MTc1MDIzMzA4MiwiZXhwIjozNjE3NTAyMzMwODJ9.XYjkuDBj7wn5PLl7M9keGfIaaqdgq8_pV3sL5Ppu6ko"} | 2025-06-18 07:51:45
+<=============================================>
+OTP received: 834019 for user_id: 10 | 2025-06-18 07:51:45
+<=============================================>
+OTP verified successfully for user_id: 10 | 2025-06-18 07:51:45
+<=============================================>
+JWT generated for user ID: 10 | 2025-06-18 07:51:45
+<=============================================>
+Incoming Headers{"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Origin":"https:\/\/smsbulk.redpay.africa","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-18 16:01:18
+<=============================================>
+Authorization Header Missing | 2025-06-18 16:01:18
+<=============================================>
+Incoming Headers{"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"https:\/\/smsbulk.redpay.africa","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Microsoft Edge\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Sec-Ch-Ua-Platform":"\"Windows\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco"} | 2025-06-18 16:01:19
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco | 2025-06-18 16:01:19
+<=============================================>
+{"id":"5","email":"researchwole@yahoo.com","role":"admin","iat":1750164535,"exp":361750164535} | 2025-06-18 16:01:19
+<=============================================>
+Token decoded. User ID: 5, Role: admin | 2025-06-18 16:01:19
+<=============================================>
+Fetching organization_id for user ID: 5 | 2025-06-18 16:01:19
+<=============================================>
+User ID: 5 belongs to organization ID: 1. Fetching groups. | 2025-06-18 16:01:19
+<=============================================>
+Fetched 0 group(s) for user ID: 5 | 2025-06-18 16:01:19
+<=============================================>
+Raw POST: [] | 2025-06-18 16:02:05
+<=============================================>
+Raw FILES: [] | 2025-06-18 16:02:05
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Origin":"https:\/\/smsbulk.redpay.africa","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"POST","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-18 16:02:05
+<=============================================>
+Authorization Header Missing | 2025-06-18 16:02:05
+<=============================================>
+Raw POST: {"text":"Dear Lord,\r\nBless your son Roy.","sms_type":"general","batchId":"1750262495690"} | 2025-06-18 16:02:05
+<=============================================>
+Raw FILES: {"file":{"name":"Testduplicates.xlsx","type":"application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet","tmp_name":"\/tmp\/phpFOmOs7","error":0,"size":9979}} | 2025-06-18 16:02:05
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"https:\/\/smsbulk.redpay.africa","Sec-Ch-Ua-Mobile":"?0","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryhMWfTFrcXk9Zo82P","Sec-Ch-Ua":"\"Microsoft Edge\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Sec-Ch-Ua-Platform":"\"Windows\"","Content-Length":"10558","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco"} | 2025-06-18 16:02:05
+<=============================================>
+Deleted original XLSX file: /var/www/html/bulksms/ubabulk/uploads/upload_6852e2fd4871f_Testduplicates.xlsx | 2025-06-18 16:02:05
+<=============================================>
+Converted XLSX to CSV: /var/www/html/bulksms/ubabulk/uploads/upload_6852e2fd4871f_Testduplicates.csv | 2025-06-18 16:02:05
+<=============================================>
+Incoming Headers{"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Origin":"https:\/\/smsbulk.redpay.africa","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-18 16:07:35
+<=============================================>
+Authorization Header Missing | 2025-06-18 16:07:35
+<=============================================>
+Incoming Headers{"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"https:\/\/smsbulk.redpay.africa","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Microsoft Edge\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Sec-Ch-Ua-Platform":"\"Windows\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco"} | 2025-06-18 16:07:35
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco | 2025-06-18 16:07:35
+<=============================================>
+{"id":"5","email":"researchwole@yahoo.com","role":"admin","iat":1750164535,"exp":361750164535} | 2025-06-18 16:07:35
+<=============================================>
+Token decoded. User ID: 5, Role: admin | 2025-06-18 16:07:35
+<=============================================>
+Fetching organization_id for user ID: 5 | 2025-06-18 16:07:35
+<=============================================>
+User ID: 5 belongs to organization ID: 1. Fetching groups. | 2025-06-18 16:07:35
+<=============================================>
+Fetched 0 group(s) for user ID: 5 | 2025-06-18 16:07:35
+<=============================================>
+Raw POST: [] | 2025-06-18 16:08:08
+<=============================================>
+Raw FILES: [] | 2025-06-18 16:08:08
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Origin":"https:\/\/smsbulk.redpay.africa","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"POST","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-18 16:08:08
+<=============================================>
+Authorization Header Missing | 2025-06-18 16:08:08
+<=============================================>
+Raw POST: {"text":"Dear Lord,\r\n\r\nHelp your son Roy to help me","sms_type":"general","batchId":"1750262867138"} | 2025-06-18 16:08:08
+<=============================================>
+Raw FILES: {"file":{"name":"Testduplicates.xlsx","type":"application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet","tmp_name":"\/tmp\/phpH7pwaE","error":0,"size":10032}} | 2025-06-18 16:08:08
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"https:\/\/smsbulk.redpay.africa","Sec-Ch-Ua-Mobile":"?0","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryUo6hLxOqVjT9JvMg","Sec-Ch-Ua":"\"Microsoft Edge\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Sec-Ch-Ua-Platform":"\"Windows\"","Content-Length":"10622","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco"} | 2025-06-18 16:08:08
+<=============================================>
+Deleted original XLSX file: /var/www/html/bulksms/ubabulk/uploads/upload_6852e468d7e50_Testduplicates.xlsx | 2025-06-18 16:08:08
+<=============================================>
+Converted XLSX to CSV: /var/www/html/bulksms/ubabulk/uploads/upload_6852e468d7e50_Testduplicates.csv | 2025-06-18 16:08:08
+<=============================================>
+Incoming Headers{"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Origin":"https:\/\/smsbulk.redpay.africa","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-18 16:18:37
+<=============================================>
+Authorization Header Missing | 2025-06-18 16:18:37
+<=============================================>
+Incoming Headers{"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"https:\/\/smsbulk.redpay.africa","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Microsoft Edge\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Sec-Ch-Ua-Platform":"\"Windows\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco"} | 2025-06-18 16:18:37
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco | 2025-06-18 16:18:37
+<=============================================>
+{"id":"5","email":"researchwole@yahoo.com","role":"admin","iat":1750164535,"exp":361750164535} | 2025-06-18 16:18:37
+<=============================================>
+Token decoded. User ID: 5, Role: admin | 2025-06-18 16:18:37
+<=============================================>
+Fetching organization_id for user ID: 5 | 2025-06-18 16:18:37
+<=============================================>
+User ID: 5 belongs to organization ID: 1. Fetching groups. | 2025-06-18 16:18:37
+<=============================================>
+Fetched 0 group(s) for user ID: 5 | 2025-06-18 16:18:37
+<=============================================>
+Raw POST: [] | 2025-06-18 16:19:11
+<=============================================>
+Raw FILES: [] | 2025-06-18 16:19:11
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Origin":"https:\/\/smsbulk.redpay.africa","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"POST","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-18 16:19:11
+<=============================================>
+Authorization Header Missing | 2025-06-18 16:19:11
+<=============================================>
+Raw POST: {"text":"Dear Father,\r\n\r\nJust bless your son\r\n\r\nRegards,","sms_type":"general","batchId":"1750263526676"} | 2025-06-18 16:19:11
+<=============================================>
+Raw FILES: {"file":{"name":"Testduplicates.xlsx","type":"application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet","tmp_name":"\/tmp\/phpqnNYBP","error":0,"size":10034}} | 2025-06-18 16:19:11
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"https:\/\/smsbulk.redpay.africa","Sec-Ch-Ua-Mobile":"?0","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundary1l51TvK4kVWRkEcG","Sec-Ch-Ua":"\"Microsoft Edge\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Sec-Ch-Ua-Platform":"\"Windows\"","Content-Length":"10629","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco"} | 2025-06-18 16:19:11
+<=============================================>
+Deleted original XLSX file: /var/www/html/bulksms/ubabulk/uploads/upload_6852e6ffd3de8_Testduplicates.xlsx | 2025-06-18 16:19:11
+<=============================================>
+Converted XLSX to CSV: /var/www/html/bulksms/ubabulk/uploads/upload_6852e6ffd3de8_Testduplicates.csv | 2025-06-18 16:19:11
+<=============================================>
+Incoming Headers{"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Origin":"https:\/\/smsbulk.redpay.africa","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-18 16:27:30
+<=============================================>
+Authorization Header Missing | 2025-06-18 16:27:30
+<=============================================>
+Incoming Headers{"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"https:\/\/smsbulk.redpay.africa","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Microsoft Edge\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Sec-Ch-Ua-Platform":"\"Windows\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco"} | 2025-06-18 16:27:30
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco | 2025-06-18 16:27:30
+<=============================================>
+{"id":"5","email":"researchwole@yahoo.com","role":"admin","iat":1750164535,"exp":361750164535} | 2025-06-18 16:27:30
+<=============================================>
+Token decoded. User ID: 5, Role: admin | 2025-06-18 16:27:30
+<=============================================>
+Fetching organization_id for user ID: 5 | 2025-06-18 16:27:30
+<=============================================>
+User ID: 5 belongs to organization ID: 1. Fetching groups. | 2025-06-18 16:27:30
+<=============================================>
+Fetched 0 group(s) for user ID: 5 | 2025-06-18 16:27:30
+<=============================================>
+Raw POST: [] | 2025-06-18 16:29:46
+<=============================================>
+Raw FILES: [] | 2025-06-18 16:29:46
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Origin":"https:\/\/smsbulk.redpay.africa","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"POST","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-18 16:29:46
+<=============================================>
+Authorization Header Missing | 2025-06-18 16:29:46
+<=============================================>
+Raw POST: {"text":"Dear Lord,\r\nThank you lord.\r\nRegards,","sms_type":"general","batchId":"1750264183091"} | 2025-06-18 16:29:46
+<=============================================>
+Raw FILES: {"file":{"name":"Testduplicates.xlsx","type":"application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet","tmp_name":"\/tmp\/phpeGnK96","error":0,"size":10034}} | 2025-06-18 16:29:46
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"https:\/\/smsbulk.redpay.africa","Sec-Ch-Ua-Mobile":"?0","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryTnlAKmVDWu9aOVyb","Sec-Ch-Ua":"\"Microsoft Edge\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Sec-Ch-Ua-Platform":"\"Windows\"","Content-Length":"10619","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco"} | 2025-06-18 16:29:46
+<=============================================>
+Deleted original XLSX file: /var/www/html/bulksms/ubabulk/uploads/upload_6852e97ae08cc_Testduplicates.xlsx | 2025-06-18 16:29:46
+<=============================================>
+Converted XLSX to CSV without empty rows: /var/www/html/bulksms/ubabulk/uploads/upload_6852e97ae08cc_Testduplicates.csv | 2025-06-18 16:29:46
+<=============================================>
+Incoming Headers{"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Origin":"https:\/\/smsbulk.redpay.africa","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-18 16:41:31
+<=============================================>
+Authorization Header Missing | 2025-06-18 16:41:31
+<=============================================>
+Incoming Headers{"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"https:\/\/smsbulk.redpay.africa","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Microsoft Edge\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Sec-Ch-Ua-Platform":"\"Windows\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco"} | 2025-06-18 16:41:31
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco | 2025-06-18 16:41:31
+<=============================================>
+{"id":"5","email":"researchwole@yahoo.com","role":"admin","iat":1750164535,"exp":361750164535} | 2025-06-18 16:41:31
+<=============================================>
+Token decoded. User ID: 5, Role: admin | 2025-06-18 16:41:31
+<=============================================>
+Fetching organization_id for user ID: 5 | 2025-06-18 16:41:31
+<=============================================>
+User ID: 5 belongs to organization ID: 1. Fetching groups. | 2025-06-18 16:41:31
+<=============================================>
+Fetched 0 group(s) for user ID: 5 | 2025-06-18 16:41:31
+<=============================================>
+Raw POST: [] | 2025-06-18 16:41:51
+<=============================================>
+Raw FILES: [] | 2025-06-18 16:41:51
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Origin":"https:\/\/smsbulk.redpay.africa","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"POST","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-18 16:41:51
+<=============================================>
+Authorization Header Missing | 2025-06-18 16:41:51
+<=============================================>
+Raw POST: {"text":"Yes Lord","sms_type":"general","batchId":"1750264899029"} | 2025-06-18 16:41:52
+<=============================================>
+Raw FILES: {"file":{"name":"Testduplicates.xlsx","type":"application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet","tmp_name":"\/tmp\/phpCACzEP","error":0,"size":10034}} | 2025-06-18 16:41:52
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"https:\/\/smsbulk.redpay.africa","Sec-Ch-Ua-Mobile":"?0","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryTtoXPdwEe6BBBPCn","Sec-Ch-Ua":"\"Microsoft Edge\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Sec-Ch-Ua-Platform":"\"Windows\"","Content-Length":"10590","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco"} | 2025-06-18 16:41:52
+<=============================================>
+Deleted original XLSX file: /var/www/html/bulksms/ubabulk/uploads/upload_6852ec502548d_Testduplicates.xlsx | 2025-06-18 16:41:52
+<=============================================>
+Converted XLSX to CSV without empty rows: /var/www/html/bulksms/ubabulk/uploads/upload_6852ec502548d_Testduplicates.csv | 2025-06-18 16:41:52
+<=============================================>
+Incoming Headers{"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Origin":"https:\/\/smsbulk.redpay.africa","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-18 16:43:05
+<=============================================>
+Authorization Header Missing | 2025-06-18 16:43:05
+<=============================================>
+Incoming Headers{"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"https:\/\/smsbulk.redpay.africa","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Microsoft Edge\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Sec-Ch-Ua-Platform":"\"Windows\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco"} | 2025-06-18 16:43:05
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco | 2025-06-18 16:43:05
+<=============================================>
+{"id":"5","email":"researchwole@yahoo.com","role":"admin","iat":1750164535,"exp":361750164535} | 2025-06-18 16:43:05
+<=============================================>
+Token decoded. User ID: 5, Role: admin | 2025-06-18 16:43:05
+<=============================================>
+Fetching organization_id for user ID: 5 | 2025-06-18 16:43:05
+<=============================================>
+User ID: 5 belongs to organization ID: 1. Fetching groups. | 2025-06-18 16:43:05
+<=============================================>
+Fetched 0 group(s) for user ID: 5 | 2025-06-18 16:43:05
+<=============================================>
+Raw POST: [] | 2025-06-18 16:44:21
+<=============================================>
+Raw FILES: [] | 2025-06-18 16:44:21
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Origin":"https:\/\/smsbulk.redpay.africa","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"POST","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-18 16:44:21
+<=============================================>
+Authorization Header Missing | 2025-06-18 16:44:21
+<=============================================>
+Raw POST: {"text":"Dear Lord","sms_type":"general","batchId":"1750265032779"} | 2025-06-18 16:44:21
+<=============================================>
+Raw FILES: {"file":{"name":"Testduplicates.xlsx","type":"application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet","tmp_name":"\/tmp\/php1Ro3ls","error":0,"size":10034}} | 2025-06-18 16:44:21
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"https:\/\/smsbulk.redpay.africa","Sec-Ch-Ua-Mobile":"?0","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryT6pgzB0cpsbapldU","Sec-Ch-Ua":"\"Microsoft Edge\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Sec-Ch-Ua-Platform":"\"Windows\"","Content-Length":"10591","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco"} | 2025-06-18 16:44:21
+<=============================================>
+Deleted original XLSX file: /var/www/html/bulksms/ubabulk/uploads/upload_6852ece58c3c5_Testduplicates.xlsx | 2025-06-18 16:44:21
+<=============================================>
+Converted XLSX to CSV without empty rows: /var/www/html/bulksms/ubabulk/uploads/upload_6852ece58c3c5_Testduplicates.csv | 2025-06-18 16:44:21
+<=============================================>
+Incoming Headers{"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Origin":"https:\/\/smsbulk.redpay.africa","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-18 16:45:23
+<=============================================>
+Authorization Header Missing | 2025-06-18 16:45:23
+<=============================================>
+Incoming Headers{"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"https:\/\/smsbulk.redpay.africa","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Microsoft Edge\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Sec-Ch-Ua-Platform":"\"Windows\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco"} | 2025-06-18 16:45:23
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco | 2025-06-18 16:45:23
+<=============================================>
+{"id":"5","email":"researchwole@yahoo.com","role":"admin","iat":1750164535,"exp":361750164535} | 2025-06-18 16:45:23
+<=============================================>
+Token decoded. User ID: 5, Role: admin | 2025-06-18 16:45:23
+<=============================================>
+Fetching organization_id for user ID: 5 | 2025-06-18 16:45:23
+<=============================================>
+User ID: 5 belongs to organization ID: 1. Fetching groups. | 2025-06-18 16:45:23
+<=============================================>
+Fetched 0 group(s) for user ID: 5 | 2025-06-18 16:45:23
+<=============================================>
+Raw POST: [] | 2025-06-18 16:45:57
+<=============================================>
+Raw FILES: [] | 2025-06-18 16:45:57
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Origin":"https:\/\/smsbulk.redpay.africa","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"POST","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-18 16:45:57
+<=============================================>
+Authorization Header Missing | 2025-06-18 16:45:57
+<=============================================>
+Raw POST: {"text":"Thank God","sms_type":"general","batchId":"1750265032779"} | 2025-06-18 16:45:57
+<=============================================>
+Raw FILES: {"file":{"name":"Testduplicates.xlsx","type":"application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet","tmp_name":"\/tmp\/phpwWdqMD","error":0,"size":10034}} | 2025-06-18 16:45:57
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"https:\/\/smsbulk.redpay.africa","Sec-Ch-Ua-Mobile":"?0","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryqtIHrAgRTelyDzHt","Sec-Ch-Ua":"\"Microsoft Edge\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Sec-Ch-Ua-Platform":"\"Windows\"","Content-Length":"10591","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco"} | 2025-06-18 16:45:57
+<=============================================>
+Deleted original XLSX file: /var/www/html/bulksms/ubabulk/uploads/upload_6852ed4563a9d_Testduplicates.xlsx | 2025-06-18 16:45:57
+<=============================================>
+Converted XLSX to CSV without empty rows: /var/www/html/bulksms/ubabulk/uploads/upload_6852ed4563a9d_Testduplicates.csv | 2025-06-18 16:45:57
+<=============================================>
+Incoming Headers{"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Origin":"https:\/\/smsbulk.redpay.africa","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-18 16:46:48
+<=============================================>
+Authorization Header Missing | 2025-06-18 16:46:48
+<=============================================>
+Incoming Headers{"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"https:\/\/smsbulk.redpay.africa","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Microsoft Edge\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Sec-Ch-Ua-Platform":"\"Windows\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco"} | 2025-06-18 16:46:48
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco | 2025-06-18 16:46:48
+<=============================================>
+{"id":"5","email":"researchwole@yahoo.com","role":"admin","iat":1750164535,"exp":361750164535} | 2025-06-18 16:46:48
+<=============================================>
+Token decoded. User ID: 5, Role: admin | 2025-06-18 16:46:48
+<=============================================>
+Fetching organization_id for user ID: 5 | 2025-06-18 16:46:48
+<=============================================>
+User ID: 5 belongs to organization ID: 1. Fetching groups. | 2025-06-18 16:46:48
+<=============================================>
+Fetched 0 group(s) for user ID: 5 | 2025-06-18 16:46:48
+<=============================================>
+Raw POST: [] | 2025-06-18 16:47:07
+<=============================================>
+Raw FILES: [] | 2025-06-18 16:47:07
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Origin":"https:\/\/smsbulk.redpay.africa","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"POST","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-18 16:47:07
+<=============================================>
+Authorization Header Missing | 2025-06-18 16:47:07
+<=============================================>
+Raw POST: {"text":"Yes Lord","sms_type":"general","batchId":"1750265032779"} | 2025-06-18 16:47:07
+<=============================================>
+Raw FILES: {"file":{"name":"Testduplicates.xlsx","type":"application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet","tmp_name":"\/tmp\/phpfgrdL6","error":0,"size":10034}} | 2025-06-18 16:47:07
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"https:\/\/smsbulk.redpay.africa","Sec-Ch-Ua-Mobile":"?0","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundary2L0emNlCvKBwUA5L","Sec-Ch-Ua":"\"Microsoft Edge\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Sec-Ch-Ua-Platform":"\"Windows\"","Content-Length":"10590","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco"} | 2025-06-18 16:47:07
+<=============================================>
+Deleted original XLSX file: /var/www/html/bulksms/ubabulk/uploads/upload_6852ed8bbba5b_Testduplicates.xlsx | 2025-06-18 16:47:07
+<=============================================>
+Converted XLSX to CSV without empty rows: /var/www/html/bulksms/ubabulk/uploads/upload_6852ed8bbba5b_Testduplicates.csv | 2025-06-18 16:47:07
+<=============================================>
+Incoming Headers{"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Origin":"https:\/\/smsbulk.redpay.africa","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-18 16:48:45
+<=============================================>
+Authorization Header Missing | 2025-06-18 16:48:45
+<=============================================>
+Incoming Headers{"Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/smsbulk.redpay.africa\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"https:\/\/smsbulk.redpay.africa","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Microsoft Edge\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 Edg\/137.0.0.0","Sec-Ch-Ua-Platform":"\"Windows\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco"} | 2025-06-18 16:48:45
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUiLCJlbWFpbCI6InJlc2VhcmNod29sZUB5YWhvby5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTAxNjQ1MzUsImV4cCI6MzYxNzUwMTY0NTM1fQ.CoGXpQ5coLazQ9hFQmirFGi4yfX0K0mKoQ7MSS0Fvco | 2025-06-18 16:48:45
+<=============================================>
+{"id":"5","email":"researchwole@yahoo.com","role":"admin","iat":1750164535,"exp":361750164535} | 2025-06-18 16:48:45
+<=============================================>
+Token decoded. User ID: 5, Role: admin | 2025-06-18 16:48:45
+<=============================================>
+Fetching organization_id for user ID: 5 | 2025-06-18 16:48:45
+<=============================================>
+User ID: 5 belongs to organization ID: 1. Fetching groups. | 2025-06-18 16:48:45
+<=============================================>
+Fetched 0 group(s) for user ID: 5 | 2025-06-18 16:48:45
+<=============================================>

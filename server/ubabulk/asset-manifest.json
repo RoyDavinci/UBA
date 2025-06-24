@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.39ff84b6.css",
+    "main.js": "/static/js/main.23b06b6e.js",
+    "static/media/RedpayVT.jpg": "/static/media/RedpayVT.6ae2568afa59a9b2780e.jpg",
+    "static/media/RedpayVT.png": "/static/media/RedpayVT.8a35551e3bedad584b73.png",
+    "index.html": "/index.html",
+    "main.39ff84b6.css.map": "/static/css/main.39ff84b6.css.map",
+    "main.23b06b6e.js.map": "/static/js/main.23b06b6e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39ff84b6.css",
+    "static/js/main.23b06b6e.js"
+  ]
+}

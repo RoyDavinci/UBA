@@ -1,0 +1,258 @@
+Received registration data: [] | 2025-05-13 09:57:24
+<=============================================>
+Validation failed: Missing fields. | 2025-05-13 09:57:24
+<=============================================>
+Received registration data: {"full_name":"John Doe","email":"admin@company.com","password":"supersecurepassword123","role":"super_admin"} | 2025-05-13 09:58:08
+<=============================================>
+User registered: email=admin@company.com, role=super_admin, org_id=NULL | 2025-05-13 09:58:08
+<=============================================>
+Received create organization data: {"name":"uba"} | 2025-05-13 10:05:23
+<=============================================>
+Authorization header missing. | 2025-05-13 10:05:23
+<=============================================>
+Received create organization data: {"name":"uba"} | 2025-05-13 10:05:54
+<=============================================>
+Organization created successfully: uba | 2025-05-13 10:05:54
+<=============================================>
+Received registration data: {"full_name":"John Doe","email":"admins@company.com","password":"supersecurepassword123","role":"admin"} | 2025-05-13 10:14:43
+<=============================================>
+Validation failed: admin missing organization_id. | 2025-05-13 10:14:43
+<=============================================>
+Received registration data: {"full_name":"John Doe","email":"admins@company.com","password":"supersecurepassword123","role":"admin","organization_id":1} | 2025-05-13 10:15:23
+<=============================================>
+User registered: email=admins@company.com, role=admin, org_id=1 | 2025-05-13 10:15:23
+<=============================================>
+Received registration data: {"full_name":"Alice Johnson","email":"alice@example.com","password":"password123","role":"admin"} | 2025-05-13 10:17:53
+<=============================================>
+Validation failed: admin missing organization_id. | 2025-05-13 10:17:53
+<=============================================>
+Received registration data: {"full_name":"Alice Johnson","email":"alice@example.com","password":"password123","role":"admin","organization_id":"1"} | 2025-05-13 10:18:06
+<=============================================>
+User registered: email=alice@example.com, role=admin, org_id=1 | 2025-05-13 10:18:06
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-05-13 10:18:31
+<=============================================>
+User logged in successfully: email=alice@example.com, role=admin | 2025-05-13 10:18:31
+<=============================================>
+Received registration data: {"full_name":"Bob Lee","email":"bob@example.com","password":"password123","role":"customer_support","organization_id":1} | 2025-05-13 10:20:33
+<=============================================>
+Decoded JWT: {"id":"3","email":"alice@example.com","role":"admin","iat":1747131511,"exp":1747135111} | 2025-05-13 10:20:33
+<=============================================>
+User registered: email=bob@example.com, role=customer_support, org_id=1 | 2025-05-13 10:20:33
+<=============================================>
+Created SMS group 'Lagos Customers' for organization 1 by user ID 4 (customer_support) | 2025-05-13 11:06:01
+<=============================================>
+User 4 (customer_support) performed 'add' on group 'Lagos Customers' (ID: 1) in org 1. Total: 3, Success: 0 | 2025-05-13 11:46:53
+<=============================================>
+Skipped invalid number: 08012345678 | 2025-05-13 11:51:00
+<=============================================>
+Skipped invalid number: 07087654321 | 2025-05-13 11:51:00
+<=============================================>
+Skipped invalid number: 09011223344 | 2025-05-13 11:51:00
+<=============================================>
+User 4 (customer_support) performed 'add' on group 'Lagos Customers' (ID: 1) in org 1. Total: 3, Success: 0 | 2025-05-13 11:51:00
+<=============================================>
+Skipped invalid number: 08012345678 | 2025-05-13 11:53:20
+<=============================================>
+Skipped invalid number: 07087654321 | 2025-05-13 11:53:20
+<=============================================>
+Skipped invalid number: 09011223344 | 2025-05-13 11:53:20
+<=============================================>
+User 4 (customer_support) performed 'add' on group 'Lagos Customers' (ID: 1) in org 1. Total: 3, Success: 0 | 2025-05-13 11:53:20
+<=============================================>
+Successfully executed 'add' for number: 08012345678 in group 1 | 2025-05-13 11:54:06
+<=============================================>
+Successfully executed 'add' for number: 07087654321 in group 1 | 2025-05-13 11:54:06
+<=============================================>
+Successfully executed 'add' for number: 09011223344 in group 1 | 2025-05-13 11:54:06
+<=============================================>
+User 4 (customer_support) performed 'add' on group 'Lagos Customers' (ID: 1) in org 1. Total: 3, Success: 3 | 2025-05-13 11:54:06
+<=============================================>
+Received login data: [] | 2025-05-13 13:08:44
+<=============================================>
+Validation failed: Missing email or password. | 2025-05-13 13:08:44
+<=============================================>
+Received login data: [] | 2025-05-13 13:10:45
+<=============================================>
+Validation failed: Missing email or password. | 2025-05-13 13:10:45
+<=============================================>
+Received login data: {"email":"admin@payitng.com.ng","password":"T@IPQpEG3PA"} | 2025-05-13 13:10:45
+<=============================================>
+Email not found: admin@payitng.com.ng | 2025-05-13 13:10:45
+<=============================================>
+Received login data: [] | 2025-05-13 13:20:50
+<=============================================>
+Validation failed: Missing email or password. | 2025-05-13 13:20:50
+<=============================================>
+Received login data: {"email":"admin@payitng.com.ng","password":"T@IPQpEG3PA"} | 2025-05-13 13:20:50
+<=============================================>
+Email not found: admin@payitng.com.ng | 2025-05-13 13:20:50
+<=============================================>
+Received login data: [] | 2025-05-13 13:21:33
+<=============================================>
+Validation failed: Missing email or password. | 2025-05-13 13:21:33
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-05-13 13:21:33
+<=============================================>
+User logged in successfully: email=alice@example.com, role=admin | 2025-05-13 13:21:33
+<=============================================>
+Received login data: [] | 2025-05-13 13:37:05
+<=============================================>
+Validation failed: Missing email or password. | 2025-05-13 13:37:05
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-05-13 13:37:05
+<=============================================>
+User logged in successfully: email=alice@example.com, role=admin | 2025-05-13 13:37:05
+<=============================================>
+Access denied: Missing token. | 2025-05-13 14:04:41
+<=============================================>
+Access denied: Missing token. | 2025-05-13 14:04:41
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-05-13 14:04:41
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-05-13 14:04:41
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-05-13 14:04:41
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-05-13 14:04:41
+<=============================================>
+Received login data: [] | 2025-05-13 18:03:57
+<=============================================>
+Validation failed: Missing email or password. | 2025-05-13 18:03:57
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-05-13 18:03:57
+<=============================================>
+User logged in successfully: email=alice@example.com, role=admin | 2025-05-13 18:03:58
+<=============================================>
+Access denied: Missing token. | 2025-05-13 18:04:01
+<=============================================>
+Access denied: Missing token. | 2025-05-13 18:04:01
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-05-13 18:04:01
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-05-13 18:04:01
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-05-13 18:04:01
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-05-13 18:04:01
+<=============================================>
+Access denied: Missing token. | 2025-05-13 18:05:22
+<=============================================>
+Access denied: Missing token. | 2025-05-13 18:05:22
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MTU5NDM4LCJleHAiOjE3NDcxNjMwMzh9.jnALqLjkXI9nWkVz42ME7yZL8Gr4xouu7D8kQYjc-pQ | 2025-05-13 18:05:22
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-05-13 18:05:22
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-05-13 18:05:22
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MTU5NDM4LCJleHAiOjE3NDcxNjMwMzh9.jnALqLjkXI9nWkVz42ME7yZL8Gr4xouu7D8kQYjc-pQ | 2025-05-13 18:05:22
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-05-13 18:05:22
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-05-13 18:05:22
+<=============================================>
+Access denied: Missing token. | 2025-05-13 18:11:33
+<=============================================>
+Access denied: Missing token. | 2025-05-13 18:11:33
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MTU5NDM4LCJleHAiOjE3NDcxNjMwMzh9.jnALqLjkXI9nWkVz42ME7yZL8Gr4xouu7D8kQYjc-pQ | 2025-05-13 18:11:33
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-05-13 18:11:33
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-05-13 18:11:33
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MTU5NDM4LCJleHAiOjE3NDcxNjMwMzh9.jnALqLjkXI9nWkVz42ME7yZL8Gr4xouu7D8kQYjc-pQ | 2025-05-13 18:11:33
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-05-13 18:11:33
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-05-13 18:11:33
+<=============================================>
+Access denied: Missing token. | 2025-05-13 18:12:39
+<=============================================>
+Access denied: Missing token. | 2025-05-13 18:12:39
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MTU5NDM4LCJleHAiOjE3NDcxNjMwMzh9.jnALqLjkXI9nWkVz42ME7yZL8Gr4xouu7D8kQYjc-pQ | 2025-05-13 18:12:39
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747159438,"exp":1747163038} | 2025-05-13 18:12:39
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-05-13 18:12:39
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-05-13 18:12:39
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MTU5NDM4LCJleHAiOjE3NDcxNjMwMzh9.jnALqLjkXI9nWkVz42ME7yZL8Gr4xouu7D8kQYjc-pQ | 2025-05-13 18:12:39
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747159438,"exp":1747163038} | 2025-05-13 18:12:39
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-05-13 18:12:39
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-05-13 18:12:39
+<=============================================>
+Access denied: Missing token. | 2025-05-13 18:13:00
+<=============================================>
+Access denied: Missing token. | 2025-05-13 18:13:00
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MTU5NDM4LCJleHAiOjE3NDcxNjMwMzh9.jnALqLjkXI9nWkVz42ME7yZL8Gr4xouu7D8kQYjc-pQ | 2025-05-13 18:13:00
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747159438,"exp":1747163038} | 2025-05-13 18:13:00
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-13 18:13:00
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-13 18:13:00
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-13 18:13:00
+<=============================================>
+Fetched 1 group(s) for user ID: 3 | 2025-05-13 18:13:00
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MTU5NDM4LCJleHAiOjE3NDcxNjMwMzh9.jnALqLjkXI9nWkVz42ME7yZL8Gr4xouu7D8kQYjc-pQ | 2025-05-13 18:13:00
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747159438,"exp":1747163038} | 2025-05-13 18:13:00
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-13 18:13:00
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-13 18:13:00
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-13 18:13:00
+<=============================================>
+Fetched 1 group(s) for user ID: 3 | 2025-05-13 18:13:00
+<=============================================>
+Successfully executed 'add' for number: 09045637480 in group 1 | 2025-05-13 18:14:17
+<=============================================>
+Successfully executed 'add' for number: 09047573847 in group 1 | 2025-05-13 18:14:17
+<=============================================>
+Skipped invalid number: 080463748367 (normalized: 080463748367) | 2025-05-13 18:14:17
+<=============================================>
+Successfully executed 'add' for number: 09137374839 in group 1 | 2025-05-13 18:14:17
+<=============================================>
+User 3 (admin) performed 'add' on group 'Lagos Customers' (ID: 1) in org 1. Total: 4, Success: 3 | 2025-05-13 18:14:17
+<=============================================>
+Created SMS group 'birthday' for organization 1 by user ID 3 (admin) | 2025-05-13 18:17:52
+<=============================================>
+Access denied: Missing token. | 2025-05-13 18:18:18
+<=============================================>
+Access denied: Missing token. | 2025-05-13 18:18:18
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MTU5NDM4LCJleHAiOjE3NDcxNjMwMzh9.jnALqLjkXI9nWkVz42ME7yZL8Gr4xouu7D8kQYjc-pQ | 2025-05-13 18:18:18
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747159438,"exp":1747163038} | 2025-05-13 18:18:18
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-13 18:18:18
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-13 18:18:18
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-13 18:18:18
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-13 18:18:18
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MTU5NDM4LCJleHAiOjE3NDcxNjMwMzh9.jnALqLjkXI9nWkVz42ME7yZL8Gr4xouu7D8kQYjc-pQ | 2025-05-13 18:18:18
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747159438,"exp":1747163038} | 2025-05-13 18:18:18
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-13 18:18:18
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-13 18:18:18
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-13 18:18:18
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-13 18:18:18
+<=============================================>

@@ -1,0 +1,1298 @@
+Access denied: Missing token. | 2025-05-15 03:17:45
+<=============================================>
+Access denied: Missing token. | 2025-05-15 03:17:45
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MjMyOTA5LCJleHAiOjM2MDE3NDcyMzI5MDl9.ircA6GsLV51MICPkqkVJM2si2iDre7hua74i508tRzo | 2025-05-15 03:17:45
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747232909,"exp":3601747232909} | 2025-05-15 03:17:45
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-15 03:17:45
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-15 03:17:45
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-15 03:17:45
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-15 03:17:45
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MjMyOTA5LCJleHAiOjM2MDE3NDcyMzI5MDl9.ircA6GsLV51MICPkqkVJM2si2iDre7hua74i508tRzo | 2025-05-15 03:17:45
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747232909,"exp":3601747232909} | 2025-05-15 03:17:45
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-15 03:17:45
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-15 03:17:45
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-15 03:17:45
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-15 03:17:45
+<=============================================>
+Missing Bearer token. | 2025-05-15 03:30:14
+<=============================================>
+Missing Bearer token. | 2025-05-15 03:31:17
+<=============================================>
+Missing Bearer token. | 2025-05-15 04:14:43
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-05-15 04:16:47
+<=============================================>
+Received login data: [] | 2025-05-15 04:17:08
+<=============================================>
+Validation failed: Missing email or password. | 2025-05-15 04:17:08
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-05-15 04:17:55
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-05-15 04:20:12
+<=============================================>
+Executing SQL query: SELECT id, full_name, email, password, role FROM users WHERE email = 'alice@example.com' | 2025-05-15 04:20:12
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-05-15 04:21:44
+<=============================================>
+Executing SQL query: SELECT id, full_name, email, password, role FROM users WHERE email = 'alice@example.com' | 2025-05-15 04:21:44
+<=============================================>
+Query executed. Rows found: 1 | 2025-05-15 04:21:44
+<=============================================>
+Query result: {"id":"3","full_name":"Alice Johnson","email":"alice@example.com","password":"$2y$10$tVzH93jiM0l6D.dLZIethOOPej..p\/a6QZA55etQDlikqBXpqouBq","role":"admin"} | 2025-05-15 04:21:44
+<=============================================>
+Password verification successful for email: alice@example.com | 2025-05-15 04:21:44
+<=============================================>
+JWT generated for user ID 3 | 2025-05-15 04:21:44
+<=============================================>
+Access denied: Missing token. | 2025-05-15 04:44:18
+<=============================================>
+Access denied: Missing token. | 2025-05-15 04:44:18
+<=============================================>
+Access denied: Missing token. | 2025-05-15 04:44:18
+<=============================================>
+Access denied: Missing token. | 2025-05-15 04:44:18
+<=============================================>
+Access denied: Missing token. | 2025-05-15 04:46:23
+<=============================================>
+Access denied: Missing token. | 2025-05-15 04:46:23
+<=============================================>
+Access denied: Missing token. | 2025-05-15 04:46:23
+<=============================================>
+Access denied: Missing token. | 2025-05-15 04:46:23
+<=============================================>
+Received login data: [] | 2025-05-15 04:54:01
+<=============================================>
+Validation failed: Missing email or password. | 2025-05-15 04:54:01
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-05-15 04:54:02
+<=============================================>
+Executing SQL query: SELECT id, full_name, email, password, role FROM users WHERE email = 'alice@example.com' | 2025-05-15 04:54:02
+<=============================================>
+Query executed. Rows found: 1 | 2025-05-15 04:54:02
+<=============================================>
+Query result: {"id":"3","full_name":"Alice Johnson","email":"alice@example.com","password":"$2y$10$tVzH93jiM0l6D.dLZIethOOPej..p\/a6QZA55etQDlikqBXpqouBq","role":"admin"} | 2025-05-15 04:54:02
+<=============================================>
+Password verification successful for email: alice@example.com | 2025-05-15 04:54:02
+<=============================================>
+JWT generated for user ID 3 | 2025-05-15 04:54:02
+<=============================================>
+Missing Bearer token. | 2025-05-15 04:55:23
+<=============================================>
+Missing Bearer token. | 2025-05-15 04:55:24
+<=============================================>
+Missing Bearer token. | 2025-05-15 04:56:04
+<=============================================>
+Missing Bearer token. | 2025-05-15 04:56:05
+<=============================================>
+Access denied: Missing token. | 2025-05-15 05:03:05
+<=============================================>
+Missing Bearer token. | 2025-05-15 05:03:20
+<=============================================>
+Incoming Headers: Array | 2025-05-15 05:05:25
+<=============================================>
+Authorization Header Missing | 2025-05-15 05:05:25
+<=============================================>
+Incoming Headers:[] | 2025-05-15 05:06:04
+<=============================================>
+Authorization Header Missing | 2025-05-15 05:06:04
+<=============================================>
+Missing Bearer token. | 2025-05-15 05:07:19
+<=============================================>
+Missing Bearer token. | 2025-05-15 05:07:54
+<=============================================>
+Incoming Headers[] | 2025-05-15 05:08:44
+<=============================================>
+Authorization Header Missing | 2025-05-15 05:08:44
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"POST","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 05:18:48
+<=============================================>
+Authorization Header Missing | 2025-05-15 05:18:48
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Content-Length":"9885","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mjg0ODQyLCJleHAiOjM2MDE3NDcyODQ4NDJ9.aqfrRg_aKnlxUlwUEIkvRriL248PiiSYFvLJuxT-r5w","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundary66wH4DS3XmKK1iBs","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 05:18:48
+<=============================================>
+Excel converted to CSV: /tmp/converted_csv_ZUHGDS | 2025-05-15 05:18:48
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"POST","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 05:24:15
+<=============================================>
+Authorization Header Missing | 2025-05-15 05:24:15
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Content-Length":"9885","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mjg0ODQyLCJleHAiOjM2MDE3NDcyODQ4NDJ9.aqfrRg_aKnlxUlwUEIkvRriL248PiiSYFvLJuxT-r5w","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryfx9IvIBbGuU4yy7i","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 05:24:16
+<=============================================>
+Excel converted to CSV: /tmp/converted_csv_2vAtj7 | 2025-05-15 05:24:16
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"POST","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 05:29:30
+<=============================================>
+Authorization Header Missing | 2025-05-15 05:29:30
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Content-Length":"9885","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mjg0ODQyLCJleHAiOjM2MDE3NDcyODQ4NDJ9.aqfrRg_aKnlxUlwUEIkvRriL248PiiSYFvLJuxT-r5w","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryt478lBKqUmaVCxdO","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 05:29:30
+<=============================================>
+Excel converted to CSV: /tmp/converted_csv_Ob5T8b.  Temp file: /tmp/converted_csv_Ob5T8b | 2025-05-15 05:29:30
+<=============================================>
+group_id:  | 2025-05-15 05:29:30
+<=============================================>
+inside file handler | 2025-05-15 05:29:30
+<=============================================>
+Successfully opened CSV file: /tmp/converted_csv_Ob5T8b | 2025-05-15 05:29:30
+<=============================================>
+CSV header info: Has header, phone index: 2 | 2025-05-15 05:29:30
+<=============================================>
+Processing MSISDN: 08012341234 | 2025-05-15 05:29:30
+<=============================================>
+calling insertMessage | 2025-05-15 05:29:30
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"POST","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 05:31:38
+<=============================================>
+Authorization Header Missing | 2025-05-15 05:31:38
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Content-Length":"9885","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mjg0ODQyLCJleHAiOjM2MDE3NDcyODQ4NDJ9.aqfrRg_aKnlxUlwUEIkvRriL248PiiSYFvLJuxT-r5w","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundarysEEdSw6gixMjwQ5l","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 05:31:39
+<=============================================>
+Excel converted to CSV: /tmp/converted_csv_daRRxz.  Temp file: /tmp/converted_csv_daRRxz | 2025-05-15 05:31:39
+<=============================================>
+group_id:  | 2025-05-15 05:31:39
+<=============================================>
+Successfully opened CSV file: /tmp/converted_csv_daRRxz | 2025-05-15 05:31:39
+<=============================================>
+CSV header info: Has header, phone index: 2 | 2025-05-15 05:31:39
+<=============================================>
+Processing MSISDN: 08012341234 | 2025-05-15 05:31:39
+<=============================================>
+calling insertMessage | 2025-05-15 05:31:39
+<=============================================>
+Insert Message Query: INSERT INTO queues (organization_id, group_id, msisdn, text, status) VALUES (1, NULL, '2348012341234', 'Hello Alex, your number 08012341234 has been added to our system. Thank you!\\r\\n', 0) | 2025-05-15 05:31:39
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"POST","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 05:36:03
+<=============================================>
+Authorization Header Missing | 2025-05-15 05:36:03
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Content-Length":"9885","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mjg0ODQyLCJleHAiOjM2MDE3NDcyODQ4NDJ9.aqfrRg_aKnlxUlwUEIkvRriL248PiiSYFvLJuxT-r5w","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryG4U6G6uvrpzoku0E","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 05:36:03
+<=============================================>
+Excel converted to CSV: /tmp/converted_csv_3fnwDX.  Temp file: /tmp/converted_csv_3fnwDX | 2025-05-15 05:36:03
+<=============================================>
+group_id:  | 2025-05-15 05:36:03
+<=============================================>
+Successfully opened CSV file: /tmp/converted_csv_3fnwDX | 2025-05-15 05:36:03
+<=============================================>
+CSV header info: Has header, phone index: 2 | 2025-05-15 05:36:03
+<=============================================>
+Processing MSISDN: 08012341234 | 2025-05-15 05:36:03
+<=============================================>
+calling insertMessage | 2025-05-15 05:36:03
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('68257d43b0', 1, NULL, '2348012341234', 'Hello Alex, your number 08012341234 has been added to our system. Thank you!\\r\\n', 0) | 2025-05-15 05:36:03
+<=============================================>
+Processing MSISDN: 08123456789 | 2025-05-15 05:36:03
+<=============================================>
+calling insertMessage | 2025-05-15 05:36:03
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('68257d43b1', 1, NULL, '2348123456789', 'Hello Nina, your number 08123456789 has been added to our system. Thank you!\\r\\n', 0) | 2025-05-15 05:36:03
+<=============================================>
+Processing MSISDN: 07098761234 | 2025-05-15 05:36:03
+<=============================================>
+calling insertMessage | 2025-05-15 05:36:03
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('68257d43b1', 1, NULL, '2347098761234', 'Hello Chris, your number 07098761234 has been added to our system. Thank you!\\r\\n', 0) | 2025-05-15 05:36:03
+<=============================================>
+Processing MSISDN: 09011227654 | 2025-05-15 05:36:03
+<=============================================>
+calling insertMessage | 2025-05-15 05:36:03
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('68257d43b2', 1, NULL, '2349011227654', 'Hello Jill, your number 09011227654 has been added to our system. Thank you!\\r\\n', 0) | 2025-05-15 05:36:03
+<=============================================>
+Processing MSISDN: 08111223344 | 2025-05-15 05:36:03
+<=============================================>
+calling insertMessage | 2025-05-15 05:36:03
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('68257d43b2', 1, NULL, '2348111223344', 'Hello Leon, your number 08111223344 has been added to our system. Thank you!\\r\\n', 0) | 2025-05-15 05:36:03
+<=============================================>
+finished processing | 2025-05-15 05:36:03
+<=============================================>
+Successfully queued 5 messages. User ID: 3, Org: 1 | 2025-05-15 05:36:03
+<=============================================>
+Incoming Headers: {"Range":"bytes: 0-22","traceparent":"00-58dc5f61a7c21911a630191c9308df2d-782e8b8cef2c1cf0-00","baggage":"sentry-environment=production,sentry-public_key=e6210d6b5d3246c29d5667b356d11c63,sentry-release=ha_github_commits_consumer@429983,sentry-trace_id=44a69160e2d145428318c029902d6777","host":"messaging.approot.ng","accept":"*\/*","user-agent":"Mozilla\/5.0 (compatible)"} | 2025-05-15 05:39:21
+<=============================================>
+Authorization Header Missing | 2025-05-15 05:39:21
+<=============================================>
+Incoming Headers{"Range":"bytes: 0-22","traceparent":"00-95f2fab01ba70cb58f59d188e5e43601-fb28fa4919f89b76-00","baggage":"sentry-environment=production,sentry-public_key=e6210d6b5d3246c29d5667b356d11c63,sentry-release=ha_github_commits_consumer@429983,sentry-trace_id=44a69160e2d145428318c029902d6777","host":"messaging.approot.ng","accept":"*\/*","user-agent":"Mozilla\/5.0 (compatible)"} | 2025-05-15 05:39:21
+<=============================================>
+Authorization Header Missing | 2025-05-15 05:39:21
+<=============================================>
+Incoming Headers{"Range":"bytes: 0-22","traceparent":"00-5274ebd1e8b4a09848f1d8b3898ff635-e83d58278f576254-00","baggage":"sentry-environment=production,sentry-public_key=e6210d6b5d3246c29d5667b356d11c63,sentry-release=ha_github_commits_consumer@429983,sentry-trace_id=44a69160e2d145428318c029902d6777","host":"messaging.approot.ng","accept":"*\/*","user-agent":"Mozilla\/5.0 (compatible)"} | 2025-05-15 05:39:21
+<=============================================>
+Authorization Header Missing | 2025-05-15 05:39:21
+<=============================================>
+Incoming Headers{"Range":"bytes: 0-22","traceparent":"00-fba2711725b16b924a61e7066372043d-d2c4b08f842c682b-00","baggage":"sentry-environment=production,sentry-public_key=e6210d6b5d3246c29d5667b356d11c63,sentry-release=ha_github_commits_consumer@429983,sentry-trace_id=44a69160e2d145428318c029902d6777","host":"messaging.approot.ng","accept":"*\/*","user-agent":"Mozilla\/5.0 (compatible)"} | 2025-05-15 05:39:21
+<=============================================>
+Authorization Header Missing | 2025-05-15 05:39:21
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 05:43:51
+<=============================================>
+Authorization Header Missing | 2025-05-15 05:43:51
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mjg0ODQyLCJleHAiOjM2MDE3NDcyODQ4NDJ9.aqfrRg_aKnlxUlwUEIkvRriL248PiiSYFvLJuxT-r5w","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 05:43:51
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mjg0ODQyLCJleHAiOjM2MDE3NDcyODQ4NDJ9.aqfrRg_aKnlxUlwUEIkvRriL248PiiSYFvLJuxT-r5w | 2025-05-15 05:43:51
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747284842,"exp":3601747284842} | 2025-05-15 05:43:51
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-15 05:43:51
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-15 05:43:51
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-15 05:43:51
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-15 05:43:51
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"POST","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 05:44:03
+<=============================================>
+Authorization Header Missing | 2025-05-15 05:44:03
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Content-Length":"529","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mjg0ODQyLCJleHAiOjM2MDE3NDcyODQ4NDJ9.aqfrRg_aKnlxUlwUEIkvRriL248PiiSYFvLJuxT-r5w","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryhWOZbkmjaAd6PBy3","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 05:44:03
+<=============================================>
+JWT decoded successfully. User ID: 3, Role: admin | 2025-05-15 05:44:03
+<=============================================>
+Executing query: SELECT organization_id FROM users WHERE id = 3 LIMIT 1 | 2025-05-15 05:44:03
+<=============================================>
+Organization ID: 1 | 2025-05-15 05:44:03
+<=============================================>
+Text message: welcome | 2025-05-15 05:44:03
+<=============================================>
+Processing group numbers for group_id: 1 | 2025-05-15 05:44:03
+<=============================================>
+Group numbers found: 8 | 2025-05-15 05:44:03
+<=============================================>
+File uploaded: name1.csv, path: /tmp/phpqwqZW1 | 2025-05-15 05:44:03
+<=============================================>
+Successfully opened file: /tmp/phpqwqZW1 | 2025-05-15 05:44:03
+<=============================================>
+CSV header: ["first_name","last_name","phone"] | 2025-05-15 05:44:03
+<=============================================>
+'phone' or 'msisdn' column found at index: 2 | 2025-05-15 05:44:03
+<=============================================>
+First number from file: 2348012341234 | 2025-05-15 05:44:03
+<=============================================>
+Numbers extracted from file: 13 | 2025-05-15 05:44:03
+<=============================================>
+Total unique numbers to insert: 12 | 2025-05-15 05:44:03
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('68257f2345', 1, 1, '2347087654321', 'welcome', 0) | 2025-05-15 05:44:03
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('68257f2346', 1, 1, '2348012345678', 'welcome', 0) | 2025-05-15 05:44:03
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('68257f2346', 1, 1, '2349011223344', 'welcome', 0) | 2025-05-15 05:44:03
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('68257f2347', 1, 1, '2349045637480', 'welcome', 0) | 2025-05-15 05:44:03
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('68257f2347', 1, 1, '2349047573847', 'welcome', 0) | 2025-05-15 05:44:03
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('68257f2347', 1, 1, '2349137374839', 'welcome', 0) | 2025-05-15 05:44:03
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('68257f2348', 1, 1, '2348098765432', 'welcome', 0) | 2025-05-15 05:44:03
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('68257f2348', 1, 1, '2348012341234', 'welcome', 0) | 2025-05-15 05:44:03
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('68257f2348', 1, 1, '2348123456789', 'welcome', 0) | 2025-05-15 05:44:03
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('68257f2348', 1, 1, '2347098761234', 'welcome', 0) | 2025-05-15 05:44:03
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('68257f2349', 1, 1, '2349011227654', 'welcome', 0) | 2025-05-15 05:44:03
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('68257f2349', 1, 1, '2348111223344', 'welcome', 0) | 2025-05-15 05:44:03
+<=============================================>
+Queued 12 messages. 0 failed. | 2025-05-15 05:44:03
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 10:20:44
+<=============================================>
+Authorization Header Missing | 2025-05-15 10:20:44
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mjg0ODQyLCJleHAiOjM2MDE3NDcyODQ4NDJ9.aqfrRg_aKnlxUlwUEIkvRriL248PiiSYFvLJuxT-r5w","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 10:20:44
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mjg0ODQyLCJleHAiOjM2MDE3NDcyODQ4NDJ9.aqfrRg_aKnlxUlwUEIkvRriL248PiiSYFvLJuxT-r5w | 2025-05-15 10:20:44
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747284842,"exp":3601747284842} | 2025-05-15 10:20:44
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-15 10:20:44
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-15 10:20:44
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-15 10:20:44
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-15 10:20:44
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"POST","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 12:21:31
+<=============================================>
+Authorization Header Missing | 2025-05-15 12:21:31
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Content-Length":"10057","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mjg0ODQyLCJleHAiOjM2MDE3NDcyODQ4NDJ9.aqfrRg_aKnlxUlwUEIkvRriL248PiiSYFvLJuxT-r5w","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryiZiAAWwbKxkWxxZ7","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 12:21:31
+<=============================================>
+Excel converted to CSV: /tmp/converted_csv_xytmdu.  Temp file: /tmp/converted_csv_xytmdu | 2025-05-15 12:21:31
+<=============================================>
+group_id:  | 2025-05-15 12:21:31
+<=============================================>
+Successfully opened CSV file: /tmp/converted_csv_xytmdu | 2025-05-15 12:21:31
+<=============================================>
+CSV header info: Has header, phone index: 2 | 2025-05-15 12:21:31
+<=============================================>
+Processing MSISDN: 08143047851 | 2025-05-15 12:21:31
+<=============================================>
+calling insertMessage | 2025-05-15 12:21:31
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825dc4bbc', 1, NULL, '2348143047851', 'Hello olanrewaju ibidokun, your number 08143047851 has been added to our system. Thank you!', 0) | 2025-05-15 12:21:31
+<=============================================>
+Processing MSISDN: 07030091110 | 2025-05-15 12:21:31
+<=============================================>
+calling insertMessage | 2025-05-15 12:21:31
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825dc4bbd', 1, NULL, '2347030091110', 'Hello Peter Okonkwo, your number 07030091110 has been added to our system. Thank you!', 0) | 2025-05-15 12:21:31
+<=============================================>
+Processing MSISDN: 08022222124 | 2025-05-15 12:21:31
+<=============================================>
+calling insertMessage | 2025-05-15 12:21:31
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825dc4bbe', 1, NULL, '2348022222124', 'Hello Samson Leye, your number 08022222124 has been added to our system. Thank you!', 0) | 2025-05-15 12:21:31
+<=============================================>
+Processing MSISDN: 08060079090 | 2025-05-15 12:21:31
+<=============================================>
+calling insertMessage | 2025-05-15 12:21:31
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825dc4bbf', 1, NULL, '2348060079090', 'Hello Cyril Akwarandu, your number 08060079090 has been added to our system. Thank you!', 0) | 2025-05-15 12:21:31
+<=============================================>
+Processing MSISDN: 07065386159 | 2025-05-15 12:21:31
+<=============================================>
+calling insertMessage | 2025-05-15 12:21:31
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825dc4bc0', 1, NULL, '2347065386159', 'Hello Adeniyi, Oluwabunmi, your number 07065386159 has been added to our system. Thank you!', 0) | 2025-05-15 12:21:31
+<=============================================>
+Processing MSISDN: 09159403602 | 2025-05-15 12:21:31
+<=============================================>
+calling insertMessage | 2025-05-15 12:21:31
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825dc4bc1', 1, NULL, '2349159403602', 'Hello Mathias Roy, your number 09159403602 has been added to our system. Thank you!', 0) | 2025-05-15 12:21:31
+<=============================================>
+Processing MSISDN: 08032039973 | 2025-05-15 12:21:31
+<=============================================>
+calling insertMessage | 2025-05-15 12:21:31
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825dc4bc1', 1, NULL, '2348032039973', 'Hello Roy  Mathias, your number 08032039973 has been added to our system. Thank you!', 0) | 2025-05-15 12:21:31
+<=============================================>
+finished processing | 2025-05-15 12:21:31
+<=============================================>
+Successfully queued 7 messages. User ID: 3, Org: 1 | 2025-05-15 12:21:31
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"POST","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 12:27:18
+<=============================================>
+Authorization Header Missing | 2025-05-15 12:27:18
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Content-Length":"10045","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mjg0ODQyLCJleHAiOjM2MDE3NDcyODQ4NDJ9.aqfrRg_aKnlxUlwUEIkvRriL248PiiSYFvLJuxT-r5w","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundary0VC2Xo5sCFJzBE13","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 12:27:18
+<=============================================>
+Excel converted to CSV: /tmp/converted_csv_MDGADK.  Temp file: /tmp/converted_csv_MDGADK | 2025-05-15 12:27:18
+<=============================================>
+group_id:  | 2025-05-15 12:27:18
+<=============================================>
+Successfully opened CSV file: /tmp/converted_csv_MDGADK | 2025-05-15 12:27:18
+<=============================================>
+CSV header info: Has header, phone index: 2 | 2025-05-15 12:27:18
+<=============================================>
+Processing MSISDN: 08143047851 | 2025-05-15 12:27:18
+<=============================================>
+calling insertMessage | 2025-05-15 12:27:18
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825dda6bc', 1, NULL, '2348143047851', 'Hello olanrewaju, your number 08143047851 has been added to our system. Thank you!', 0) | 2025-05-15 12:27:18
+<=============================================>
+Processing MSISDN: 07030091110 | 2025-05-15 12:27:18
+<=============================================>
+calling insertMessage | 2025-05-15 12:27:18
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825dda6bd', 1, NULL, '2347030091110', 'Hello Peter, your number 07030091110 has been added to our system. Thank you!', 0) | 2025-05-15 12:27:18
+<=============================================>
+Processing MSISDN: 08022222124 | 2025-05-15 12:27:18
+<=============================================>
+calling insertMessage | 2025-05-15 12:27:18
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825dda6bd', 1, NULL, '2348022222124', 'Hello Samson, your number 08022222124 has been added to our system. Thank you!', 0) | 2025-05-15 12:27:18
+<=============================================>
+Processing MSISDN: 08060079090 | 2025-05-15 12:27:18
+<=============================================>
+calling insertMessage | 2025-05-15 12:27:18
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825dda6be', 1, NULL, '2348060079090', 'Hello Cyril, your number 08060079090 has been added to our system. Thank you!', 0) | 2025-05-15 12:27:18
+<=============================================>
+Processing MSISDN: 07065386159 | 2025-05-15 12:27:18
+<=============================================>
+calling insertMessage | 2025-05-15 12:27:18
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825dda6be', 1, NULL, '2347065386159', 'Hello Adeniyi,, your number 07065386159 has been added to our system. Thank you!', 0) | 2025-05-15 12:27:18
+<=============================================>
+Processing MSISDN: 09159403602 | 2025-05-15 12:27:18
+<=============================================>
+calling insertMessage | 2025-05-15 12:27:18
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825dda6bf', 1, NULL, '2349159403602', 'Hello Mathias, your number 09159403602 has been added to our system. Thank you!', 0) | 2025-05-15 12:27:18
+<=============================================>
+Processing MSISDN: 08032039973 | 2025-05-15 12:27:18
+<=============================================>
+calling insertMessage | 2025-05-15 12:27:18
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825dda6bf', 1, NULL, '2348032039973', 'Hello Roy , your number 08032039973 has been added to our system. Thank you!', 0) | 2025-05-15 12:27:18
+<=============================================>
+finished processing | 2025-05-15 12:27:18
+<=============================================>
+Successfully queued 7 messages. User ID: 3, Org: 1 | 2025-05-15 12:27:18
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"POST","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 12:57:29
+<=============================================>
+Authorization Header Missing | 2025-05-15 12:57:29
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Content-Length":"10045","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mjg0ODQyLCJleHAiOjM2MDE3NDcyODQ4NDJ9.aqfrRg_aKnlxUlwUEIkvRriL248PiiSYFvLJuxT-r5w","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryAjBHJBzvOUMS70eY","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 12:57:29
+<=============================================>
+Excel converted to CSV: /tmp/converted_csv_RBwcrw.  Temp file: /tmp/converted_csv_RBwcrw | 2025-05-15 12:57:29
+<=============================================>
+group_id:  | 2025-05-15 12:57:29
+<=============================================>
+Successfully opened CSV file: /tmp/converted_csv_RBwcrw | 2025-05-15 12:57:29
+<=============================================>
+CSV header info: Has header, phone index: 2 | 2025-05-15 12:57:29
+<=============================================>
+Processing MSISDN: 08143047851 | 2025-05-15 12:57:29
+<=============================================>
+calling insertMessage | 2025-05-15 12:57:29
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825e4b945b09', 1, NULL, '2348143047851', 'Hello olanrewaju, your number 08143047851 has been added to our system. Thank you!', 0) | 2025-05-15 12:57:29
+<=============================================>
+Processing MSISDN: 07030091110 | 2025-05-15 12:57:29
+<=============================================>
+calling insertMessage | 2025-05-15 12:57:29
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825e4b946271', 1, NULL, '2347030091110', 'Hello Peter, your number 07030091110 has been added to our system. Thank you!', 0) | 2025-05-15 12:57:29
+<=============================================>
+Processing MSISDN: 08022222124 | 2025-05-15 12:57:29
+<=============================================>
+calling insertMessage | 2025-05-15 12:57:29
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825e4b946894', 1, NULL, '2348022222124', 'Hello Samson, your number 08022222124 has been added to our system. Thank you!', 0) | 2025-05-15 12:57:29
+<=============================================>
+Processing MSISDN: 08060079090 | 2025-05-15 12:57:29
+<=============================================>
+calling insertMessage | 2025-05-15 12:57:29
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825e4b9475bd', 1, NULL, '2348060079090', 'Hello Cyril, your number 08060079090 has been added to our system. Thank you!', 0) | 2025-05-15 12:57:29
+<=============================================>
+Processing MSISDN: 07065386159 | 2025-05-15 12:57:29
+<=============================================>
+calling insertMessage | 2025-05-15 12:57:29
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825e4b947af1', 1, NULL, '2347065386159', 'Hello Adeniyi,, your number 07065386159 has been added to our system. Thank you!', 0) | 2025-05-15 12:57:29
+<=============================================>
+Processing MSISDN: 09159403602 | 2025-05-15 12:57:29
+<=============================================>
+calling insertMessage | 2025-05-15 12:57:29
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825e4b948058', 1, NULL, '2349159403602', 'Hello Mathias, your number 09159403602 has been added to our system. Thank you!', 0) | 2025-05-15 12:57:29
+<=============================================>
+Processing MSISDN: 08032039973 | 2025-05-15 12:57:29
+<=============================================>
+calling insertMessage | 2025-05-15 12:57:29
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825e4b9486ab', 1, NULL, '2348032039973', 'Hello Roy , your number 08032039973 has been added to our system. Thank you!', 0) | 2025-05-15 12:57:29
+<=============================================>
+finished processing | 2025-05-15 12:57:29
+<=============================================>
+Successfully queued 7 messages. User ID: 3, Org: 1 | 2025-05-15 12:57:29
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"POST","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 13:01:44
+<=============================================>
+Authorization Header Missing | 2025-05-15 13:01:44
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Content-Length":"10045","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mjg0ODQyLCJleHAiOjM2MDE3NDcyODQ4NDJ9.aqfrRg_aKnlxUlwUEIkvRriL248PiiSYFvLJuxT-r5w","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryG0lWVoWWma5hFTDI","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 13:01:44
+<=============================================>
+Excel converted to CSV: /tmp/converted_csv_ERNZgY.  Temp file: /tmp/converted_csv_ERNZgY | 2025-05-15 13:01:44
+<=============================================>
+group_id:  | 2025-05-15 13:01:44
+<=============================================>
+Successfully opened CSV file: /tmp/converted_csv_ERNZgY | 2025-05-15 13:01:44
+<=============================================>
+CSV header info: Has header, phone index: 2 | 2025-05-15 13:01:44
+<=============================================>
+Processing MSISDN: 08143047851 | 2025-05-15 13:01:44
+<=============================================>
+calling insertMessage | 2025-05-15 13:01:44
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825e5b88859d', 1, NULL, '2348143047851', 'Hello olanrewaju, your number 08143047851 has been added to our system. Thank you!', 0) | 2025-05-15 13:01:44
+<=============================================>
+Processing MSISDN: 07030091110 | 2025-05-15 13:01:44
+<=============================================>
+calling insertMessage | 2025-05-15 13:01:44
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825e5b888f91', 1, NULL, '2347030091110', 'Hello Peter, your number 07030091110 has been added to our system. Thank you!', 0) | 2025-05-15 13:01:44
+<=============================================>
+Processing MSISDN: 08022222124 | 2025-05-15 13:01:44
+<=============================================>
+calling insertMessage | 2025-05-15 13:01:44
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825e5b88958a', 1, NULL, '2348022222124', 'Hello Samson, your number 08022222124 has been added to our system. Thank you!', 0) | 2025-05-15 13:01:44
+<=============================================>
+Processing MSISDN: 08060079090 | 2025-05-15 13:01:44
+<=============================================>
+calling insertMessage | 2025-05-15 13:01:44
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825e5b88a9f4', 1, NULL, '2348060079090', 'Hello Cyril, your number 08060079090 has been added to our system. Thank you!', 0) | 2025-05-15 13:01:44
+<=============================================>
+Processing MSISDN: 07065386159 | 2025-05-15 13:01:44
+<=============================================>
+calling insertMessage | 2025-05-15 13:01:44
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825e5b88b01a', 1, NULL, '2347065386159', 'Hello Adeniyi,, your number 07065386159 has been added to our system. Thank you!', 0) | 2025-05-15 13:01:44
+<=============================================>
+Processing MSISDN: 09159403602 | 2025-05-15 13:01:44
+<=============================================>
+calling insertMessage | 2025-05-15 13:01:44
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825e5b88b5b2', 1, NULL, '2349159403602', 'Hello Mathias, your number 09159403602 has been added to our system. Thank you!', 0) | 2025-05-15 13:01:44
+<=============================================>
+Processing MSISDN: 08032039973 | 2025-05-15 13:01:44
+<=============================================>
+calling insertMessage | 2025-05-15 13:01:44
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825e5b88bb98', 1, NULL, '2348032039973', 'Hello Roy , your number 08032039973 has been added to our system. Thank you!', 0) | 2025-05-15 13:01:44
+<=============================================>
+finished processing | 2025-05-15 13:01:44
+<=============================================>
+Successfully queued 7 messages. User ID: 3, Org: 1 | 2025-05-15 13:01:44
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"POST","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 13:03:55
+<=============================================>
+Authorization Header Missing | 2025-05-15 13:03:55
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Content-Length":"10045","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mjg0ODQyLCJleHAiOjM2MDE3NDcyODQ4NDJ9.aqfrRg_aKnlxUlwUEIkvRriL248PiiSYFvLJuxT-r5w","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryM0yTNDV4UAtNKNXR","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 13:03:55
+<=============================================>
+Excel converted to CSV: /tmp/converted_csv_AFwtl1.  Temp file: /tmp/converted_csv_AFwtl1 | 2025-05-15 13:03:55
+<=============================================>
+group_id:  | 2025-05-15 13:03:55
+<=============================================>
+Successfully opened CSV file: /tmp/converted_csv_AFwtl1 | 2025-05-15 13:03:55
+<=============================================>
+CSV header info: Has header, phone index: 2 | 2025-05-15 13:03:55
+<=============================================>
+Processing MSISDN: 08143047851 | 2025-05-15 13:03:55
+<=============================================>
+calling insertMessage | 2025-05-15 13:03:55
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825e63b9a0f0', 1, NULL, '2348143047851', 'Hello olanrewaju, your number 08143047851 has been added to our system. Thank you!', 0) | 2025-05-15 13:03:55
+<=============================================>
+Processing MSISDN: 07030091110 | 2025-05-15 13:03:55
+<=============================================>
+calling insertMessage | 2025-05-15 13:03:55
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825e63b9ae8a', 1, NULL, '2347030091110', 'Hello Peter, your number 07030091110 has been added to our system. Thank you!', 0) | 2025-05-15 13:03:55
+<=============================================>
+Processing MSISDN: 08022222124 | 2025-05-15 13:03:55
+<=============================================>
+calling insertMessage | 2025-05-15 13:03:55
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825e63b9b5e3', 1, NULL, '2348022222124', 'Hello Samson, your number 08022222124 has been added to our system. Thank you!', 0) | 2025-05-15 13:03:55
+<=============================================>
+Processing MSISDN: 08060079090 | 2025-05-15 13:03:55
+<=============================================>
+calling insertMessage | 2025-05-15 13:03:55
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825e63b9c5b7', 1, NULL, '2348060079090', 'Hello Cyril, your number 08060079090 has been added to our system. Thank you!', 0) | 2025-05-15 13:03:55
+<=============================================>
+Processing MSISDN: 07065386159 | 2025-05-15 13:03:55
+<=============================================>
+calling insertMessage | 2025-05-15 13:03:55
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825e63b9cdb3', 1, NULL, '2347065386159', 'Hello Adeniyi,, your number 07065386159 has been added to our system. Thank you!', 0) | 2025-05-15 13:03:55
+<=============================================>
+Processing MSISDN: 09159403602 | 2025-05-15 13:03:55
+<=============================================>
+calling insertMessage | 2025-05-15 13:03:55
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825e63b9d3fc', 1, NULL, '2349159403602', 'Hello Mathias, your number 09159403602 has been added to our system. Thank you!', 0) | 2025-05-15 13:03:55
+<=============================================>
+Processing MSISDN: 08032039973 | 2025-05-15 13:03:55
+<=============================================>
+calling insertMessage | 2025-05-15 13:03:55
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825e63b9d92e', 1, NULL, '2348032039973', 'Hello Roy , your number 08032039973 has been added to our system. Thank you!', 0) | 2025-05-15 13:03:55
+<=============================================>
+finished processing | 2025-05-15 13:03:55
+<=============================================>
+Successfully queued 7 messages. User ID: 3, Org: 1 | 2025-05-15 13:03:55
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"POST","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 13:36:42
+<=============================================>
+Authorization Header Missing | 2025-05-15 13:36:42
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Content-Length":"10045","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mjg0ODQyLCJleHAiOjM2MDE3NDcyODQ4NDJ9.aqfrRg_aKnlxUlwUEIkvRriL248PiiSYFvLJuxT-r5w","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryBgEeTEF712MbuepH","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 13:36:43
+<=============================================>
+Excel converted to CSV: /tmp/converted_csv_Zxke8B.  Temp file: /tmp/converted_csv_Zxke8B | 2025-05-15 13:36:43
+<=============================================>
+group_id:  | 2025-05-15 13:36:43
+<=============================================>
+Successfully opened CSV file: /tmp/converted_csv_Zxke8B | 2025-05-15 13:36:43
+<=============================================>
+CSV header info: Has header, phone index: 2 | 2025-05-15 13:36:43
+<=============================================>
+Processing MSISDN: 08143047851 | 2025-05-15 13:36:43
+<=============================================>
+calling insertMessage | 2025-05-15 13:36:43
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825edeb383bb', 1, NULL, '2348143047851', 'Hello olanrewaju, your number 08143047851 has been added to our system. Thank you!', 0) | 2025-05-15 13:36:43
+<=============================================>
+Processing MSISDN: 07030091110 | 2025-05-15 13:36:43
+<=============================================>
+calling insertMessage | 2025-05-15 13:36:43
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825edeb38ea3', 1, NULL, '2347030091110', 'Hello Peter, your number 07030091110 has been added to our system. Thank you!', 0) | 2025-05-15 13:36:43
+<=============================================>
+Processing MSISDN: 08022222124 | 2025-05-15 13:36:43
+<=============================================>
+calling insertMessage | 2025-05-15 13:36:43
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825edeb3970e', 1, NULL, '2348022222124', 'Hello Samson, your number 08022222124 has been added to our system. Thank you!', 0) | 2025-05-15 13:36:43
+<=============================================>
+Processing MSISDN: 08060079090 | 2025-05-15 13:36:43
+<=============================================>
+calling insertMessage | 2025-05-15 13:36:43
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825edeb3b7cf', 1, NULL, '2348060079090', 'Hello Cyril, your number 08060079090 has been added to our system. Thank you!', 0) | 2025-05-15 13:36:43
+<=============================================>
+Processing MSISDN: 07065386159 | 2025-05-15 13:36:43
+<=============================================>
+calling insertMessage | 2025-05-15 13:36:43
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825edeb3c14d', 1, NULL, '2347065386159', 'Hello Adeniyi,, your number 07065386159 has been added to our system. Thank you!', 0) | 2025-05-15 13:36:43
+<=============================================>
+Processing MSISDN: 09159403602 | 2025-05-15 13:36:43
+<=============================================>
+calling insertMessage | 2025-05-15 13:36:43
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825edeb3cb7a', 1, NULL, '2349159403602', 'Hello Mathias, your number 09159403602 has been added to our system. Thank you!', 0) | 2025-05-15 13:36:43
+<=============================================>
+Processing MSISDN: 08032039973 | 2025-05-15 13:36:43
+<=============================================>
+calling insertMessage | 2025-05-15 13:36:43
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825edeb3d3b2', 1, NULL, '2348032039973', 'Hello Roy , your number 08032039973 has been added to our system. Thank you!', 0) | 2025-05-15 13:36:43
+<=============================================>
+finished processing | 2025-05-15 13:36:43
+<=============================================>
+Successfully queued 7 messages. User ID: 3, Org: 1 | 2025-05-15 13:36:43
+<=============================================>
+Received login data: [] | 2025-05-15 13:49:45
+<=============================================>
+Validation failed: Missing email or password. | 2025-05-15 13:49:45
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-05-15 13:49:45
+<=============================================>
+Executing SQL query: SELECT id, full_name, email, password, role FROM users WHERE email = 'alice@example.com' | 2025-05-15 13:49:45
+<=============================================>
+Query executed. Rows found: 1 | 2025-05-15 13:49:45
+<=============================================>
+Query result: {"id":"3","full_name":"Alice Johnson","email":"alice@example.com","password":"$2y$10$tVzH93jiM0l6D.dLZIethOOPej..p\/a6QZA55etQDlikqBXpqouBq","role":"admin"} | 2025-05-15 13:49:45
+<=============================================>
+Password verification successful for email: alice@example.com | 2025-05-15 13:49:45
+<=============================================>
+JWT generated for user ID 3 | 2025-05-15 13:49:45
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"http:\/\/localhost:3000","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:11:26
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"http:\/\/localhost:3000","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:11:26
+<=============================================>
+Authorization Header Missing | 2025-05-15 14:11:26
+<=============================================>
+Authorization Header Missing | 2025-05-15 14:11:26
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U","Origin":"http:\/\/localhost:3000","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:11:26
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U | 2025-05-15 14:11:26
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747316985,"exp":3601747316985} | 2025-05-15 14:11:26
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-15 14:11:26
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-15 14:11:26
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-15 14:11:26
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-15 14:11:26
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U","Origin":"http:\/\/localhost:3000","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:11:26
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U | 2025-05-15 14:11:26
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747316985,"exp":3601747316985} | 2025-05-15 14:11:26
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-15 14:11:26
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-15 14:11:26
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-15 14:11:26
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-15 14:11:26
+<=============================================>
+Incoming Headers: [] | 2025-05-15 14:24:14
+<=============================================>
+Authorization Header Missing | 2025-05-15 14:24:14
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"POST","Access-Control-Request-Headers":"authorization","Origin":"http:\/\/localhost:3000","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:24:21
+<=============================================>
+Authorization Header Missing | 2025-05-15 14:24:21
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Content-Length":"10066","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundary9sY7wlOqiwDJgG6L","Origin":"http:\/\/localhost:3000","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:24:21
+<=============================================>
+Excel converted to CSV: /tmp/converted_csv_zc7O5u | 2025-05-15 14:24:21
+<=============================================>
+Successfully executed 'add' for number: 08143047851 in group 2 | 2025-05-15 14:24:21
+<=============================================>
+Successfully executed 'add' for number: 07030091110 in group 2 | 2025-05-15 14:24:21
+<=============================================>
+Successfully executed 'add' for number: 08022222124 in group 2 | 2025-05-15 14:24:21
+<=============================================>
+Successfully executed 'add' for number: 08060079090 in group 2 | 2025-05-15 14:24:21
+<=============================================>
+Successfully executed 'add' for number: 07065386159 in group 2 | 2025-05-15 14:24:21
+<=============================================>
+Successfully executed 'add' for number: 09159403602 in group 2 | 2025-05-15 14:24:21
+<=============================================>
+Successfully executed 'add' for number: 08032039973 in group 2 | 2025-05-15 14:24:21
+<=============================================>
+User 3 (admin) performed 'add' on group 'birthday' (ID: 2) in org 1. Total: 7, Success: 7, Skipped: 0, Failed: 0 | 2025-05-15 14:24:21
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"http:\/\/localhost:3000","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:25:08
+<=============================================>
+Authorization Header Missing | 2025-05-15 14:25:08
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"http:\/\/localhost:3000","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:25:08
+<=============================================>
+Authorization Header Missing | 2025-05-15 14:25:08
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U","Origin":"http:\/\/localhost:3000","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:25:08
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U | 2025-05-15 14:25:08
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747316985,"exp":3601747316985} | 2025-05-15 14:25:08
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-15 14:25:08
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-15 14:25:08
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-15 14:25:08
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-15 14:25:08
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U","Origin":"http:\/\/localhost:3000","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:25:09
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U | 2025-05-15 14:25:09
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747316985,"exp":3601747316985} | 2025-05-15 14:25:09
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-15 14:25:09
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-15 14:25:09
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-15 14:25:09
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-15 14:25:09
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"POST","Access-Control-Request-Headers":"authorization","Origin":"http:\/\/localhost:3000","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:25:15
+<=============================================>
+Authorization Header Missing | 2025-05-15 14:25:15
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Content-Length":"10066","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryATB48xDqx0Aei6hY","Origin":"http:\/\/localhost:3000","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:25:15
+<=============================================>
+Excel converted to CSV: /tmp/converted_csv_Ucf7BF | 2025-05-15 14:25:15
+<=============================================>
+Successfully executed 'add' for number: 08143047851 in group 2 | 2025-05-15 14:25:15
+<=============================================>
+Successfully executed 'add' for number: 07030091110 in group 2 | 2025-05-15 14:25:15
+<=============================================>
+Successfully executed 'add' for number: 08022222124 in group 2 | 2025-05-15 14:25:15
+<=============================================>
+Successfully executed 'add' for number: 08060079090 in group 2 | 2025-05-15 14:25:15
+<=============================================>
+Successfully executed 'add' for number: 07065386159 in group 2 | 2025-05-15 14:25:15
+<=============================================>
+Successfully executed 'add' for number: 09159403602 in group 2 | 2025-05-15 14:25:15
+<=============================================>
+Successfully executed 'add' for number: 08032039973 in group 2 | 2025-05-15 14:25:15
+<=============================================>
+User 3 (admin) performed 'add' on group 'birthday' (ID: 2) in org 1. Total: 7, Success: 7, Skipped: 0, Failed: 0 | 2025-05-15 14:25:15
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"http:\/\/localhost:3000","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:25:42
+<=============================================>
+Authorization Header Missing | 2025-05-15 14:25:42
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"http:\/\/localhost:3000","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:25:42
+<=============================================>
+Authorization Header Missing | 2025-05-15 14:25:42
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U","Origin":"http:\/\/localhost:3000","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:25:42
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U | 2025-05-15 14:25:42
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747316985,"exp":3601747316985} | 2025-05-15 14:25:42
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-15 14:25:42
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-15 14:25:42
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-15 14:25:42
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-15 14:25:42
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U","Origin":"http:\/\/localhost:3000","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:25:43
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U | 2025-05-15 14:25:43
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747316985,"exp":3601747316985} | 2025-05-15 14:25:43
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-15 14:25:43
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-15 14:25:43
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-15 14:25:43
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-15 14:25:43
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"POST","Access-Control-Request-Headers":"authorization","Origin":"http:\/\/localhost:3000","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:25:52
+<=============================================>
+Authorization Header Missing | 2025-05-15 14:25:52
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Content-Length":"10066","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryuoGywCAuz48pHMpz","Origin":"http:\/\/localhost:3000","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:25:52
+<=============================================>
+Excel converted to CSV: /tmp/converted_csv_JG4qG7 | 2025-05-15 14:25:52
+<=============================================>
+Successfully executed 'add' for number: 08143047851 in group 2 | 2025-05-15 14:25:52
+<=============================================>
+Successfully executed 'add' for number: 07030091110 in group 2 | 2025-05-15 14:25:52
+<=============================================>
+Successfully executed 'add' for number: 08022222124 in group 2 | 2025-05-15 14:25:52
+<=============================================>
+Successfully executed 'add' for number: 08060079090 in group 2 | 2025-05-15 14:25:52
+<=============================================>
+Successfully executed 'add' for number: 07065386159 in group 2 | 2025-05-15 14:25:52
+<=============================================>
+Successfully executed 'add' for number: 09159403602 in group 2 | 2025-05-15 14:25:52
+<=============================================>
+Successfully executed 'add' for number: 08032039973 in group 2 | 2025-05-15 14:25:52
+<=============================================>
+User 3 (admin) performed 'add' on group 'birthday' (ID: 2) in org 1. Total: 7, Success: 7, Skipped: 0, Failed: 0 | 2025-05-15 14:25:52
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"http:\/\/localhost:3000","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:29:13
+<=============================================>
+Authorization Header Missing | 2025-05-15 14:29:13
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"http:\/\/localhost:3000","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:29:13
+<=============================================>
+Authorization Header Missing | 2025-05-15 14:29:13
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U","Origin":"http:\/\/localhost:3000","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:29:13
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U | 2025-05-15 14:29:13
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747316985,"exp":3601747316985} | 2025-05-15 14:29:13
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-15 14:29:13
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-15 14:29:13
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-15 14:29:13
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-15 14:29:13
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U","Origin":"http:\/\/localhost:3000","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:29:13
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U | 2025-05-15 14:29:13
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747316985,"exp":3601747316985} | 2025-05-15 14:29:13
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-15 14:29:13
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-15 14:29:13
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-15 14:29:13
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-15 14:29:13
+<=============================================>
+Using apache_request_headers() | 2025-05-15 14:29:20
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"POST","Access-Control-Request-Headers":"authorization","Origin":"http:\/\/localhost:3000","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:29:20
+<=============================================>
+Authorization Header Missing | 2025-05-15 14:29:20
+<=============================================>
+Using apache_request_headers() | 2025-05-15 14:29:21
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Content-Length":"10066","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundarybMY37laPeZ7quwB1","Origin":"http:\/\/localhost:3000","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:29:21
+<=============================================>
+Authorization Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U | 2025-05-15 14:29:21
+<=============================================>
+JWT Decoded: User ID: 3, Role: admin | 2025-05-15 14:29:21
+<=============================================>
+Merged input data: {"group_id":"2","action":"add"} | 2025-05-15 14:29:21
+<=============================================>
+Organization ID for user 3: 1 | 2025-05-15 14:29:21
+<=============================================>
+Group ID: 2, Action: add | 2025-05-15 14:29:21
+<=============================================>
+Checking group: SELECT id, name FROM sms_groups WHERE id = 2 AND organization_id = 1 | 2025-05-15 14:29:21
+<=============================================>
+Group found: ID: 2, Name: birthday | 2025-05-15 14:29:21
+<=============================================>
+Uploaded file: Book1.xlsx, size: 9635 | 2025-05-15 14:29:21
+<=============================================>
+Uploaded file moved to: /tmp/uploaded_file_5Mwvjh | 2025-05-15 14:29:21
+<=============================================>
+File extension: xlsx | 2025-05-15 14:29:21
+<=============================================>
+Excel converted to CSV: /tmp/converted_csv_7Dk738 | 2025-05-15 14:29:21
+<=============================================>
+CSV file opened: /tmp/converted_csv_7Dk738 | 2025-05-15 14:29:21
+<=============================================>
+CSV Header: ["first_name","last_name","phone"] | 2025-05-15 14:29:21
+<=============================================>
+Phone column index: 2 | 2025-05-15 14:29:21
+<=============================================>
+Numbers extracted from CSV: 7 | 2025-05-15 14:29:21
+<=============================================>
+Executing query: INSERT IGNORE INTO sms_group_numbers (group_id, phone_number) VALUES (2, '2348143047851') | 2025-05-15 14:29:21
+<=============================================>
+Successfully executed 'add' for number: 2348143047851 in group 2 | 2025-05-15 14:29:21
+<=============================================>
+Executing query: INSERT IGNORE INTO sms_group_numbers (group_id, phone_number) VALUES (2, '2347030091110') | 2025-05-15 14:29:21
+<=============================================>
+Successfully executed 'add' for number: 2347030091110 in group 2 | 2025-05-15 14:29:21
+<=============================================>
+Executing query: INSERT IGNORE INTO sms_group_numbers (group_id, phone_number) VALUES (2, '2348022222124') | 2025-05-15 14:29:21
+<=============================================>
+Successfully executed 'add' for number: 2348022222124 in group 2 | 2025-05-15 14:29:21
+<=============================================>
+Executing query: INSERT IGNORE INTO sms_group_numbers (group_id, phone_number) VALUES (2, '2348060079090') | 2025-05-15 14:29:21
+<=============================================>
+Successfully executed 'add' for number: 2348060079090 in group 2 | 2025-05-15 14:29:21
+<=============================================>
+Executing query: INSERT IGNORE INTO sms_group_numbers (group_id, phone_number) VALUES (2, '2347065386159') | 2025-05-15 14:29:21
+<=============================================>
+Successfully executed 'add' for number: 2347065386159 in group 2 | 2025-05-15 14:29:21
+<=============================================>
+Executing query: INSERT IGNORE INTO sms_group_numbers (group_id, phone_number) VALUES (2, '2349159403602') | 2025-05-15 14:29:21
+<=============================================>
+Successfully executed 'add' for number: 2349159403602 in group 2 | 2025-05-15 14:29:21
+<=============================================>
+Executing query: INSERT IGNORE INTO sms_group_numbers (group_id, phone_number) VALUES (2, '2348032039973') | 2025-05-15 14:29:21
+<=============================================>
+Successfully executed 'add' for number: 2348032039973 in group 2 | 2025-05-15 14:29:21
+<=============================================>
+User 3 (admin) performed 'add' on group 'birthday' (ID: 2) in org 1. Total: 7, Success: 7, Skipped: 0, Failed: 0 | 2025-05-15 14:29:21
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"http:\/\/localhost:3000","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:33:19
+<=============================================>
+Authorization Header Missing | 2025-05-15 14:33:19
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"http:\/\/localhost:3000","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:33:19
+<=============================================>
+Authorization Header Missing | 2025-05-15 14:33:19
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U","Origin":"http:\/\/localhost:3000","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:33:19
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U | 2025-05-15 14:33:19
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747316985,"exp":3601747316985} | 2025-05-15 14:33:19
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-15 14:33:19
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-15 14:33:19
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-15 14:33:19
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-15 14:33:19
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U","Origin":"http:\/\/localhost:3000","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:33:19
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U | 2025-05-15 14:33:19
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747316985,"exp":3601747316985} | 2025-05-15 14:33:19
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-15 14:33:19
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-15 14:33:19
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-15 14:33:19
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-15 14:33:19
+<=============================================>
+Using apache_request_headers() | 2025-05-15 14:33:26
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"POST","Access-Control-Request-Headers":"authorization","Origin":"http:\/\/localhost:3000","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:33:26
+<=============================================>
+Authorization Header Missing | 2025-05-15 14:33:26
+<=============================================>
+Using apache_request_headers() | 2025-05-15 14:33:26
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Content-Length":"10066","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryxvnEJUiA5CsqM9j4","Origin":"http:\/\/localhost:3000","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:33:26
+<=============================================>
+Authorization Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U | 2025-05-15 14:33:26
+<=============================================>
+JWT Decoded: User ID: 3, Role: admin | 2025-05-15 14:33:26
+<=============================================>
+Merged input data: {"group_id":"2","action":"add"} | 2025-05-15 14:33:26
+<=============================================>
+Organization ID for user 3: 1 | 2025-05-15 14:33:26
+<=============================================>
+Group ID: 2, Action: add | 2025-05-15 14:33:26
+<=============================================>
+Checking group: SELECT id, name FROM sms_groups WHERE id = 2 AND organization_id = 1 | 2025-05-15 14:33:26
+<=============================================>
+Group found: ID: 2, Name: birthday | 2025-05-15 14:33:26
+<=============================================>
+Uploaded file: Book1.xlsx, size: 9635 | 2025-05-15 14:33:26
+<=============================================>
+Uploaded file moved to: /tmp/uploaded_file_trupGq | 2025-05-15 14:33:26
+<=============================================>
+File extension: xlsx | 2025-05-15 14:33:26
+<=============================================>
+Excel converted to CSV: /tmp/converted_csv_brQnBy | 2025-05-15 14:33:26
+<=============================================>
+CSV file opened: /tmp/converted_csv_brQnBy | 2025-05-15 14:33:26
+<=============================================>
+CSV Header: ["first_name","last_name","phone"] | 2025-05-15 14:33:26
+<=============================================>
+Phone column index: 2 | 2025-05-15 14:33:26
+<=============================================>
+Numbers extracted from CSV: 7 | 2025-05-15 14:33:26
+<=============================================>
+Executing query: INSERT INTO sms_group_numbers (group_id, phone_number) VALUES (2, '2348143047851') | 2025-05-15 14:33:26
+<=============================================>
+Successfully executed 'add' for number: 2348143047851 in group 2 | 2025-05-15 14:33:26
+<=============================================>
+Executing query: INSERT INTO sms_group_numbers (group_id, phone_number) VALUES (2, '2347030091110') | 2025-05-15 14:33:26
+<=============================================>
+Successfully executed 'add' for number: 2347030091110 in group 2 | 2025-05-15 14:33:26
+<=============================================>
+Executing query: INSERT INTO sms_group_numbers (group_id, phone_number) VALUES (2, '2348022222124') | 2025-05-15 14:33:26
+<=============================================>
+Successfully executed 'add' for number: 2348022222124 in group 2 | 2025-05-15 14:33:26
+<=============================================>
+Executing query: INSERT INTO sms_group_numbers (group_id, phone_number) VALUES (2, '2348060079090') | 2025-05-15 14:33:26
+<=============================================>
+Successfully executed 'add' for number: 2348060079090 in group 2 | 2025-05-15 14:33:26
+<=============================================>
+Executing query: INSERT INTO sms_group_numbers (group_id, phone_number) VALUES (2, '2347065386159') | 2025-05-15 14:33:26
+<=============================================>
+Successfully executed 'add' for number: 2347065386159 in group 2 | 2025-05-15 14:33:26
+<=============================================>
+Executing query: INSERT INTO sms_group_numbers (group_id, phone_number) VALUES (2, '2349159403602') | 2025-05-15 14:33:26
+<=============================================>
+Successfully executed 'add' for number: 2349159403602 in group 2 | 2025-05-15 14:33:26
+<=============================================>
+Executing query: INSERT INTO sms_group_numbers (group_id, phone_number) VALUES (2, '2348032039973') | 2025-05-15 14:33:26
+<=============================================>
+Successfully executed 'add' for number: 2348032039973 in group 2 | 2025-05-15 14:33:26
+<=============================================>
+User 3 (admin) performed 'add' on group 'birthday' (ID: 2) in org 1. Total: 7, Success: 7, Skipped: 0, Failed: 0 | 2025-05-15 14:33:26
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"http:\/\/localhost:3000","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:34:00
+<=============================================>
+Authorization Header Missing | 2025-05-15 14:34:00
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"http:\/\/localhost:3000","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:34:00
+<=============================================>
+Authorization Header Missing | 2025-05-15 14:34:00
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U","Origin":"http:\/\/localhost:3000","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:34:00
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U | 2025-05-15 14:34:00
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747316985,"exp":3601747316985} | 2025-05-15 14:34:00
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-15 14:34:00
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-15 14:34:00
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-15 14:34:00
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-15 14:34:00
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U","Origin":"http:\/\/localhost:3000","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:34:00
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U | 2025-05-15 14:34:00
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747316985,"exp":3601747316985} | 2025-05-15 14:34:00
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-15 14:34:00
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-15 14:34:00
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-15 14:34:00
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-15 14:34:00
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"POST","Access-Control-Request-Headers":"authorization","Origin":"http:\/\/localhost:3000","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:35:08
+<=============================================>
+Authorization Header Missing | 2025-05-15 14:35:08
+<=============================================>
+Incoming Headers: {"Host":"messaging.approot.ng","Connection":"keep-alive","Content-Length":"333","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryjMbsvsLB0cVTc5nD","Origin":"http:\/\/localhost:3000","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:35:08
+<=============================================>
+JWT decoded successfully. User ID: 3, Role: admin | 2025-05-15 14:35:08
+<=============================================>
+Executing query: SELECT organization_id FROM users WHERE id = 3 LIMIT 1 | 2025-05-15 14:35:08
+<=============================================>
+Organization ID: 1 | 2025-05-15 14:35:08
+<=============================================>
+Text message: welcome | 2025-05-15 14:35:08
+<=============================================>
+Processing group numbers for group_id: 2 | 2025-05-15 14:35:08
+<=============================================>
+Group numbers found: 7 | 2025-05-15 14:35:08
+<=============================================>
+Total unique numbers to insert: 7 | 2025-05-15 14:35:08
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825fb9c8663c', 1, 2, '2347030091110', 'welcome', 0) | 2025-05-15 14:35:08
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825fb9c870ba', 1, 2, '2347065386159', 'welcome', 0) | 2025-05-15 14:35:08
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825fb9c881a4', 1, 2, '2348022222124', 'welcome', 0) | 2025-05-15 14:35:08
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825fb9c8970c', 1, 2, '2348032039973', 'welcome', 0) | 2025-05-15 14:35:08
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825fb9c89e92', 1, 2, '2348060079090', 'welcome', 0) | 2025-05-15 14:35:08
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825fb9c8a755', 1, 2, '2348143047851', 'welcome', 0) | 2025-05-15 14:35:08
+<=============================================>
+Insert Message Query: INSERT INTO queues (id, organization_id, group_id, msisdn, text, status) VALUES ('6825fb9c8aea7', 1, 2, '2349159403602', 'welcome', 0) | 2025-05-15 14:35:08
+<=============================================>
+Queued 7 messages. 0 failed. | 2025-05-15 14:35:08
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"http:\/\/localhost:3000","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:37:18
+<=============================================>
+Authorization Header Missing | 2025-05-15 14:37:18
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Accept":"application\/json, text\/plain, *\/*","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U","Origin":"http:\/\/localhost:3000","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:3000\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 14:37:19
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzE2OTg1LCJleHAiOjM2MDE3NDczMTY5ODV9.F8bn23uawCZg2swWVtxnIJc2c03L2k2XycJ4xrG5P4U | 2025-05-15 14:37:19
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747316985,"exp":3601747316985} | 2025-05-15 14:37:19
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-15 14:37:19
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-15 14:37:19
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-15 14:37:19
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-15 14:37:19
+<=============================================>
+Received login data: [] | 2025-05-15 15:17:04
+<=============================================>
+Validation failed: Missing email or password. | 2025-05-15 15:17:04
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-05-15 15:17:04
+<=============================================>
+Executing SQL query: SELECT id, full_name, email, password, role FROM users WHERE email = 'alice@example.com' | 2025-05-15 15:17:04
+<=============================================>
+Query executed. Rows found: 1 | 2025-05-15 15:17:04
+<=============================================>
+Query result: {"id":"3","full_name":"Alice Johnson","email":"alice@example.com","password":"$2y$10$tVzH93jiM0l6D.dLZIethOOPej..p\/a6QZA55etQDlikqBXpqouBq","role":"admin"} | 2025-05-15 15:17:04
+<=============================================>
+Password verification successful for email: alice@example.com | 2025-05-15 15:17:04
+<=============================================>
+JWT generated for user ID 3 | 2025-05-15 15:17:04
+<=============================================>
+Received login data: [] | 2025-05-15 15:48:11
+<=============================================>
+Validation failed: Missing email or password. | 2025-05-15 15:48:11
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-05-15 15:48:11
+<=============================================>
+Executing SQL query: SELECT id, full_name, email, password, role FROM users WHERE email = 'alice@example.com' | 2025-05-15 15:48:11
+<=============================================>
+Query executed. Rows found: 1 | 2025-05-15 15:48:11
+<=============================================>
+Query result: {"id":"3","full_name":"Alice Johnson","email":"alice@example.com","password":"$2y$10$tVzH93jiM0l6D.dLZIethOOPej..p\/a6QZA55etQDlikqBXpqouBq","role":"admin"} | 2025-05-15 15:48:11
+<=============================================>
+Password verification successful for email: alice@example.com | 2025-05-15 15:48:11
+<=============================================>
+JWT generated for user ID 3 | 2025-05-15 15:48:11
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 15:48:28
+<=============================================>
+Authorization Header Missing | 2025-05-15 15:48:28
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","sec-ch-ua-platform":"\"macOS\"","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzI0MDkxLCJleHAiOjM2MDE3NDczMjQwOTF9.wIbuw1u67smpaSiEb9Mi_dLQw2ny2qOv4kbeeSNxmIw","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"application\/json, text\/plain, *\/*","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 15:48:28
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzI0MDkxLCJleHAiOjM2MDE3NDczMjQwOTF9.wIbuw1u67smpaSiEb9Mi_dLQw2ny2qOv4kbeeSNxmIw | 2025-05-15 15:48:28
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747324091,"exp":3601747324091} | 2025-05-15 15:48:28
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-15 15:48:28
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-15 15:48:28
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-15 15:48:28
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-15 15:48:28
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 15:48:37
+<=============================================>
+Authorization Header Missing | 2025-05-15 15:48:37
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","sec-ch-ua-platform":"\"macOS\"","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzI0MDkxLCJleHAiOjM2MDE3NDczMjQwOTF9.wIbuw1u67smpaSiEb9Mi_dLQw2ny2qOv4kbeeSNxmIw","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"application\/json, text\/plain, *\/*","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 15:48:37
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzI0MDkxLCJleHAiOjM2MDE3NDczMjQwOTF9.wIbuw1u67smpaSiEb9Mi_dLQw2ny2qOv4kbeeSNxmIw | 2025-05-15 15:48:37
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747324091,"exp":3601747324091} | 2025-05-15 15:48:37
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-15 15:48:37
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-15 15:48:37
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-15 15:48:37
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-15 15:48:37
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 15:48:43
+<=============================================>
+Authorization Header Missing | 2025-05-15 15:48:43
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","sec-ch-ua-platform":"\"macOS\"","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzI0MDkxLCJleHAiOjM2MDE3NDczMjQwOTF9.wIbuw1u67smpaSiEb9Mi_dLQw2ny2qOv4kbeeSNxmIw","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"application\/json, text\/plain, *\/*","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 15:48:44
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzI0MDkxLCJleHAiOjM2MDE3NDczMjQwOTF9.wIbuw1u67smpaSiEb9Mi_dLQw2ny2qOv4kbeeSNxmIw | 2025-05-15 15:48:44
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747324091,"exp":3601747324091} | 2025-05-15 15:48:44
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-15 15:48:44
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-15 15:48:44
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-15 15:48:44
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-15 15:48:44
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 15:49:01
+<=============================================>
+Authorization Header Missing | 2025-05-15 15:49:01
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","sec-ch-ua-platform":"\"macOS\"","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzI0MDkxLCJleHAiOjM2MDE3NDczMjQwOTF9.wIbuw1u67smpaSiEb9Mi_dLQw2ny2qOv4kbeeSNxmIw","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"application\/json, text\/plain, *\/*","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-15 15:49:02
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzI0MDkxLCJleHAiOjM2MDE3NDczMjQwOTF9.wIbuw1u67smpaSiEb9Mi_dLQw2ny2qOv4kbeeSNxmIw | 2025-05-15 15:49:02
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747324091,"exp":3601747324091} | 2025-05-15 15:49:02
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-15 15:49:02
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-15 15:49:02
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-15 15:49:02
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-15 15:49:02
+<=============================================>

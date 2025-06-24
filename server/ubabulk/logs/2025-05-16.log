@@ -1,0 +1,286 @@
+Received login data: [] | 2025-05-16 09:34:37
+<=============================================>
+Validation failed: Missing email or password. | 2025-05-16 09:34:37
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-05-16 09:34:37
+<=============================================>
+Executing SQL query: SELECT id, full_name, email, password, role FROM users WHERE email = 'alice@example.com' | 2025-05-16 09:34:37
+<=============================================>
+Query executed. Rows found: 1 | 2025-05-16 09:34:37
+<=============================================>
+Query result: {"id":"3","full_name":"Alice Johnson","email":"alice@example.com","password":"$2y$10$tVzH93jiM0l6D.dLZIethOOPej..p\/a6QZA55etQDlikqBXpqouBq","role":"admin"} | 2025-05-16 09:34:37
+<=============================================>
+Password verification successful for email: alice@example.com | 2025-05-16 09:34:38
+<=============================================>
+JWT generated for user ID 3 | 2025-05-16 09:34:38
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-US,en;q=0.9"} | 2025-05-16 09:34:49
+<=============================================>
+Authorization Header Missing | 2025-05-16 09:34:49
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"application\/json, text\/plain, *\/*","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-US,en;q=0.9"} | 2025-05-16 09:34:50
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0 | 2025-05-16 09:34:50
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747388078,"exp":3601747388078} | 2025-05-16 09:34:50
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-16 09:34:50
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-16 09:34:50
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-16 09:34:50
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-16 09:34:50
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-US,en;q=0.9"} | 2025-05-16 09:35:38
+<=============================================>
+Authorization Header Missing | 2025-05-16 09:35:38
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"application\/json, text\/plain, *\/*","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-US,en;q=0.9"} | 2025-05-16 09:35:38
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0 | 2025-05-16 09:35:38
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747388078,"exp":3601747388078} | 2025-05-16 09:35:38
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-16 09:35:38
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-16 09:35:38
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-16 09:35:38
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-16 09:35:38
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-US,en;q=0.9"} | 2025-05-16 09:37:07
+<=============================================>
+Authorization Header Missing | 2025-05-16 09:37:07
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"application\/json, text\/plain, *\/*","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-US,en;q=0.9"} | 2025-05-16 09:37:07
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0 | 2025-05-16 09:37:07
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747388078,"exp":3601747388078} | 2025-05-16 09:37:07
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-16 09:37:07
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-16 09:37:07
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-16 09:37:07
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-16 09:37:07
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-US,en;q=0.9"} | 2025-05-16 09:43:48
+<=============================================>
+Authorization Header Missing | 2025-05-16 09:43:48
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"application\/json, text\/plain, *\/*","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-US,en;q=0.9"} | 2025-05-16 09:43:49
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0 | 2025-05-16 09:43:49
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747388078,"exp":3601747388078} | 2025-05-16 09:43:49
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-16 09:43:49
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-16 09:43:49
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-16 09:43:49
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-16 09:43:49
+<=============================================>
+Received login data: [] | 2025-05-16 10:21:28
+<=============================================>
+Validation failed: Missing email or password. | 2025-05-16 10:21:28
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-05-16 10:21:29
+<=============================================>
+Executing SQL query: SELECT id, full_name, email, password, role FROM users WHERE email = 'alice@example.com' | 2025-05-16 10:21:29
+<=============================================>
+Query executed. Rows found: 1 | 2025-05-16 10:21:29
+<=============================================>
+Query result: {"id":"3","full_name":"Alice Johnson","email":"alice@example.com","password":"$2y$10$tVzH93jiM0l6D.dLZIethOOPej..p\/a6QZA55etQDlikqBXpqouBq","role":"admin"} | 2025-05-16 10:21:29
+<=============================================>
+Password verification successful for email: alice@example.com | 2025-05-16 10:21:29
+<=============================================>
+JWT generated for user ID 3 | 2025-05-16 10:21:29
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-16 10:21:34
+<=============================================>
+Authorization Header Missing | 2025-05-16 10:21:34
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","sec-ch-ua-platform":"\"macOS\"","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzkwODg5LCJleHAiOjM2MDE3NDczOTA4ODl9.KfnQFk2VHDQzQFnrECW4OoqxNtIYu6n3b-EN1YNHbms","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"application\/json, text\/plain, *\/*","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-16 10:21:34
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzkwODg5LCJleHAiOjM2MDE3NDczOTA4ODl9.KfnQFk2VHDQzQFnrECW4OoqxNtIYu6n3b-EN1YNHbms | 2025-05-16 10:21:34
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747390889,"exp":3601747390889} | 2025-05-16 10:21:34
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-16 10:21:34
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-16 10:21:34
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-16 10:21:34
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-16 10:21:34
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","sec-ch-ua-platform":"\"macOS\"","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzkwODg5LCJleHAiOjM2MDE3NDczOTA4ODl9.KfnQFk2VHDQzQFnrECW4OoqxNtIYu6n3b-EN1YNHbms","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"application\/json, text\/plain, *\/*","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-16 10:21:36
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzkwODg5LCJleHAiOjM2MDE3NDczOTA4ODl9.KfnQFk2VHDQzQFnrECW4OoqxNtIYu6n3b-EN1YNHbms | 2025-05-16 10:21:36
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747390889,"exp":3601747390889} | 2025-05-16 10:21:36
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-16 10:21:36
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-16 10:21:36
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-16 10:21:36
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-16 10:21:36
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","sec-ch-ua-platform":"\"macOS\"","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzkwODg5LCJleHAiOjM2MDE3NDczOTA4ODl9.KfnQFk2VHDQzQFnrECW4OoqxNtIYu6n3b-EN1YNHbms","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"application\/json, text\/plain, *\/*","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-16 10:21:37
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3MzkwODg5LCJleHAiOjM2MDE3NDczOTA4ODl9.KfnQFk2VHDQzQFnrECW4OoqxNtIYu6n3b-EN1YNHbms | 2025-05-16 10:21:37
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747390889,"exp":3601747390889} | 2025-05-16 10:21:37
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-16 10:21:37
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-16 10:21:37
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-16 10:21:37
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-16 10:21:37
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-US,en;q=0.9"} | 2025-05-16 12:04:53
+<=============================================>
+Authorization Header Missing | 2025-05-16 12:04:53
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"application\/json, text\/plain, *\/*","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-US,en;q=0.9"} | 2025-05-16 12:04:53
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0 | 2025-05-16 12:04:53
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747388078,"exp":3601747388078} | 2025-05-16 12:04:53
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-16 12:04:53
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-16 12:04:53
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-16 12:04:53
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-16 12:04:53
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-US,en;q=0.9"} | 2025-05-16 12:05:01
+<=============================================>
+Authorization Header Missing | 2025-05-16 12:05:01
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"application\/json, text\/plain, *\/*","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-US,en;q=0.9"} | 2025-05-16 12:05:02
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0 | 2025-05-16 12:05:02
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747388078,"exp":3601747388078} | 2025-05-16 12:05:02
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-16 12:05:02
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-16 12:05:02
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-16 12:05:02
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-16 12:05:02
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"application\/json, text\/plain, *\/*","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-US,en;q=0.9"} | 2025-05-16 12:05:03
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0 | 2025-05-16 12:05:03
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747388078,"exp":3601747388078} | 2025-05-16 12:05:03
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-16 12:05:03
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-16 12:05:03
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-16 12:05:03
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-16 12:05:03
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-US,en;q=0.9"} | 2025-05-16 17:27:44
+<=============================================>
+Authorization Header Missing | 2025-05-16 17:27:44
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"application\/json, text\/plain, *\/*","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-US,en;q=0.9"} | 2025-05-16 17:27:44
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0 | 2025-05-16 17:27:44
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747388078,"exp":3601747388078} | 2025-05-16 17:27:44
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-16 17:27:44
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-16 17:27:44
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-16 17:27:44
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-16 17:27:44
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"application\/json, text\/plain, *\/*","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-US,en;q=0.9"} | 2025-05-16 17:27:46
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0 | 2025-05-16 17:27:46
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747388078,"exp":3601747388078} | 2025-05-16 17:27:46
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-16 17:27:46
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-16 17:27:46
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-16 17:27:46
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-16 17:27:46
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-US,en;q=0.9"} | 2025-05-16 17:27:59
+<=============================================>
+Authorization Header Missing | 2025-05-16 17:27:59
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"application\/json, text\/plain, *\/*","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-US,en;q=0.9"} | 2025-05-16 17:27:59
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0 | 2025-05-16 17:27:59
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747388078,"exp":3601747388078} | 2025-05-16 17:27:59
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-16 17:27:59
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-16 17:27:59
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-16 17:27:59
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-16 17:27:59
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-US,en;q=0.9"} | 2025-05-16 17:34:59
+<=============================================>
+Authorization Header Missing | 2025-05-16 17:34:59
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"application\/json, text\/plain, *\/*","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-US,en;q=0.9"} | 2025-05-16 17:34:59
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mzg4MDc4LCJleHAiOjM2MDE3NDczODgwNzh9.n64p95ja0WiqYjwefxO0rlWn1UhcG8kXi7Zb2E94zv0 | 2025-05-16 17:34:59
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747388078,"exp":3601747388078} | 2025-05-16 17:34:59
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-16 17:34:59
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-16 17:34:59
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-16 17:34:59
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-16 17:34:59
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","Accept":"*\/*","Access-Control-Request-Method":"GET","Access-Control-Request-Headers":"authorization","Origin":"https:\/\/portal-bjqu.vercel.app","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-16 19:11:38
+<=============================================>
+Authorization Header Missing | 2025-05-16 19:11:38
+<=============================================>
+Incoming Headers{"Host":"messaging.approot.ng","Connection":"keep-alive","sec-ch-ua-platform":"\"macOS\"","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mjg0ODQyLCJleHAiOjM2MDE3NDcyODQ4NDJ9.aqfrRg_aKnlxUlwUEIkvRriL248PiiSYFvLJuxT-r5w","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"application\/json, text\/plain, *\/*","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","Origin":"https:\/\/portal-bjqu.vercel.app","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https:\/\/portal-bjqu.vercel.app\/","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8"} | 2025-05-16 19:11:38
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3Mjg0ODQyLCJleHAiOjM2MDE3NDcyODQ4NDJ9.aqfrRg_aKnlxUlwUEIkvRriL248PiiSYFvLJuxT-r5w | 2025-05-16 19:11:38
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1747284842,"exp":3601747284842} | 2025-05-16 19:11:38
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-05-16 19:11:38
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-05-16 19:11:38
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-05-16 19:11:38
+<=============================================>
+Fetched 2 group(s) for user ID: 3 | 2025-05-16 19:11:38
+<=============================================>

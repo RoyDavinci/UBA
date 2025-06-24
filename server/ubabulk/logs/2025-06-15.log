@@ -1,0 +1,1556 @@
+Received login data: [] | 2025-06-15 12:00:05
+<=============================================>
+Validation failed: Missing email or password. | 2025-06-15 12:00:05
+<=============================================>
+Received login data: [] | 2025-06-15 12:02:43
+<=============================================>
+Validation failed: Missing email or password. | 2025-06-15 12:02:43
+<=============================================>
+Received login data: [] | 2025-06-15 12:11:21
+<=============================================>
+Validation failed: Missing email or password. | 2025-06-15 12:11:21
+<=============================================>
+Received login data: [] | 2025-06-15 12:13:24
+<=============================================>
+Validation failed: Missing email or password. | 2025-06-15 12:13:24
+<=============================================>
+Received login data: [] | 2025-06-15 12:14:22
+<=============================================>
+Validation failed: Missing email or password. | 2025-06-15 12:14:22
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-06-15 12:19:27
+<=============================================>
+Executing SQL query: SELECT id, full_name, email, password, role FROM users WHERE email = 'alice@example.com' | 2025-06-15 12:19:27
+<=============================================>
+Query executed. Rows found: 1 | 2025-06-15 12:19:27
+<=============================================>
+Query result: {"id":"3","full_name":"Alice Johnson","email":"alice@example.com","password":"$2y$10$tVzH93jiM0l6D.dLZIethOOPej..p\/a6QZA55etQDlikqBXpqouBq","role":"admin"} | 2025-06-15 12:19:27
+<=============================================>
+Password verification successful for email: alice@example.com | 2025-06-15 12:19:27
+<=============================================>
+JWT generated for user ID 3 | 2025-06-15 12:19:27
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTg5OTY3LCJleHAiOjM2MDE3NDk5ODk5Njd9.wtMnXA_LsO9rs0xv7RT7whendUvKX1t4qhvuNDfG7pk"} | 2025-06-15 12:19:50
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTg5OTY3LCJleHAiOjM2MDE3NDk5ODk5Njd9.wtMnXA_LsO9rs0xv7RT7whendUvKX1t4qhvuNDfG7pk | 2025-06-15 12:19:50
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1749989967,"exp":3601749989967} | 2025-06-15 12:19:50
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 12:19:50
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 12:19:50
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 12:19:50
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 12:19:50
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundarycqpjBMc8AjmPq40h","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"59668983","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTg5OTY3LCJleHAiOjM2MDE3NDk5ODk5Njd9.wtMnXA_LsO9rs0xv7RT7whendUvKX1t4qhvuNDfG7pk"} | 2025-06-15 12:20:36
+<=============================================>
+JWT decoded successfully. User ID: 3, Role: admin | 2025-06-15 12:20:36
+<=============================================>
+Executing query: SELECT organization_id FROM users WHERE id = 3 LIMIT 1 | 2025-06-15 12:20:36
+<=============================================>
+Organization ID: 1 | 2025-06-15 12:20:36
+<=============================================>
+Text message:  | 2025-06-15 12:20:36
+<=============================================>
+Text message is required. | 2025-06-15 12:20:36
+<=============================================>
+Exiting with error: Text message is required. | 2025-06-15 12:20:36
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryxOKnY36kVWBevLcS","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"59668983","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTg5OTY3LCJleHAiOjM2MDE3NDk5ODk5Njd9.wtMnXA_LsO9rs0xv7RT7whendUvKX1t4qhvuNDfG7pk"} | 2025-06-15 12:22:49
+<=============================================>
+File upload failed. Error code: No file error code | 2025-06-15 12:22:49
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-06-15 12:25:17
+<=============================================>
+Executing SQL query: SELECT id, full_name, email, password, role FROM users WHERE email = 'alice@example.com' | 2025-06-15 12:25:17
+<=============================================>
+Query executed. Rows found: 1 | 2025-06-15 12:25:17
+<=============================================>
+Query result: {"id":"3","full_name":"Alice Johnson","email":"alice@example.com","password":"$2y$10$tVzH93jiM0l6D.dLZIethOOPej..p\/a6QZA55etQDlikqBXpqouBq","role":"admin"} | 2025-06-15 12:25:17
+<=============================================>
+Password verification successful for email: alice@example.com | 2025-06-15 12:25:17
+<=============================================>
+JWT generated for user ID 3 | 2025-06-15 12:25:17
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/update_sms_group_numbers","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkwMzE3LCJleHAiOjM2MDE3NDk5OTAzMTd9.rZUFDczVr4AxSgcozCfe8Wi5i9FxMHmr9Zhurzf02L4"} | 2025-06-15 12:25:26
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkwMzE3LCJleHAiOjM2MDE3NDk5OTAzMTd9.rZUFDczVr4AxSgcozCfe8Wi5i9FxMHmr9Zhurzf02L4 | 2025-06-15 12:25:26
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1749990317,"exp":3601749990317} | 2025-06-15 12:25:26
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 12:25:26
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 12:25:26
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 12:25:26
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 12:25:26
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkwMzE3LCJleHAiOjM2MDE3NDk5OTAzMTd9.rZUFDczVr4AxSgcozCfe8Wi5i9FxMHmr9Zhurzf02L4"} | 2025-06-15 12:25:29
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkwMzE3LCJleHAiOjM2MDE3NDk5OTAzMTd9.rZUFDczVr4AxSgcozCfe8Wi5i9FxMHmr9Zhurzf02L4 | 2025-06-15 12:25:29
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1749990317,"exp":3601749990317} | 2025-06-15 12:25:29
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 12:25:29
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 12:25:29
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 12:25:29
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 12:25:29
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryKoDyvv7VQE0emKB9","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"59668983","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkwMzE3LCJleHAiOjM2MDE3NDk5OTAzMTd9.rZUFDczVr4AxSgcozCfe8Wi5i9FxMHmr9Zhurzf02L4"} | 2025-06-15 12:25:56
+<=============================================>
+File upload failed. Error code: No file error code | 2025-06-15 12:25:56
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkwMzE3LCJleHAiOjM2MDE3NDk5OTAzMTd9.rZUFDczVr4AxSgcozCfe8Wi5i9FxMHmr9Zhurzf02L4"} | 2025-06-15 12:28:47
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkwMzE3LCJleHAiOjM2MDE3NDk5OTAzMTd9.rZUFDczVr4AxSgcozCfe8Wi5i9FxMHmr9Zhurzf02L4 | 2025-06-15 12:28:47
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1749990317,"exp":3601749990317} | 2025-06-15 12:28:47
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 12:28:47
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 12:28:47
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 12:28:47
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 12:28:47
+<=============================================>
+Received file data: [] | 2025-06-15 12:29:06
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryNJtyLcH1LT66DNz5","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"59668983","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkwMzE3LCJleHAiOjM2MDE3NDk5OTAzMTd9.rZUFDczVr4AxSgcozCfe8Wi5i9FxMHmr9Zhurzf02L4"} | 2025-06-15 12:29:06
+<=============================================>
+File upload failed. Error code: No file error code | 2025-06-15 12:29:06
+<=============================================>
+Received file data: [] | 2025-06-15 12:37:07
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryvUHftXprvvrh5Afl","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"59668983","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkwMzE3LCJleHAiOjM2MDE3NDk5OTAzMTd9.rZUFDczVr4AxSgcozCfe8Wi5i9FxMHmr9Zhurzf02L4"} | 2025-06-15 12:37:07
+<=============================================>
+File upload failed. Error code: No file error code | 2025-06-15 12:37:07
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-06-15 12:37:34
+<=============================================>
+Executing SQL query: SELECT id, full_name, email, password, role FROM users WHERE email = 'alice@example.com' | 2025-06-15 12:37:34
+<=============================================>
+Query executed. Rows found: 1 | 2025-06-15 12:37:34
+<=============================================>
+Query result: {"id":"3","full_name":"Alice Johnson","email":"alice@example.com","password":"$2y$10$tVzH93jiM0l6D.dLZIethOOPej..p\/a6QZA55etQDlikqBXpqouBq","role":"admin"} | 2025-06-15 12:37:34
+<=============================================>
+Password verification successful for email: alice@example.com | 2025-06-15 12:37:34
+<=============================================>
+JWT generated for user ID 3 | 2025-06-15 12:37:34
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 12:37:36
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk | 2025-06-15 12:37:36
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1749991054,"exp":3601749991054} | 2025-06-15 12:37:36
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 12:37:36
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 12:37:36
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 12:37:36
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 12:37:36
+<=============================================>
+Received file data: [] | 2025-06-15 12:37:48
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundary8x18bDQkNiXRloVJ","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"59668983","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 12:37:48
+<=============================================>
+File upload failed. Error code: No file error code | 2025-06-15 12:37:48
+<=============================================>
+Received file data: [] | 2025-06-15 12:49:26
+<=============================================>
+Raw POST: [] | 2025-06-15 12:49:26
+<=============================================>
+Raw FILES: [] | 2025-06-15 12:49:26
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryJx4QVJEgd166ZQPe","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"59668983","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 12:49:26
+<=============================================>
+File upload failed. Error code: No file error code | 2025-06-15 12:49:26
+<=============================================>
+Received file data: [] | 2025-06-15 12:55:03
+<=============================================>
+Raw POST: [] | 2025-06-15 12:55:03
+<=============================================>
+Raw FILES: [] | 2025-06-15 12:55:03
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryqqCS4AR02oRrsn0v","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"59668983","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 12:55:03
+<=============================================>
+File upload failed. Error code: No file error code | 2025-06-15 12:55:03
+<=============================================>
+Received file data: [] | 2025-06-15 12:58:30
+<=============================================>
+Raw POST: [] | 2025-06-15 12:58:30
+<=============================================>
+Raw FILES: [] | 2025-06-15 12:58:30
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryLEYY2YQmoVKAgPgS","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"59668983","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 12:58:30
+<=============================================>
+File upload failed. Error code: No file error code | 2025-06-15 12:58:30
+<=============================================>
+Received file data: [] | 2025-06-15 13:00:49
+<=============================================>
+Raw POST: [] | 2025-06-15 13:00:49
+<=============================================>
+Raw FILES: [] | 2025-06-15 13:00:49
+<=============================================>
+Incoming Headers: {"Content-Length":"59669012","Content-Type":"multipart\/form-data; boundary=--------------------------694597535238252708784574","Connection":"keep-alive","Accept-Encoding":"gzip, deflate, br","Host":"bulksms.approot.ng","Postman-Token":"4453d1c0-0c04-4ec3-959c-29263e19761f","Accept":"*\/*","User-Agent":"PostmanRuntime\/7.44.0"} | 2025-06-15 13:00:49
+<=============================================>
+Authorization Header Missing | 2025-06-15 13:00:49
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 13:01:52
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 13:01:52
+<=============================================>
+Raw FILES: {"file":{"name":"APROOT OPEN CREDIT TRANSACTIONS (1).xlsx","type":"application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet","tmp_name":"\/tmp\/phptK2pd5","error":0,"size":440705}} | 2025-06-15 13:01:52
+<=============================================>
+Incoming Headers: {"Content-Length":"441108","Content-Type":"multipart\/form-data; boundary=--------------------------820124273673400611908292","Connection":"keep-alive","Accept-Encoding":"gzip, deflate, br","Host":"bulksms.approot.ng","Postman-Token":"6af2b827-9d6a-4c17-ba85-5123156ff391","Accept":"*\/*","User-Agent":"PostmanRuntime\/7.44.0"} | 2025-06-15 13:01:52
+<=============================================>
+Authorization Header Missing | 2025-06-15 13:01:52
+<=============================================>
+Received file data: {"text":"welcome to sms"} | 2025-06-15 13:04:58
+<=============================================>
+Raw POST: {"text":"welcome to sms"} | 2025-06-15 13:04:58
+<=============================================>
+Raw FILES: {"file":{"name":"check.csv","type":"text\/csv","tmp_name":"\/tmp\/phpMnXvLe","error":0,"size":858}} | 2025-06-15 13:04:58
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryUkApTZIApO8eJgkS","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"1144","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:04:58
+<=============================================>
+File stored: /var/www/html/bulksms/ubabulk/upload_684ec4fa7739f.csv with 13 rows | 2025-06-15 13:04:58
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:07:06
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk | 2025-06-15 13:07:06
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1749991054,"exp":3601749991054} | 2025-06-15 13:07:06
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 13:07:06
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 13:07:06
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 13:07:06
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 13:07:06
+<=============================================>
+Received file data: [] | 2025-06-15 13:07:14
+<=============================================>
+Raw POST: [] | 2025-06-15 13:07:14
+<=============================================>
+Raw FILES: [] | 2025-06-15 13:07:14
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryIYwmPbnb1G2DGHX4","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"59668976","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:07:14
+<=============================================>
+File upload failed. Error code: No file error code | 2025-06-15 13:07:14
+<=============================================>
+Received file data: [] | 2025-06-15 13:11:17
+<=============================================>
+Raw POST: [] | 2025-06-15 13:11:17
+<=============================================>
+Raw FILES: [] | 2025-06-15 13:11:17
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryqYDGEVnRbvZjAST4","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"60668965","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:11:17
+<=============================================>
+File upload failed. Error code: No file error code | 2025-06-15 13:11:17
+<=============================================>
+Received file data: [] | 2025-06-15 13:12:30
+<=============================================>
+Raw POST: [] | 2025-06-15 13:12:30
+<=============================================>
+Raw FILES: [] | 2025-06-15 13:12:30
+<=============================================>
+Incoming Headers: {"Content-Length":"60669001","Content-Type":"multipart\/form-data; boundary=--------------------------720897031576133481368460","Connection":"keep-alive","Accept-Encoding":"gzip, deflate, br","Host":"bulksms.approot.ng","Postman-Token":"b3c76326-cdc6-4311-8655-7eca7feee8ae","Accept":"*\/*","User-Agent":"PostmanRuntime\/7.44.0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:12:30
+<=============================================>
+File upload failed. Error code: No file error code | 2025-06-15 13:12:30
+<=============================================>
+Received file data: [] | 2025-06-15 13:13:54
+<=============================================>
+Raw POST: [] | 2025-06-15 13:13:54
+<=============================================>
+Raw FILES: [] | 2025-06-15 13:13:54
+<=============================================>
+Incoming Headers: {"Content-Length":"60669001","Content-Type":"multipart\/form-data; boundary=--------------------------237065703570277730033521","Connection":"keep-alive","Accept-Encoding":"gzip, deflate, br","Host":"bulksms.approot.ng","Postman-Token":"401478ac-b777-469b-8a50-06a26ff81f22","Accept":"*\/*","User-Agent":"PostmanRuntime\/7.44.0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:13:54
+<=============================================>
+File upload failed. Error code: No file error code | 2025-06-15 13:13:54
+<=============================================>
+Received file data: [] | 2025-06-15 13:15:07
+<=============================================>
+Raw POST: [] | 2025-06-15 13:15:07
+<=============================================>
+Raw FILES: [] | 2025-06-15 13:15:07
+<=============================================>
+Incoming Headers: {"Content-Length":"27572801","Content-Type":"multipart\/form-data; boundary=--------------------------416166553776373171369139","Connection":"keep-alive","Accept-Encoding":"gzip, deflate, br","Host":"bulksms.approot.ng","Postman-Token":"fee93f9c-e0bd-46f3-b487-cf997d4c6875","Accept":"*\/*","User-Agent":"PostmanRuntime\/7.44.0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:15:07
+<=============================================>
+File upload failed. Error code: No file error code | 2025-06-15 13:15:07
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:15:29
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk | 2025-06-15 13:15:29
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1749991054,"exp":3601749991054} | 2025-06-15 13:15:29
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 13:15:29
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 13:15:29
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 13:15:29
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 13:15:29
+<=============================================>
+Received file data: [] | 2025-06-15 13:15:42
+<=============================================>
+Raw POST: [] | 2025-06-15 13:15:42
+<=============================================>
+Raw FILES: [] | 2025-06-15 13:15:42
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryDHY9c1SAnyFobF1n","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"27572765","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:15:42
+<=============================================>
+File upload failed. Error code: No file error code | 2025-06-15 13:15:42
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:16:33
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk | 2025-06-15 13:16:33
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1749991054,"exp":3601749991054} | 2025-06-15 13:16:33
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 13:16:33
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 13:16:33
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 13:16:33
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 13:16:33
+<=============================================>
+Received file data: {"text":"try again"} | 2025-06-15 13:16:57
+<=============================================>
+Raw POST: {"text":"try again"} | 2025-06-15 13:16:57
+<=============================================>
+Raw FILES: {"file":{"name":"check.csv","type":"","tmp_name":"","error":1,"size":0}} | 2025-06-15 13:16:57
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryGTzjH2sInBZ4JEWP","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"6065218","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:16:57
+<=============================================>
+File upload failed. Error code: 1 | 2025-06-15 13:16:57
+<=============================================>
+Received file data: {"text":"try again"} | 2025-06-15 13:23:09
+<=============================================>
+Raw POST: {"text":"try again"} | 2025-06-15 13:23:09
+<=============================================>
+Raw FILES: {"file":{"name":"check.csv","type":"","tmp_name":"","error":1,"size":0}} | 2025-06-15 13:23:09
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryQ1LgAo6rtXsSZNkq","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"6065218","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:23:09
+<=============================================>
+Failed to move uploaded file. | 2025-06-15 13:23:09
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:24:31
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk | 2025-06-15 13:24:31
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1749991054,"exp":3601749991054} | 2025-06-15 13:24:31
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 13:24:31
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 13:24:31
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 13:24:31
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 13:24:31
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:31:19
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk | 2025-06-15 13:31:19
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1749991054,"exp":3601749991054} | 2025-06-15 13:31:19
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 13:31:19
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 13:31:19
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 13:31:19
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 13:31:19
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:32:25
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk | 2025-06-15 13:32:25
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1749991054,"exp":3601749991054} | 2025-06-15 13:32:25
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 13:32:25
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 13:32:25
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 13:32:25
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 13:32:25
+<=============================================>
+Received file data: [] | 2025-06-15 13:35:15
+<=============================================>
+Raw POST: [] | 2025-06-15 13:35:15
+<=============================================>
+Raw FILES: [] | 2025-06-15 13:35:15
+<=============================================>
+Incoming Headers: [] | 2025-06-15 13:35:15
+<=============================================>
+Authorization Header Missing | 2025-06-15 13:35:15
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:35:21
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk | 2025-06-15 13:35:21
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1749991054,"exp":3601749991054} | 2025-06-15 13:35:21
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 13:35:21
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 13:35:21
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 13:35:21
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 13:35:21
+<=============================================>
+Received file data: [] | 2025-06-15 13:35:31
+<=============================================>
+Raw POST: [] | 2025-06-15 13:35:31
+<=============================================>
+Raw FILES: [] | 2025-06-15 13:35:31
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryeSy0BsPJpcClY7z1","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"59668976","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:35:31
+<=============================================>
+File upload failed. Error code: No file error code | 2025-06-15 13:35:31
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:35:57
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk | 2025-06-15 13:35:57
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1749991054,"exp":3601749991054} | 2025-06-15 13:35:57
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 13:35:57
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 13:35:57
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 13:35:57
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 13:35:57
+<=============================================>
+Received file data: [] | 2025-06-15 13:36:05
+<=============================================>
+Raw POST: [] | 2025-06-15 13:36:05
+<=============================================>
+Raw FILES: [] | 2025-06-15 13:36:05
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryKLC6o2J1Aji3cLcT","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"27572765","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:36:05
+<=============================================>
+File upload failed. Error code: No file error code | 2025-06-15 13:36:05
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:36:18
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk | 2025-06-15 13:36:18
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1749991054,"exp":3601749991054} | 2025-06-15 13:36:18
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 13:36:18
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 13:36:18
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 13:36:18
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 13:36:18
+<=============================================>
+Received file data: [] | 2025-06-15 13:36:26
+<=============================================>
+Raw POST: [] | 2025-06-15 13:36:26
+<=============================================>
+Raw FILES: [] | 2025-06-15 13:36:26
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryFF1LgRN8p7FWJ9XF","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"27572765","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:36:26
+<=============================================>
+File upload failed. Error code: No file error code | 2025-06-15 13:36:26
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 13:37:49
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 13:37:49
+<=============================================>
+Raw FILES: {"file":{"name":"check.csv","type":"","tmp_name":"","error":1,"size":0}} | 2025-06-15 13:37:49
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryy4COaJ5B3Hpt5yqK","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"6065216","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:37:49
+<=============================================>
+File upload failed. Error code: 1 | 2025-06-15 13:37:49
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 13:39:02
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 13:39:02
+<=============================================>
+Raw FILES: {"file":{"name":"check.csv","type":"","tmp_name":"","error":1,"size":0}} | 2025-06-15 13:39:02
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundarygUvdGWcWFuxj9iAx","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"6065216","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:39:02
+<=============================================>
+File upload failed. Error code: 1 | 2025-06-15 13:39:02
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:44:14
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk | 2025-06-15 13:44:14
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1749991054,"exp":3601749991054} | 2025-06-15 13:44:14
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 13:44:14
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 13:44:14
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 13:44:14
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 13:44:14
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 13:44:39
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 13:44:39
+<=============================================>
+Raw FILES: {"file":{"name":"check.csv","type":"","tmp_name":"","error":1,"size":0}} | 2025-06-15 13:44:39
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundarytpyWBljh1VJaVJiN","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"6065216","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:44:39
+<=============================================>
+File upload failed. Error code: 1 | 2025-06-15 13:44:39
+<=============================================>
+Received file data: [] | 2025-06-15 13:46:07
+<=============================================>
+Raw POST: [] | 2025-06-15 13:46:07
+<=============================================>
+Raw FILES: [] | 2025-06-15 13:46:07
+<=============================================>
+Incoming Headers: {"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Origin":"http:\/\/bulksms.approot.ng","Content-Type":"multipart\/form-data; boundary=----WebKitFormBoundaryNzXqtwGSqf0w2pNs","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Content-Length":"59668976","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:46:07
+<=============================================>
+File upload failed. Error code: No file error code | 2025-06-15 13:46:07
+<=============================================>
+Received file data: [] | 2025-06-15 13:52:11
+<=============================================>
+Raw POST: [] | 2025-06-15 13:52:11
+<=============================================>
+Raw FILES: [] | 2025-06-15 13:52:11
+<=============================================>
+File upload failed. Error code: No file error code | 2025-06-15 13:52:11
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 13:56:41
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 13:56:41
+<=============================================>
+Raw FILES: {"file":{"name":"check.csv","type":"","tmp_name":"","error":1,"size":0}} | 2025-06-15 13:56:41
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk"} | 2025-06-15 13:57:22
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTkxMDU0LCJleHAiOjM2MDE3NDk5OTEwNTR9.a9DR5CZyF5fefDdklrvY_2MCRI0SW1P6PSXV61WaNGk | 2025-06-15 13:57:22
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1749991054,"exp":3601749991054} | 2025-06-15 13:57:22
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 13:57:22
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 13:57:22
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 13:57:22
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 13:57:22
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-06-15 13:58:02
+<=============================================>
+Executing SQL query: SELECT id, full_name, email, password, role FROM users WHERE email = 'alice@example.com' | 2025-06-15 13:58:02
+<=============================================>
+Query executed. Rows found: 1 | 2025-06-15 13:58:02
+<=============================================>
+Query result: {"id":"3","full_name":"Alice Johnson","email":"alice@example.com","password":"$2y$10$tVzH93jiM0l6D.dLZIethOOPej..p\/a6QZA55etQDlikqBXpqouBq","role":"admin"} | 2025-06-15 13:58:02
+<=============================================>
+Password verification successful for email: alice@example.com | 2025-06-15 13:58:02
+<=============================================>
+JWT generated for user ID 3 | 2025-06-15 13:58:02
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTk1ODgyLCJleHAiOjM2MDE3NDk5OTU4ODJ9.M8SSo34K4e_RaGlT-qFPYLwZMTtzndQ-2oXYmeGBulI"} | 2025-06-15 13:58:07
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ5OTk1ODgyLCJleHAiOjM2MDE3NDk5OTU4ODJ9.M8SSo34K4e_RaGlT-qFPYLwZMTtzndQ-2oXYmeGBulI | 2025-06-15 13:58:07
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1749995882,"exp":3601749995882} | 2025-06-15 13:58:07
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 13:58:07
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 13:58:07
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 13:58:07
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 13:58:07
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 13:58:10
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 13:58:10
+<=============================================>
+Raw FILES: {"file":{"name":"check.csv","type":"","tmp_name":"","error":1,"size":0}} | 2025-06-15 13:58:10
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 13:58:44
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 13:58:44
+<=============================================>
+Raw FILES: {"file":{"name":"check.csv","type":"","tmp_name":"","error":1,"size":0}} | 2025-06-15 13:58:44
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 14:02:01
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 14:02:01
+<=============================================>
+Raw FILES: {"file":{"name":"check.csv","type":"","tmp_name":"","error":1,"size":0}} | 2025-06-15 14:02:01
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 14:04:42
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 14:04:42
+<=============================================>
+Raw FILES: {"file":{"name":"check.csv","type":"","tmp_name":"","error":1,"size":0}} | 2025-06-15 14:04:42
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 14:06:26
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 14:06:26
+<=============================================>
+Raw FILES: {"file":{"name":"newcsv.csv","type":"text\/csv","tmp_name":"\/tmp\/php2rTV3W","error":0,"size":1292}} | 2025-06-15 14:06:26
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 14:07:02
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 14:07:02
+<=============================================>
+Raw FILES: {"file":{"name":"newcsv.csv","type":"text\/csv","tmp_name":"\/tmp\/phpJpmEQM","error":0,"size":1292}} | 2025-06-15 14:07:02
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 14:07:47
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 14:07:47
+<=============================================>
+Raw FILES: {"file":{"name":"check.csv","type":"","tmp_name":"","error":1,"size":0}} | 2025-06-15 14:07:47
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 14:08:34
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 14:08:34
+<=============================================>
+Raw FILES: {"file":{"name":"check.csv","type":"","tmp_name":"","error":1,"size":0}} | 2025-06-15 14:08:34
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 14:10:13
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 14:10:13
+<=============================================>
+Raw FILES: {"file":{"name":"check.csv","type":"","tmp_name":"","error":1,"size":0}} | 2025-06-15 14:10:13
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 14:14:40
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 14:14:40
+<=============================================>
+Raw FILES: {"file":{"name":"check.csv","type":"","tmp_name":"","error":1,"size":0}} | 2025-06-15 14:14:40
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 14:32:53
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 14:32:53
+<=============================================>
+Raw FILES: {"file":{"name":"check.csv","type":"","tmp_name":"","error":1,"size":0}} | 2025-06-15 14:32:53
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 14:35:24
+<=============================================>
+Authorization Header Missing | 2025-06-15 14:35:24
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 14:35:24
+<=============================================>
+Authorization Header Missing | 2025-06-15 14:35:24
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/localhost:3000\/","Origin":"http:\/\/localhost:3000","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 14:35:24
+<=============================================>
+null | 2025-06-15 14:35:24
+<=============================================>
+null | 2025-06-15 14:35:24
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 14:35:24
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 14:35:24
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/localhost:3000\/","Origin":"http:\/\/localhost:3000","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 14:35:24
+<=============================================>
+null | 2025-06-15 14:35:24
+<=============================================>
+null | 2025-06-15 14:35:24
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 14:35:24
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 14:35:24
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 14:35:33
+<=============================================>
+Authorization Header Missing | 2025-06-15 14:35:33
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 14:35:34
+<=============================================>
+Authorization Header Missing | 2025-06-15 14:35:34
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/localhost:3000\/","Origin":"http:\/\/localhost:3000","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 14:35:34
+<=============================================>
+null | 2025-06-15 14:35:34
+<=============================================>
+null | 2025-06-15 14:35:34
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 14:35:34
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 14:35:34
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/localhost:3000\/","Origin":"http:\/\/localhost:3000","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 14:35:34
+<=============================================>
+null | 2025-06-15 14:35:34
+<=============================================>
+null | 2025-06-15 14:35:34
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 14:35:34
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 14:35:34
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 14:48:02
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 14:48:02
+<=============================================>
+Raw FILES: {"file":{"name":"check.csv","type":"","tmp_name":"","error":1,"size":0}} | 2025-06-15 14:48:02
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 14:49:17
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 14:49:17
+<=============================================>
+Raw FILES: {"file":{"name":"check.csv","type":"","tmp_name":"","error":1,"size":0}} | 2025-06-15 14:49:17
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 14:51:40
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 14:51:40
+<=============================================>
+Raw FILES: {"file":{"name":"newcsv.csv","type":"text\/csv","tmp_name":"\/tmp\/phpmngvl6","error":0,"size":1292}} | 2025-06-15 14:51:40
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 14:54:27
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 14:54:27
+<=============================================>
+Raw FILES: {"file":{"name":"newcsv.csv","type":"text\/csv","tmp_name":"\/tmp\/phpUz9DxN","error":0,"size":1292}} | 2025-06-15 14:54:27
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 14:57:35
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 14:57:35
+<=============================================>
+Raw FILES: {"file":{"name":"newcsv.csv","type":"text\/csv","tmp_name":"\/tmp\/phpvFyMWD","error":0,"size":1292}} | 2025-06-15 14:57:35
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 15:05:49
+<=============================================>
+Authorization Header Missing | 2025-06-15 15:05:49
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 15:05:49
+<=============================================>
+Authorization Header Missing | 2025-06-15 15:05:49
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/localhost:3000\/","Origin":"http:\/\/localhost:3000","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 15:05:49
+<=============================================>
+null | 2025-06-15 15:05:49
+<=============================================>
+null | 2025-06-15 15:05:49
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 15:05:49
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 15:05:49
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/localhost:3000\/","Origin":"http:\/\/localhost:3000","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 15:05:49
+<=============================================>
+null | 2025-06-15 15:05:49
+<=============================================>
+null | 2025-06-15 15:05:49
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 15:05:49
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 15:05:49
+<=============================================>
+Received file data: [] | 2025-06-15 15:06:42
+<=============================================>
+Raw POST: [] | 2025-06-15 15:06:42
+<=============================================>
+Raw FILES: [] | 2025-06-15 15:06:42
+<=============================================>
+Received file data: [] | 2025-06-15 15:08:17
+<=============================================>
+Raw POST: [] | 2025-06-15 15:08:17
+<=============================================>
+Raw FILES: [] | 2025-06-15 15:08:17
+<=============================================>
+Received file data: [] | 2025-06-15 15:09:23
+<=============================================>
+Raw POST: [] | 2025-06-15 15:09:23
+<=============================================>
+Raw FILES: [] | 2025-06-15 15:09:23
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 15:09:46
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 15:09:46
+<=============================================>
+Raw FILES: {"file":{"name":"newcsv.csv","type":"text\/csv","tmp_name":"\/tmp\/phpmwEtBU","error":0,"size":1292}} | 2025-06-15 15:09:46
+<=============================================>
+Received file data: [] | 2025-06-15 15:09:59
+<=============================================>
+Raw POST: [] | 2025-06-15 15:09:59
+<=============================================>
+Raw FILES: [] | 2025-06-15 15:09:59
+<=============================================>
+Received file data: [] | 2025-06-15 15:10:36
+<=============================================>
+Raw POST: [] | 2025-06-15 15:10:36
+<=============================================>
+Raw FILES: [] | 2025-06-15 15:10:36
+<=============================================>
+Received file data: [] | 2025-06-15 15:17:29
+<=============================================>
+Raw POST: [] | 2025-06-15 15:17:29
+<=============================================>
+Raw FILES: [] | 2025-06-15 15:17:29
+<=============================================>
+Received file data: [] | 2025-06-15 15:18:18
+<=============================================>
+Raw POST: [] | 2025-06-15 15:18:18
+<=============================================>
+Raw FILES: [] | 2025-06-15 15:18:18
+<=============================================>
+Received file data: [] | 2025-06-15 15:18:37
+<=============================================>
+Raw POST: [] | 2025-06-15 15:18:37
+<=============================================>
+Raw FILES: [] | 2025-06-15 15:18:37
+<=============================================>
+Received file data: [] | 2025-06-15 15:19:05
+<=============================================>
+Raw POST: [] | 2025-06-15 15:19:05
+<=============================================>
+Raw FILES: [] | 2025-06-15 15:19:05
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 15:40:05
+<=============================================>
+Authorization Header Missing | 2025-06-15 15:40:05
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 15:40:05
+<=============================================>
+Authorization Header Missing | 2025-06-15 15:40:05
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/localhost:3000\/","Origin":"http:\/\/localhost:3000","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 15:40:05
+<=============================================>
+null | 2025-06-15 15:40:05
+<=============================================>
+null | 2025-06-15 15:40:05
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 15:40:05
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 15:40:05
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/localhost:3000\/","Origin":"http:\/\/localhost:3000","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 15:40:06
+<=============================================>
+null | 2025-06-15 15:40:06
+<=============================================>
+null | 2025-06-15 15:40:06
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 15:40:06
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 15:40:06
+<=============================================>
+Received file data: [] | 2025-06-15 15:40:41
+<=============================================>
+Raw POST: [] | 2025-06-15 15:40:41
+<=============================================>
+Raw FILES: [] | 2025-06-15 15:40:41
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 15:40:41
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 15:40:41
+<=============================================>
+Raw FILES: {"file":{"name":"newcsv.csv","type":"text\/csv","tmp_name":"\/tmp\/phprLu8o6","error":0,"size":1292}} | 2025-06-15 15:40:41
+<=============================================>
+Error  | 2025-06-15 15:42:11
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 16:10:35
+<=============================================>
+Authorization Header Missing | 2025-06-15 16:10:35
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/localhost:3000\/","Origin":"http:\/\/localhost:3000","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 16:10:35
+<=============================================>
+null | 2025-06-15 16:10:35
+<=============================================>
+null | 2025-06-15 16:10:35
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 16:10:35
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 16:10:35
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 16:10:35
+<=============================================>
+Authorization Header Missing | 2025-06-15 16:10:35
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate","Referer":"http:\/\/localhost:3000\/","Origin":"http:\/\/localhost:3000","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 16:10:35
+<=============================================>
+null | 2025-06-15 16:10:35
+<=============================================>
+null | 2025-06-15 16:10:35
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 16:10:35
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 16:10:35
+<=============================================>
+Received file data: [] | 2025-06-15 16:38:57
+<=============================================>
+Raw POST: [] | 2025-06-15 16:38:57
+<=============================================>
+Raw FILES: [] | 2025-06-15 16:38:57
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 16:38:58
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 16:38:58
+<=============================================>
+Raw FILES: {"fileupload":{"name":"newcsv.csv","type":"text\/csv","tmp_name":"\/tmp\/phpCU8hom","error":0,"size":1292}} | 2025-06-15 16:38:58
+<=============================================>
+Received file data: [] | 2025-06-15 16:40:34
+<=============================================>
+Raw POST: [] | 2025-06-15 16:40:34
+<=============================================>
+Raw FILES: [] | 2025-06-15 16:40:34
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 16:40:34
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 16:40:34
+<=============================================>
+Raw FILES: {"file":{"name":"newcsv.csv","type":"text\/csv","tmp_name":"\/tmp\/phpYc4uxM","error":0,"size":1292}} | 2025-06-15 16:40:34
+<=============================================>
+Received file data: [] | 2025-06-15 16:41:02
+<=============================================>
+Raw POST: [] | 2025-06-15 16:41:02
+<=============================================>
+Raw FILES: [] | 2025-06-15 16:41:02
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 16:41:02
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 16:41:02
+<=============================================>
+Raw FILES: {"file":{"name":"newcsv.csv","type":"text\/csv","tmp_name":"\/tmp\/phpWDgHHd","error":0,"size":1292}} | 2025-06-15 16:41:02
+<=============================================>
+Received file data: [] | 2025-06-15 16:41:37
+<=============================================>
+Raw POST: [] | 2025-06-15 16:41:37
+<=============================================>
+Raw FILES: [] | 2025-06-15 16:41:37
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 16:41:49
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 16:41:49
+<=============================================>
+Raw FILES: {"file":{"name":"check.csv","type":"text\/csv","tmp_name":"\/tmp\/phpI44pwN","error":0,"size":6064937}} | 2025-06-15 16:41:49
+<=============================================>
+Received file data: [] | 2025-06-15 16:42:35
+<=============================================>
+Raw POST: [] | 2025-06-15 16:42:35
+<=============================================>
+Raw FILES: [] | 2025-06-15 16:42:35
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 16:43:29
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 16:43:29
+<=============================================>
+Raw FILES: {"file":{"name":"nigeria_fake_data.csv","type":"text\/csv","tmp_name":"\/tmp\/phpp57XyN","error":0,"size":59668685}} | 2025-06-15 16:43:29
+<=============================================>
+Received file data: [] | 2025-06-15 16:46:31
+<=============================================>
+Raw POST: [] | 2025-06-15 16:46:31
+<=============================================>
+Raw FILES: [] | 2025-06-15 16:46:31
+<=============================================>
+Received file data: {"text":"welcome"} | 2025-06-15 16:47:06
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 16:47:06
+<=============================================>
+Raw FILES: {"file":{"name":"nigeria_fake_data.csv","type":"text\/csv","tmp_name":"\/tmp\/phpX0tTv9","error":0,"size":59668685}} | 2025-06-15 16:47:06
+<=============================================>
+Raw POST: [] | 2025-06-15 17:06:15
+<=============================================>
+Raw FILES: [] | 2025-06-15 17:06:15
+<=============================================>
+Missing text | 2025-06-15 17:06:15
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 17:06:49
+<=============================================>
+Raw FILES: {"file":{"name":"nigeria_fake_data.csv","type":"text\/csv","tmp_name":"\/tmp\/phpyOSyzr","error":0,"size":59668685}} | 2025-06-15 17:06:49
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-06-15 20:00:57
+<=============================================>
+Executing SQL query: SELECT id, full_name, email, password, role FROM users WHERE email = 'alice@example.com' | 2025-06-15 20:00:57
+<=============================================>
+Query executed. Rows found: 1 | 2025-06-15 20:00:57
+<=============================================>
+Query result: {"id":"3","full_name":"Alice Johnson","email":"alice@example.com","password":"$2y$10$tVzH93jiM0l6D.dLZIethOOPej..p\/a6QZA55etQDlikqBXpqouBq","role":"admin"} | 2025-06-15 20:00:57
+<=============================================>
+Password verification successful for email: alice@example.com | 2025-06-15 20:00:57
+<=============================================>
+JWT generated for user ID 3 | 2025-06-15 20:00:57
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-06-15 20:01:21
+<=============================================>
+Executing SQL query: SELECT id, full_name, email, password, role FROM users WHERE email = 'alice@example.com' | 2025-06-15 20:01:21
+<=============================================>
+Query executed. Rows found: 1 | 2025-06-15 20:01:21
+<=============================================>
+Query result: {"id":"3","full_name":"Alice Johnson","email":"alice@example.com","password":"$2y$10$tVzH93jiM0l6D.dLZIethOOPej..p\/a6QZA55etQDlikqBXpqouBq","role":"admin"} | 2025-06-15 20:01:21
+<=============================================>
+Password verification successful for email: alice@example.com | 2025-06-15 20:01:21
+<=============================================>
+JWT generated for user ID 3 | 2025-06-15 20:01:21
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"same-origin","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDE3NjgxLCJleHAiOjM2MDE3NTAwMTc2ODF9.SquZ5GcBtpQmS9NVkN5CedRe0gOhj7MVvn2D4CJvzjA"} | 2025-06-15 20:01:26
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDE3NjgxLCJleHAiOjM2MDE3NTAwMTc2ODF9.SquZ5GcBtpQmS9NVkN5CedRe0gOhj7MVvn2D4CJvzjA | 2025-06-15 20:01:26
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1750017681,"exp":3601750017681} | 2025-06-15 20:01:26
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 20:01:26
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 20:01:26
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 20:01:26
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 20:01:26
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"same-origin","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDE3NjgxLCJleHAiOjM2MDE3NTAwMTc2ODF9.SquZ5GcBtpQmS9NVkN5CedRe0gOhj7MVvn2D4CJvzjA"} | 2025-06-15 20:05:30
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDE3NjgxLCJleHAiOjM2MDE3NTAwMTc2ODF9.SquZ5GcBtpQmS9NVkN5CedRe0gOhj7MVvn2D4CJvzjA | 2025-06-15 20:05:30
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1750017681,"exp":3601750017681} | 2025-06-15 20:05:30
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 20:05:30
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 20:05:30
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 20:05:30
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 20:05:30
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 20:05:40
+<=============================================>
+Raw FILES: {"file":{"name":"newcsv.csv","type":"text\/csv","tmp_name":"\/tmp\/php1NDDz7","error":0,"size":193}} | 2025-06-15 20:05:40
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"same-origin","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDE3NjgxLCJleHAiOjM2MDE3NTAwMTc2ODF9.SquZ5GcBtpQmS9NVkN5CedRe0gOhj7MVvn2D4CJvzjA"} | 2025-06-15 20:48:26
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDE3NjgxLCJleHAiOjM2MDE3NTAwMTc2ODF9.SquZ5GcBtpQmS9NVkN5CedRe0gOhj7MVvn2D4CJvzjA | 2025-06-15 20:48:26
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1750017681,"exp":3601750017681} | 2025-06-15 20:48:26
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 20:48:26
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 20:48:26
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 20:48:26
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 20:48:26
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"same-origin","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDE3NjgxLCJleHAiOjM2MDE3NTAwMTc2ODF9.SquZ5GcBtpQmS9NVkN5CedRe0gOhj7MVvn2D4CJvzjA"} | 2025-06-15 20:51:44
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDE3NjgxLCJleHAiOjM2MDE3NTAwMTc2ODF9.SquZ5GcBtpQmS9NVkN5CedRe0gOhj7MVvn2D4CJvzjA | 2025-06-15 20:51:44
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1750017681,"exp":3601750017681} | 2025-06-15 20:51:44
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 20:51:44
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 20:51:44
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 20:51:44
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 20:51:44
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 20:54:27
+<=============================================>
+Raw FILES: {"file":{"name":"nigeria_fake_data.csv","type":"text\/csv","tmp_name":"\/tmp\/phpXoYWyB","error":0,"size":59668685}} | 2025-06-15 20:54:27
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/bulksms.approot.ng\/dashboard\/send-sms","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"same-origin","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDE3NjgxLCJleHAiOjM2MDE3NTAwMTc2ODF9.SquZ5GcBtpQmS9NVkN5CedRe0gOhj7MVvn2D4CJvzjA"} | 2025-06-15 20:57:08
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDE3NjgxLCJleHAiOjM2MDE3NTAwMTc2ODF9.SquZ5GcBtpQmS9NVkN5CedRe0gOhj7MVvn2D4CJvzjA | 2025-06-15 20:57:08
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1750017681,"exp":3601750017681} | 2025-06-15 20:57:08
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 20:57:08
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 20:57:08
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 20:57:08
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 20:57:08
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-06-15 21:15:20
+<=============================================>
+Executing SQL query: SELECT id, full_name, email, password, role FROM users WHERE email = 'alice@example.com' | 2025-06-15 21:15:20
+<=============================================>
+Query executed. Rows found: 1 | 2025-06-15 21:15:20
+<=============================================>
+Query result: {"id":"3","full_name":"Alice Johnson","email":"alice@example.com","password":"$2y$10$tVzH93jiM0l6D.dLZIethOOPej..p\/a6QZA55etQDlikqBXpqouBq","role":"admin"} | 2025-06-15 21:15:20
+<=============================================>
+Password verification successful for email: alice@example.com | 2025-06-15 21:15:20
+<=============================================>
+JWT generated for user ID 3 | 2025-06-15 21:15:20
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/bulksms.approot.ng\/dashboard\/send-sms","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"same-origin","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDIyMTIwLCJleHAiOjM2MDE3NTAwMjIxMjB9.GTVMpgfjhQvjNIleT1NprV_D_qGUELoh2QcEb3o5Czk"} | 2025-06-15 21:16:42
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDIyMTIwLCJleHAiOjM2MDE3NTAwMjIxMjB9.GTVMpgfjhQvjNIleT1NprV_D_qGUELoh2QcEb3o5Czk | 2025-06-15 21:16:42
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1750022120,"exp":3601750022120} | 2025-06-15 21:16:42
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 21:16:42
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 21:16:42
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 21:16:42
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 21:16:42
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/bulksms.approot.ng\/dashboard\/send-sms","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"same-origin","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDIyMTIwLCJleHAiOjM2MDE3NTAwMjIxMjB9.GTVMpgfjhQvjNIleT1NprV_D_qGUELoh2QcEb3o5Czk"} | 2025-06-15 21:26:30
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDIyMTIwLCJleHAiOjM2MDE3NTAwMjIxMjB9.GTVMpgfjhQvjNIleT1NprV_D_qGUELoh2QcEb3o5Czk | 2025-06-15 21:26:30
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1750022120,"exp":3601750022120} | 2025-06-15 21:26:30
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 21:26:30
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 21:26:30
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 21:26:30
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 21:26:30
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/bulksms.approot.ng\/dashboard\/send-sms","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"same-origin","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDIyMTIwLCJleHAiOjM2MDE3NTAwMjIxMjB9.GTVMpgfjhQvjNIleT1NprV_D_qGUELoh2QcEb3o5Czk"} | 2025-06-15 21:29:58
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDIyMTIwLCJleHAiOjM2MDE3NTAwMjIxMjB9.GTVMpgfjhQvjNIleT1NprV_D_qGUELoh2QcEb3o5Czk | 2025-06-15 21:29:58
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1750022120,"exp":3601750022120} | 2025-06-15 21:29:58
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 21:29:58
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 21:29:58
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 21:29:58
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 21:29:58
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 21:49:39
+<=============================================>
+Authorization Header Missing | 2025-06-15 21:49:39
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 21:49:39
+<=============================================>
+Authorization Header Missing | 2025-06-15 21:49:39
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"http:\/\/localhost:3000","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 21:49:39
+<=============================================>
+null | 2025-06-15 21:49:39
+<=============================================>
+null | 2025-06-15 21:49:39
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 21:49:39
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 21:49:39
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"http:\/\/localhost:3000","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 21:49:39
+<=============================================>
+null | 2025-06-15 21:49:39
+<=============================================>
+null | 2025-06-15 21:49:39
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 21:49:39
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 21:49:39
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 21:50:21
+<=============================================>
+Authorization Header Missing | 2025-06-15 21:50:21
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 21:50:21
+<=============================================>
+Authorization Header Missing | 2025-06-15 21:50:21
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"http:\/\/localhost:3000","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 21:50:21
+<=============================================>
+null | 2025-06-15 21:50:21
+<=============================================>
+null | 2025-06-15 21:50:21
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 21:50:21
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 21:50:21
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"http:\/\/localhost:3000","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 21:50:22
+<=============================================>
+null | 2025-06-15 21:50:22
+<=============================================>
+null | 2025-06-15 21:50:22
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 21:50:22
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 21:50:22
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-06-15 21:52:02
+<=============================================>
+Executing SQL query: SELECT id, full_name, email, password, role FROM users WHERE email = 'alice@example.com' | 2025-06-15 21:52:02
+<=============================================>
+Query executed. Rows found: 1 | 2025-06-15 21:52:02
+<=============================================>
+Query result: {"id":"3","full_name":"Alice Johnson","email":"alice@example.com","password":"$2y$10$tVzH93jiM0l6D.dLZIethOOPej..p\/a6QZA55etQDlikqBXpqouBq","role":"admin"} | 2025-06-15 21:52:02
+<=============================================>
+Password verification successful for email: alice@example.com | 2025-06-15 21:52:02
+<=============================================>
+JWT generated for user ID 3 | 2025-06-15 21:52:02
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-06-15 21:52:49
+<=============================================>
+Executing SQL query: SELECT id, full_name, email, password, role FROM users WHERE email = 'alice@example.com' | 2025-06-15 21:52:49
+<=============================================>
+Query executed. Rows found: 1 | 2025-06-15 21:52:49
+<=============================================>
+Query result: {"id":"3","full_name":"Alice Johnson","email":"alice@example.com","password":"$2y$10$tVzH93jiM0l6D.dLZIethOOPej..p\/a6QZA55etQDlikqBXpqouBq","role":"admin"} | 2025-06-15 21:52:49
+<=============================================>
+Password verification successful for email: alice@example.com | 2025-06-15 21:52:49
+<=============================================>
+JWT generated for user ID 3 | 2025-06-15 21:52:49
+<=============================================>
+Incoming Headers{"Cookie":"__utma=174742321.291883870.1750006047.1750006047.1750006047.1; __utmc=174742321; __utmz=174742321.1750006047.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)","Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/bulksms.approot.ng\/dashboard\/send-sms","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"same-origin","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/135.0.0.0 Safari\/537.36","Sec-Ch-Ua-Platform":"\"macOS\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDI0MzY5LCJleHAiOjM2MDE3NTAwMjQzNjl9.DslELnhAYMZCIs1tvivTWMHrPbgkz3564JK9A2p8-YY"} | 2025-06-15 21:54:07
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDI0MzY5LCJleHAiOjM2MDE3NTAwMjQzNjl9.DslELnhAYMZCIs1tvivTWMHrPbgkz3564JK9A2p8-YY | 2025-06-15 21:54:07
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1750024369,"exp":3601750024369} | 2025-06-15 21:54:07
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 21:54:07
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 21:54:07
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 21:54:07
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 21:54:07
+<=============================================>
+Incoming Headers{"Cookie":"__utma=174742321.291883870.1750006047.1750006047.1750006047.1; __utmc=174742321; __utmz=174742321.1750006047.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)","Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/bulksms.approot.ng\/dashboard\/send-sms","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"same-origin","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/135.0.0.0 Safari\/537.36","Sec-Ch-Ua-Platform":"\"macOS\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDI0MzY5LCJleHAiOjM2MDE3NTAwMjQzNjl9.DslELnhAYMZCIs1tvivTWMHrPbgkz3564JK9A2p8-YY"} | 2025-06-15 21:54:09
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDI0MzY5LCJleHAiOjM2MDE3NTAwMjQzNjl9.DslELnhAYMZCIs1tvivTWMHrPbgkz3564JK9A2p8-YY | 2025-06-15 21:54:09
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1750024369,"exp":3601750024369} | 2025-06-15 21:54:09
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 21:54:09
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 21:54:09
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 21:54:09
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 21:54:09
+<=============================================>
+Incoming Headers{"Cookie":"__utma=174742321.291883870.1750006047.1750006047.1750006047.1; __utmc=174742321; __utmz=174742321.1750006047.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)","Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"same-origin","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/135.0.0.0 Safari\/537.36","Sec-Ch-Ua-Platform":"\"macOS\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDI0MzY5LCJleHAiOjM2MDE3NTAwMjQzNjl9.DslELnhAYMZCIs1tvivTWMHrPbgkz3564JK9A2p8-YY"} | 2025-06-15 21:54:52
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDI0MzY5LCJleHAiOjM2MDE3NTAwMjQzNjl9.DslELnhAYMZCIs1tvivTWMHrPbgkz3564JK9A2p8-YY | 2025-06-15 21:54:52
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1750024369,"exp":3601750024369} | 2025-06-15 21:54:52
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 21:54:52
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 21:54:52
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 21:54:52
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 21:54:52
+<=============================================>
+Incoming Headers{"Cookie":"__utma=174742321.291883870.1750006047.1750006047.1750006047.1; __utmc=174742321; __utmz=174742321.1750006047.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)","Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/bulksms.approot.ng\/dashboard\/send-sms","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"same-origin","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/135.0.0.0 Safari\/537.36","Sec-Ch-Ua-Platform":"\"macOS\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDI0MzY5LCJleHAiOjM2MDE3NTAwMjQzNjl9.DslELnhAYMZCIs1tvivTWMHrPbgkz3564JK9A2p8-YY"} | 2025-06-15 21:54:53
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDI0MzY5LCJleHAiOjM2MDE3NTAwMjQzNjl9.DslELnhAYMZCIs1tvivTWMHrPbgkz3564JK9A2p8-YY | 2025-06-15 21:54:53
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1750024369,"exp":3601750024369} | 2025-06-15 21:54:53
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 21:54:53
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 21:54:53
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 21:54:53
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 21:54:53
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-06-15 21:55:56
+<=============================================>
+Executing SQL query: SELECT id, full_name, email, password, role FROM users WHERE email = 'alice@example.com' | 2025-06-15 21:55:56
+<=============================================>
+Query executed. Rows found: 1 | 2025-06-15 21:55:56
+<=============================================>
+Query result: {"id":"3","full_name":"Alice Johnson","email":"alice@example.com","password":"$2y$10$tVzH93jiM0l6D.dLZIethOOPej..p\/a6QZA55etQDlikqBXpqouBq","role":"admin"} | 2025-06-15 21:55:56
+<=============================================>
+Password verification successful for email: alice@example.com | 2025-06-15 21:55:56
+<=============================================>
+JWT generated for user ID 3 | 2025-06-15 21:55:56
+<=============================================>
+Incoming Headers{"Cookie":"__utma=174742321.291883870.1750006047.1750006047.1750006047.1; __utmc=174742321; __utmz=174742321.1750006047.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)","Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/bulksms.approot.ng\/dashboard\/send-sms","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"same-origin","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/135.0.0.0 Safari\/537.36","Sec-Ch-Ua-Platform":"\"macOS\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDI0MzY5LCJleHAiOjM2MDE3NTAwMjQzNjl9.DslELnhAYMZCIs1tvivTWMHrPbgkz3564JK9A2p8-YY"} | 2025-06-15 21:56:09
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDI0MzY5LCJleHAiOjM2MDE3NTAwMjQzNjl9.DslELnhAYMZCIs1tvivTWMHrPbgkz3564JK9A2p8-YY | 2025-06-15 21:56:09
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1750024369,"exp":3601750024369} | 2025-06-15 21:56:09
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 21:56:09
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 21:56:09
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 21:56:09
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 21:56:09
+<=============================================>
+Incoming Headers{"Cookie":"__utma=174742321.291883870.1750006047.1750006047.1750006047.1; __utmc=174742321; __utmz=174742321.1750006047.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)","Accept-Language":"en-US,en;q=0.9","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/bulksms.approot.ng\/dashboard\/send-sms","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"same-origin","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/135.0.0.0 Safari\/537.36","Sec-Ch-Ua-Platform":"\"macOS\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDI0MzY5LCJleHAiOjM2MDE3NTAwMjQzNjl9.DslELnhAYMZCIs1tvivTWMHrPbgkz3564JK9A2p8-YY"} | 2025-06-15 21:56:11
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDI0MzY5LCJleHAiOjM2MDE3NTAwMjQzNjl9.DslELnhAYMZCIs1tvivTWMHrPbgkz3564JK9A2p8-YY | 2025-06-15 21:56:11
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1750024369,"exp":3601750024369} | 2025-06-15 21:56:11
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 21:56:11
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 21:56:11
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 21:56:11
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 21:56:11
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-06-15 21:56:30
+<=============================================>
+Executing SQL query: SELECT id, full_name, email, password, role FROM users WHERE email = 'alice@example.com' | 2025-06-15 21:56:30
+<=============================================>
+Query executed. Rows found: 1 | 2025-06-15 21:56:30
+<=============================================>
+Query result: {"id":"3","full_name":"Alice Johnson","email":"alice@example.com","password":"$2y$10$tVzH93jiM0l6D.dLZIethOOPej..p\/a6QZA55etQDlikqBXpqouBq","role":"admin"} | 2025-06-15 21:56:30
+<=============================================>
+Password verification successful for email: alice@example.com | 2025-06-15 21:56:30
+<=============================================>
+JWT generated for user ID 3 | 2025-06-15 21:56:30
+<=============================================>
+Received login data: {"email":"alice@example.com","password":"password123"} | 2025-06-15 21:57:10
+<=============================================>
+Executing SQL query: SELECT id, full_name, email, password, role FROM users WHERE email = 'alice@example.com' | 2025-06-15 21:57:10
+<=============================================>
+Query executed. Rows found: 1 | 2025-06-15 21:57:10
+<=============================================>
+Query result: {"id":"3","full_name":"Alice Johnson","email":"alice@example.com","password":"$2y$10$tVzH93jiM0l6D.dLZIethOOPej..p\/a6QZA55etQDlikqBXpqouBq","role":"admin"} | 2025-06-15 21:57:10
+<=============================================>
+Password verification successful for email: alice@example.com | 2025-06-15 21:57:10
+<=============================================>
+JWT generated for user ID 3 | 2025-06-15 21:57:10
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"same-origin","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Sec-Ch-Ua-Platform":"\"macOS\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDI0NTU2LCJleHAiOjM2MDE3NTAwMjQ1NTZ9.iWQHnkEOMK9rloKL1TG00LdpHmNArTBLPPKHwmyvNfU"} | 2025-06-15 21:59:16
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDI0NTU2LCJleHAiOjM2MDE3NTAwMjQ1NTZ9.iWQHnkEOMK9rloKL1TG00LdpHmNArTBLPPKHwmyvNfU | 2025-06-15 21:59:16
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1750024556,"exp":3601750024556} | 2025-06-15 21:59:16
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 21:59:16
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 21:59:16
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 21:59:16
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 21:59:16
+<=============================================>
+Raw POST: {"text":"welcome to uba"} | 2025-06-15 22:02:35
+<=============================================>
+Raw FILES: {"file":{"name":"nigeria_fake_data.csv","type":"text\/csv","tmp_name":"\/tmp\/phpqzTS12","error":0,"size":59668685}} | 2025-06-15 22:02:35
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/bulksms.approot.ng\/dashboard\/send-sms","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"same-origin","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Sec-Ch-Ua-Platform":"\"macOS\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDI0NTU2LCJleHAiOjM2MDE3NTAwMjQ1NTZ9.iWQHnkEOMK9rloKL1TG00LdpHmNArTBLPPKHwmyvNfU"} | 2025-06-15 22:03:13
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDI0NTU2LCJleHAiOjM2MDE3NTAwMjQ1NTZ9.iWQHnkEOMK9rloKL1TG00LdpHmNArTBLPPKHwmyvNfU | 2025-06-15 22:03:13
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1750024556,"exp":3601750024556} | 2025-06-15 22:03:13
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 22:03:13
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 22:03:13
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 22:03:13
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 22:03:13
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 22:03:35
+<=============================================>
+Authorization Header Missing | 2025-06-15 22:03:35
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 22:03:35
+<=============================================>
+Authorization Header Missing | 2025-06-15 22:03:35
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"http:\/\/localhost:3000","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 22:03:35
+<=============================================>
+null | 2025-06-15 22:03:35
+<=============================================>
+null | 2025-06-15 22:03:35
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 22:03:35
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 22:03:35
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"http:\/\/localhost:3000","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 22:03:36
+<=============================================>
+null | 2025-06-15 22:03:36
+<=============================================>
+null | 2025-06-15 22:03:36
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 22:03:36
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 22:03:36
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 22:04:14
+<=============================================>
+Authorization Header Missing | 2025-06-15 22:04:14
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 22:04:14
+<=============================================>
+Authorization Header Missing | 2025-06-15 22:04:14
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"http:\/\/localhost:3000","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Sec-Ch-Ua-Platform":"\"macOS\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 22:04:15
+<=============================================>
+null | 2025-06-15 22:04:15
+<=============================================>
+null | 2025-06-15 22:04:15
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 22:04:15
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 22:04:15
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"http:\/\/localhost:3000","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Sec-Ch-Ua-Platform":"\"macOS\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 22:04:15
+<=============================================>
+null | 2025-06-15 22:04:15
+<=============================================>
+null | 2025-06-15 22:04:15
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 22:04:15
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 22:04:15
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 22:06:40
+<=============================================>
+Authorization Header Missing | 2025-06-15 22:06:40
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 22:06:40
+<=============================================>
+Authorization Header Missing | 2025-06-15 22:06:40
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"http:\/\/localhost:3000","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Sec-Ch-Ua-Platform":"\"macOS\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 22:06:40
+<=============================================>
+null | 2025-06-15 22:06:40
+<=============================================>
+null | 2025-06-15 22:06:40
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 22:06:40
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 22:06:40
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"http:\/\/localhost:3000","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Sec-Ch-Ua-Platform":"\"macOS\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 22:06:41
+<=============================================>
+null | 2025-06-15 22:06:41
+<=============================================>
+null | 2025-06-15 22:06:41
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 22:06:41
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 22:06:41
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 22:27:11
+<=============================================>
+Authorization Header Missing | 2025-06-15 22:27:11
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 22:27:11
+<=============================================>
+Authorization Header Missing | 2025-06-15 22:27:11
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"http:\/\/localhost:3000","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Sec-Ch-Ua-Platform":"\"macOS\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 22:27:14
+<=============================================>
+null | 2025-06-15 22:27:14
+<=============================================>
+null | 2025-06-15 22:27:14
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 22:27:14
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 22:27:14
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"http:\/\/localhost:3000","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Sec-Ch-Ua-Platform":"\"macOS\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 22:27:15
+<=============================================>
+null | 2025-06-15 22:27:15
+<=============================================>
+null | 2025-06-15 22:27:15
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 22:27:15
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 22:27:15
+<=============================================>
+Raw POST: [] | 2025-06-15 22:27:20
+<=============================================>
+Raw FILES: [] | 2025-06-15 22:27:20
+<=============================================>
+Missing text | 2025-06-15 22:27:20
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 22:27:20
+<=============================================>
+Raw FILES: {"file":{"name":"newcsv.csv","type":"text\/csv","tmp_name":"\/tmp\/phplFHSSb","error":0,"size":59}} | 2025-06-15 22:27:20
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 22:28:13
+<=============================================>
+Authorization Header Missing | 2025-06-15 22:28:13
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 22:28:13
+<=============================================>
+Authorization Header Missing | 2025-06-15 22:28:13
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"http:\/\/localhost:3000","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Sec-Ch-Ua-Platform":"\"macOS\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 22:28:14
+<=============================================>
+null | 2025-06-15 22:28:14
+<=============================================>
+null | 2025-06-15 22:28:14
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 22:28:14
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 22:28:14
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"http:\/\/localhost:3000","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Sec-Ch-Ua-Platform":"\"macOS\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 22:28:15
+<=============================================>
+null | 2025-06-15 22:28:15
+<=============================================>
+null | 2025-06-15 22:28:15
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 22:28:15
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 22:28:15
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"https:\/\/bulksms.approot.ng\/dashboard\/send-multiple-sms","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"same-origin","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (X11; Linux aarch64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36 CrKey\/1.54.250320","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDI0NTU2LCJleHAiOjM2MDE3NTAwMjQ1NTZ9.iWQHnkEOMK9rloKL1TG00LdpHmNArTBLPPKHwmyvNfU"} | 2025-06-15 22:40:33
+<=============================================>
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMiLCJlbWFpbCI6ImFsaWNlQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUwMDI0NTU2LCJleHAiOjM2MDE3NTAwMjQ1NTZ9.iWQHnkEOMK9rloKL1TG00LdpHmNArTBLPPKHwmyvNfU | 2025-06-15 22:40:33
+<=============================================>
+{"id":"3","email":"alice@example.com","role":"admin","iat":1750024556,"exp":3601750024556} | 2025-06-15 22:40:33
+<=============================================>
+Token decoded. User ID: 3, Role: admin | 2025-06-15 22:40:33
+<=============================================>
+Fetching organization_id for user ID: 3 | 2025-06-15 22:40:33
+<=============================================>
+User ID: 3 belongs to organization ID: 1. Fetching groups. | 2025-06-15 22:40:33
+<=============================================>
+Fetched 0 group(s) for user ID: 3 | 2025-06-15 22:40:33
+<=============================================>
+Raw POST: {"text":"welcome"} | 2025-06-15 22:43:15
+<=============================================>
+Raw FILES: {"file":{"name":"newcsv.csv","type":"text\/csv","tmp_name":"\/tmp\/phpXdp862","error":0,"size":59}} | 2025-06-15 22:43:15
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 22:53:52
+<=============================================>
+Authorization Header Missing | 2025-06-15 22:53:52
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Site":"cross-site","Sec-Fetch-Mode":"cors","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Origin":"http:\/\/localhost:3000","Access-Control-Request-Headers":"authorization","Access-Control-Request-Method":"GET","Accept":"*\/*","Connection":"keep-alive","Host":"bulksms.approot.ng"} | 2025-06-15 22:53:52
+<=============================================>
+Authorization Header Missing | 2025-06-15 22:53:52
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"http:\/\/localhost:3000","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Sec-Ch-Ua-Platform":"\"macOS\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 22:53:52
+<=============================================>
+null | 2025-06-15 22:53:52
+<=============================================>
+null | 2025-06-15 22:53:52
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 22:53:52
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 22:53:52
+<=============================================>
+Incoming Headers{"Accept-Language":"en-GB,en-US;q=0.9,en;q=0.8","Accept-Encoding":"gzip, deflate, br, zstd","Referer":"http:\/\/localhost:3000\/","Sec-Fetch-Dest":"empty","Sec-Fetch-Mode":"cors","Sec-Fetch-Site":"cross-site","Origin":"http:\/\/localhost:3000","Sec-Ch-Ua-Mobile":"?0","Sec-Ch-Ua":"\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not\/A)Brand\";v=\"24\"","Accept":"application\/json, text\/plain, *\/*","User-Agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/137.0.0.0 Safari\/537.36","Sec-Ch-Ua-Platform":"\"macOS\"","Connection":"keep-alive","Host":"bulksms.approot.ng","Authorization":"Bearer null"} | 2025-06-15 22:53:53
+<=============================================>
+null | 2025-06-15 22:53:53
+<=============================================>
+null | 2025-06-15 22:53:53
+<=============================================>
+Token decoded. User ID: , Role:  | 2025-06-15 22:53:53
+<=============================================>
+Invalid token payload. userId or role missing. | 2025-06-15 22:53:53
+<=============================================>
